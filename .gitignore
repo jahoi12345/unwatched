@@ -2,6 +2,9 @@
 dist/
 *.tsbuildinfo
 
+# generated ingest data (SQLite db + JSON exports)
+ingest/data/
+
 # dependencies
 node_modules/
 
