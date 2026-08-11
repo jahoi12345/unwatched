@@ -22,5 +22,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# agent instructions files (kept locally, not published)
+AGENTS.md
+CLAUDE.md
+
 # jetbrains setting folder
 .idea/
