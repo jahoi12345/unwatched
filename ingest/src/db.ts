@@ -33,6 +33,14 @@ CREATE TABLE IF NOT EXISTS status_history (
 	observed_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS compliance_flags (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	document_id INTEGER NOT NULL REFERENCES documents(id) ON DELETE CASCADE,
+	flag TEXT NOT NULL,
+	detail TEXT,
+	UNIQUE(document_id, flag)
+);
+
 CREATE TABLE IF NOT EXISTS runs (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	source TEXT NOT NULL,
@@ -120,6 +128,39 @@ export function replaceMatches(db: DatabaseSync, documentId: number, hits: Keywo
 	for (const hit of hits) {
 		insert.run(documentId, hit.keyword, hit.category);
 	}
+}
+
+export function replaceComplianceFlags(
+	db: DatabaseSync,
+	documentId: number,
+	flags: { flag: string; detail: string }[],
+): void {
+	db.prepare('DELETE FROM compliance_flags WHERE document_id = ?').run(documentId);
+	const insert = db.prepare('INSERT INTO compliance_flags (document_id, flag, detail) VALUES (?, ?, ?)');
+	for (const f of flags) {
+		insert.run(documentId, f.flag, f.detail);
+	}
+}
+
+export interface ComplianceFlagRow {
+	document_id: number;
+	title: string;
+	url: string | null;
+	flag: string;
+	detail: string | null;
+}
+
+export function queryComplianceFlags(db: DatabaseSync, source?: string): ComplianceFlagRow[] {
+	const where = source ? 'WHERE d.source = ?' : '';
+	return db
+		.prepare(
+			`SELECT d.id AS document_id, d.title, d.url, cf.flag, cf.detail
+			 FROM compliance_flags cf
+			 JOIN documents d ON d.id = cf.document_id
+			 ${where}
+			 ORDER BY d.id`,
+		)
+		.all(...(source ? [source] : [])) as unknown as ComplianceFlagRow[];
 }
 
 export interface RunRecord {

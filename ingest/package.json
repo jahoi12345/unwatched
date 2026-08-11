@@ -9,11 +9,15 @@
     "batch": "tsx src/batch.ts",
     "digest": "tsx src/digest.ts",
     "flock-monitor": "tsx src/flock-monitor.ts",
+    "foia": "tsx src/foia.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
   }
 }
