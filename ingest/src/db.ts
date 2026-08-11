@@ -1,0 +1,105 @@
+import { DatabaseSync } from 'node:sqlite';
+import type { KeywordHit, RawDocument } from './types.ts';
+
+const SCHEMA = `
+CREATE TABLE IF NOT EXISTS documents (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	source TEXT NOT NULL,
+	external_id TEXT NOT NULL,
+	title TEXT NOT NULL,
+	body TEXT,
+	doc_type TEXT,
+	status TEXT,
+	intro_date TEXT,
+	agenda_date TEXT,
+	url TEXT,
+	raw_json TEXT,
+	ingested_at TEXT NOT NULL,
+	UNIQUE(source, external_id)
+);
+
+CREATE TABLE IF NOT EXISTS matches (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	document_id INTEGER NOT NULL REFERENCES documents(id) ON DELETE CASCADE,
+	keyword TEXT NOT NULL,
+	category TEXT NOT NULL,
+	UNIQUE(document_id, keyword)
+);
+`;
+
+export function openDb(path: string): DatabaseSync {
+	const db = new DatabaseSync(path);
+	db.exec(SCHEMA);
+	return db;
+}
+
+export function upsertDocument(db: DatabaseSync, doc: RawDocument): number {
+	db.prepare(
+		`INSERT INTO documents (source, external_id, title, body, doc_type, status, intro_date, agenda_date, url, raw_json, ingested_at)
+		 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+		 ON CONFLICT(source, external_id) DO UPDATE SET
+			title = excluded.title,
+			body = excluded.body,
+			doc_type = excluded.doc_type,
+			status = excluded.status,
+			intro_date = excluded.intro_date,
+			agenda_date = excluded.agenda_date,
+			url = excluded.url,
+			raw_json = excluded.raw_json,
+			ingested_at = excluded.ingested_at`,
+	).run(
+		doc.source,
+		doc.externalId,
+		doc.title,
+		doc.body,
+		doc.docType,
+		doc.status,
+		doc.introDate,
+		doc.agendaDate,
+		doc.url,
+		JSON.stringify(doc.raw),
+		new Date().toISOString(),
+	);
+
+	const row = db
+		.prepare('SELECT id FROM documents WHERE source = ? AND external_id = ?')
+		.get(doc.source, doc.externalId) as { id: number };
+	return row.id;
+}
+
+export function replaceMatches(db: DatabaseSync, documentId: number, hits: KeywordHit[]): void {
+	db.prepare('DELETE FROM matches WHERE document_id = ?').run(documentId);
+	const insert = db.prepare('INSERT INTO matches (document_id, keyword, category) VALUES (?, ?, ?)');
+	for (const hit of hits) {
+		insert.run(documentId, hit.keyword, hit.category);
+	}
+}
+
+export interface MatchedDocumentRow {
+	id: number;
+	title: string;
+	body: string | null;
+	doc_type: string | null;
+	status: string | null;
+	intro_date: string | null;
+	agenda_date: string | null;
+	url: string | null;
+	categories: string;
+	keywords: string;
+}
+
+export function queryMatchedDocuments(db: DatabaseSync, source: string): MatchedDocumentRow[] {
+	return db
+		.prepare(
+			`SELECT
+				d.id, d.title, d.body, d.doc_type, d.status, d.intro_date, d.agenda_date, d.url,
+				GROUP_CONCAT(DISTINCT m.category) AS categories,
+				GROUP_CONCAT(DISTINCT m.keyword) AS keywords
+			 FROM documents d
+			 JOIN matches m ON m.document_id = d.id
+			 WHERE d.source = ?
+			 GROUP BY d.id
+			 ORDER BY d.agenda_date DESC`,
+		)
+		.all(source) as unknown as MatchedDocumentRow[];
+}
