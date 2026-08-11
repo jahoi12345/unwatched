@@ -46,6 +46,45 @@ curl -s "https://webapi.legistar.com/v1/<slug>/matters?\$orderby=MatterId%20desc
 
 Keyword taxonomy lives in `src/keywords.ts`.
 
+## Running against many cities
+
+`src/cities.ts` holds a target list (currently the top 50 US cities by
+population) with best-guess Legistar client slugs per city.
+
+```sh
+npm run discover           # probes every candidate slug, classifies each
+                            # city as live / stale / not-found, without
+                            # ingesting anything
+npm run batch -- --months=24   # runs discovery, then ingests every
+                                # live/stale city, logging one row per
+                                # city to the `runs` table for audit
+```
+
+`stale` means the client resolves but its most recent record predates
+the live threshold (6 months) — e.g. `sfgov`'s data is frozen at 2020,
+apparently because San Francisco migrated their public agenda site off
+the shared `webapi.legistar.com` host. `not-found` means none of the
+candidate slugs resolved — that city likely doesn't run Legistar, or
+runs a private/differently-hosted instance; it needs a different source
+connector, not a better slug guess.
+
+### Validating coverage — the `runs` table
+
+Every `batch` run writes one row per city to `runs`: slug, status,
+pages fetched, matters fetched, matches found, and any error. This is
+the audit trail for "did we actually cover what we meant to cover":
+
+- **Pagination completeness**: `fetchLegistarMatters` keeps paging while
+  a page comes back full-size, so a non-full last page is proof the
+  loop reached the true end rather than being cut short. `pages_fetched`
+  in `runs` makes that checkable after the fact.
+- **City coverage**: `not-found` cities are listed explicitly in
+  `data/batch-summary.json`, not silently dropped.
+- **Anomaly spotting**: an unusually low `matters_fetched` next to peer
+  cities is worth a manual check — e.g. Miami's low count turned out to
+  be a real, low `MatterId` ceiling (their Legistar tenant appears
+  recently established), not a scraping bug.
+
 ## Adding a new source
 
 Sources live in `src/sources/`. Each exports a function that returns

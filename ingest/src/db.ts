@@ -25,6 +25,22 @@ CREATE TABLE IF NOT EXISTS matches (
 	category TEXT NOT NULL,
 	UNIQUE(document_id, keyword)
 );
+
+CREATE TABLE IF NOT EXISTS runs (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	source TEXT NOT NULL,
+	city TEXT NOT NULL,
+	state TEXT NOT NULL,
+	slug TEXT,
+	client_status TEXT NOT NULL,
+	months_lookback INTEGER,
+	pages_fetched INTEGER,
+	matters_fetched INTEGER,
+	matches_found INTEGER,
+	error TEXT,
+	started_at TEXT NOT NULL,
+	finished_at TEXT
+);
 `;
 
 export function openDb(path: string): DatabaseSync {
@@ -73,6 +89,41 @@ export function replaceMatches(db: DatabaseSync, documentId: number, hits: Keywo
 	for (const hit of hits) {
 		insert.run(documentId, hit.keyword, hit.category);
 	}
+}
+
+export interface RunRecord {
+	source: string;
+	city: string;
+	state: string;
+	slug: string | null;
+	clientStatus: string;
+	monthsLookback: number | null;
+	pagesFetched: number | null;
+	mattersFetched: number | null;
+	matchesFound: number | null;
+	error: string | null;
+	startedAt: string;
+	finishedAt: string | null;
+}
+
+export function insertRun(db: DatabaseSync, run: RunRecord): void {
+	db.prepare(
+		`INSERT INTO runs (source, city, state, slug, client_status, months_lookback, pages_fetched, matters_fetched, matches_found, error, started_at, finished_at)
+		 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+	).run(
+		run.source,
+		run.city,
+		run.state,
+		run.slug,
+		run.clientStatus,
+		run.monthsLookback,
+		run.pagesFetched,
+		run.mattersFetched,
+		run.matchesFound,
+		run.error,
+		run.startedAt,
+		run.finishedAt,
+	);
 }
 
 export interface MatchedDocumentRow {

@@ -19,14 +19,25 @@ function legistarDetailUrl(client: string, matter: LegistarMatter): string {
 	return `https://${client}.legistar.com/LegislationDetail.aspx?ID=${matter.MatterId}&GUID=${matter.MatterGuid}`;
 }
 
+export interface LegistarFetchResult {
+	documents: RawDocument[];
+	pagesFetched: number;
+}
+
 /**
  * Fetches Legistar matters (agenda items) for a client introduced on or after `sinceDate`.
  * Legistar's public Web API: https://webapi.legistar.com/Home/Examples
+ *
+ * `pagesFetched` is returned so callers can audit completeness: if the last
+ * page fetched was a full page (PAGE_SIZE items), the loop kept going, so a
+ * non-full last page is proof pagination reached the true end rather than
+ * being cut short.
  */
-export async function fetchLegistarMatters(client: string, sinceDate: Date): Promise<RawDocument[]> {
+export async function fetchLegistarMatters(client: string, sinceDate: Date): Promise<LegistarFetchResult> {
 	const isoDate = sinceDate.toISOString().slice(0, 19);
 	const documents: RawDocument[] = [];
 	let skip = 0;
+	let pagesFetched = 0;
 
 	for (;;) {
 		const url = new URL(`https://webapi.legistar.com/v1/${client}/matters`);
@@ -40,6 +51,7 @@ export async function fetchLegistarMatters(client: string, sinceDate: Date): Pro
 			throw new Error(`Legistar API error for client "${client}": ${res.status} ${res.statusText}`);
 		}
 		const page = (await res.json()) as LegistarMatter[];
+		pagesFetched++;
 		if (page.length === 0) break;
 
 		for (const matter of page) {
@@ -61,5 +73,5 @@ export async function fetchLegistarMatters(client: string, sinceDate: Date): Pro
 		skip += PAGE_SIZE;
 	}
 
-	return documents;
+	return { documents, pagesFetched };
 }
