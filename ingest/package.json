@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "ingest": "tsx src/cli.ts",
+    "discover": "tsx src/discover.ts",
+    "batch": "tsx src/batch.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

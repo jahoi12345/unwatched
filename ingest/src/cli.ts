@@ -35,8 +35,8 @@ async function main() {
 	sinceDate.setMonth(sinceDate.getMonth() - months);
 
 	console.log(`Fetching matters for "${client}" since ${sinceDate.toISOString().slice(0, 10)}...`);
-	const documents = await fetchLegistarMatters(client, sinceDate);
-	console.log(`Fetched ${documents.length} matters. Scanning for surveillance-related keywords...`);
+	const { documents, pagesFetched } = await fetchLegistarMatters(client, sinceDate);
+	console.log(`Fetched ${documents.length} matters across ${pagesFetched} page(s). Scanning for surveillance-related keywords...`);
 
 	mkdirSync(DATA_DIR, { recursive: true });
 	const db = openDb(path.join(DATA_DIR, 'unwatched.db'));
