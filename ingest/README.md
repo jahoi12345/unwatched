@@ -85,6 +85,34 @@ the audit trail for "did we actually cover what we meant to cover":
   be a real, low `MatterId` ceiling (their Legistar tenant appears
   recently established), not a scraping bug.
 
+## Advocacy digest (#6)
+
+```sh
+npm run digest -- --days=30
+```
+
+Pulls every matched document with an agenda date in the last N days
+across all ingested cities, and drafts a public-comment paragraph for
+each one via `comment-drafter.ts` — the wording adapts based on whether
+the item is a vendor contract (cites cost if found in the title), an
+annual technology-use report, or a data-sharing/ICE-related policy item.
+Output is a markdown file per run in `data/digest-<date>.md`, grouped by
+city, meant to be skimmed and copied into a public-comment period.
+
+## Flock transparency monitor (#3)
+
+```sh
+npm run flock-monitor
+```
+
+Filters the ingested data to just Flock Safety/Flock Group matches
+across every city and reports current status plus status history for
+each (via the `status_history` table — every `upsertDocument` call
+records a new row whenever a document's status changes between runs,
+so re-running `batch` periodically builds a real timeline: e.g.
+Introduced → Passed, or Passed → Failed on reconsideration). Exports
+`data/flock-transparency-report.json`.
+
 ## Adding a new source
 
 Sources live in `src/sources/`. Each exports a function that returns
