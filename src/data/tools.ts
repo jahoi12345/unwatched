@@ -2,8 +2,10 @@ export type Category =
 	| 'routing'
 	| 'mapping'
 	| 'facial-recognition'
-	| 'cell-site'
-	| 'foia';
+	| 'tracking-device'
+	| 'ice-surveillance'
+	| 'foia'
+	| 'digital-security';
 
 export interface CategoryMeta {
 	id: Category;
@@ -28,14 +30,24 @@ export const categories: CategoryMeta[] = [
 		description: 'Campaigns, apparel, and eyewear built to resist or ban facial recognition.',
 	},
 	{
-		id: 'cell-site',
-		label: 'Cell-Site Simulator Detection',
-		description: 'Tools that detect IMSI catchers ("Stingrays") monitoring nearby phones.',
+		id: 'tracking-device',
+		label: 'Tracking Device Detection',
+		description: 'Tools that detect physical tracking devices — cell-site simulators ("Stingrays") and Bluetooth trackers like AirTags.',
+	},
+	{
+		id: 'ice-surveillance',
+		label: 'Immigration & Data-Broker Surveillance',
+		description: 'Tracking the data brokers and tech vendors that feed surveillance data to ICE and other agencies.',
 	},
 	{
 		id: 'foia',
 		label: 'FOIA & Records Infrastructure',
 		description: 'Tools for requesting, tracking, and researching government surveillance records.',
+	},
+	{
+		id: 'digital-security',
+		label: 'Digital Security Guides',
+		description: 'General-purpose guides for securing your devices, communications, and online footprint.',
 	},
 ];
 
@@ -95,6 +107,19 @@ export const tools: Tool[] = [
 		category: 'mapping',
 	},
 	{
+		name: 'Rural Privacy Coalition',
+		url: 'https://ruralprivacy.org',
+		description:
+			'ALPR action toolkit and map connecting rural privacy organizers, with templates for pushing back on local surveillance deployments.',
+		category: 'mapping',
+	},
+	{
+		name: 'Texas Privacy Coalition',
+		url: 'https://www.texasprivacycoalition.com/map',
+		description: 'State-specific map of ALPR/Flock camera locations across Texas, plus an organizing toolkit.',
+		category: 'mapping',
+	},
+	{
 		name: 'Fight for the Future: Ban Facial Recognition',
 		url: 'https://www.fightforthefuture.org/',
 		description:
@@ -121,17 +146,38 @@ export const tools: Tool[] = [
 		category: 'facial-recognition',
 	},
 	{
+		name: 'America Under Watch',
+		url: 'https://www.americaunderwatch.com/',
+		description:
+			"Georgetown Center on Privacy & Technology's research hub documenting citywide face-surveillance networks in the U.S.",
+		category: 'facial-recognition',
+	},
+	{
 		name: 'Rayhunter',
 		url: 'https://github.com/EFForg/rayhunter',
 		description:
 			"EFF's open-source tool that runs on a low-cost mobile hotspot to detect cell-site simulators (Stingrays).",
-		category: 'cell-site',
+		category: 'tracking-device',
 	},
 	{
 		name: 'AIMSICD',
 		url: 'https://cellularprivacy.github.io/Android-IMSI-Catcher-Detector/',
 		description: 'Android app for detecting IMSI catchers monitoring nearby cell traffic.',
-		category: 'cell-site',
+		category: 'tracking-device',
+	},
+	{
+		name: 'AirGuard',
+		url: 'https://github.com/seemoo-lab/AirGuard',
+		description:
+			'Open-source Android app that detects unwanted Bluetooth trackers — AirTags, Samsung SmartTags, Tile, and similar devices.',
+		category: 'tracking-device',
+	},
+	{
+		name: 'Mijente: No Tech For ICE',
+		url: 'https://notechforice.com/',
+		description:
+			'Documents the data brokers and tech vendors (Palantir and others) supplying surveillance data and tooling to ICE.',
+		category: 'ice-surveillance',
 	},
 	{
 		name: 'MuckRock',
@@ -146,5 +192,26 @@ export const tools: Tool[] = [
 		description:
 			'Independent research and intelligence on physical security and video surveillance technology, including vendor contracts.',
 		category: 'foia',
+	},
+	{
+		name: 'Lucy Parsons Labs',
+		url: 'https://www.lucyparsonslabs.com/',
+		description:
+			'Files and litigates public-records requests to expose police surveillance technology purchases and use.',
+		category: 'foia',
+	},
+	{
+		name: 'OpenOversight',
+		url: 'https://openoversight.com/',
+		description:
+			"Lucy Parsons Labs' crowdsourced, public-records-based database for identifying police officers by badge, name, or photo.",
+		category: 'foia',
+	},
+	{
+		name: 'EFF Surveillance Self-Defense',
+		url: 'https://ssd.eff.org/',
+		description:
+			"EFF's guide to securing your devices and communications — threat modeling, secure messaging, and step-by-step tool tutorials.",
+		category: 'digital-security',
 	},
 ];
