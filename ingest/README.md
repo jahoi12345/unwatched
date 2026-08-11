@@ -113,6 +113,28 @@ so re-running `batch` periodically builds a real timeline: e.g.
 Introduced → Passed, or Passed → Failed on reconsideration). Exports
 `data/flock-transparency-report.json`.
 
+## FOIA compliance parser (#5)
+
+```sh
+npm run foia -- --folder=./foia-inbox   # folder is the default, flag is optional
+```
+
+Extracts text from every PDF in `foia-inbox/` (via `pdf-parse`), runs it
+through the same surveillance-keyword taxonomy used for council agendas,
+and flags compliance issues: redaction language, full/partial denial or
+exemption claims, denied fee waivers, and — if a same-named `.json`
+metadata sidecar gives a request date, response date, and state — whether
+the response beat that state's statutory deadline (`compliance.ts`; the
+deadline table is approximate and meant to flag responses worth a closer
+look, not to be cited as legal fact). Exports `data/foia-compliance-report.json`.
+
+Verified against a real, redacted Cook County Sheriff's Office FOIA
+response about Flock Safety (via MuckRock): correctly extracted "Flock
+Safety"/"license plate reader" from an 8.5MB real PDF, flagged it as a
+partial denial (the file itself is titled "Redacted"), and correctly
+computed a 47-business-day response time against Illinois's 5-day
+statutory deadline.
+
 ## Adding a new source
 
 Sources live in `src/sources/`. Each exports a function that returns

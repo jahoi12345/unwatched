@@ -5,6 +5,11 @@ dist/
 # generated ingest data (SQLite db + JSON exports)
 ingest/data/
 
+# local FOIA source PDFs/metadata (not ours to redistribute)
+ingest/foia-inbox/*
+!ingest/foia-inbox/.gitkeep
+!ingest/foia-inbox/README.md
+
 # dependencies
 node_modules/
 
