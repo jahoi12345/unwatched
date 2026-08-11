@@ -26,6 +26,13 @@ CREATE TABLE IF NOT EXISTS matches (
 	UNIQUE(document_id, keyword)
 );
 
+CREATE TABLE IF NOT EXISTS status_history (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	document_id INTEGER NOT NULL REFERENCES documents(id) ON DELETE CASCADE,
+	status TEXT,
+	observed_at TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS runs (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	source TEXT NOT NULL,
@@ -50,6 +57,10 @@ export function openDb(path: string): DatabaseSync {
 }
 
 export function upsertDocument(db: DatabaseSync, doc: RawDocument): number {
+	const existing = db
+		.prepare('SELECT id, status FROM documents WHERE source = ? AND external_id = ?')
+		.get(doc.source, doc.externalId) as { id: number; status: string | null } | undefined;
+
 	db.prepare(
 		`INSERT INTO documents (source, external_id, title, body, doc_type, status, intro_date, agenda_date, url, raw_json, ingested_at)
 		 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -80,7 +91,27 @@ export function upsertDocument(db: DatabaseSync, doc: RawDocument): number {
 	const row = db
 		.prepare('SELECT id FROM documents WHERE source = ? AND external_id = ?')
 		.get(doc.source, doc.externalId) as { id: number };
+
+	if (!existing || existing.status !== doc.status) {
+		db.prepare('INSERT INTO status_history (document_id, status, observed_at) VALUES (?, ?, ?)').run(
+			row.id,
+			doc.status,
+			new Date().toISOString(),
+		);
+	}
+
 	return row.id;
+}
+
+export interface StatusHistoryRow {
+	status: string | null;
+	observed_at: string;
+}
+
+export function queryStatusHistory(db: DatabaseSync, documentId: number): StatusHistoryRow[] {
+	return db
+		.prepare('SELECT status, observed_at FROM status_history WHERE document_id = ? ORDER BY observed_at ASC')
+		.all(documentId) as unknown as StatusHistoryRow[];
 }
 
 export function replaceMatches(db: DatabaseSync, documentId: number, hits: KeywordHit[]): void {
@@ -153,4 +184,46 @@ export function queryMatchedDocuments(db: DatabaseSync, source: string): Matched
 			 ORDER BY d.agenda_date DESC`,
 		)
 		.all(source) as unknown as MatchedDocumentRow[];
+}
+
+export interface MatchedDocumentWithSourceRow extends MatchedDocumentRow {
+	source: string;
+}
+
+/**
+ * All matched documents across every ingested city, optionally filtered
+ * to those with at least one match on/after `sinceDate` and/or matching
+ * a specific keyword (case-insensitive substring, e.g. vendor name).
+ */
+export function queryAllMatchedDocuments(
+	db: DatabaseSync,
+	opts: { sinceAgendaDate?: string; keywordLike?: string } = {},
+): MatchedDocumentWithSourceRow[] {
+	const clauses: string[] = [];
+	const params: string[] = [];
+
+	if (opts.sinceAgendaDate) {
+		clauses.push('d.agenda_date >= ?');
+		params.push(opts.sinceAgendaDate);
+	}
+	if (opts.keywordLike) {
+		clauses.push('d.id IN (SELECT document_id FROM matches WHERE keyword LIKE ?)');
+		params.push(`%${opts.keywordLike}%`);
+	}
+
+	const where = clauses.length > 0 ? `WHERE ${clauses.join(' AND ')}` : '';
+
+	return db
+		.prepare(
+			`SELECT
+				d.id, d.source, d.title, d.body, d.doc_type, d.status, d.intro_date, d.agenda_date, d.url,
+				GROUP_CONCAT(DISTINCT m.category) AS categories,
+				GROUP_CONCAT(DISTINCT m.keyword) AS keywords
+			 FROM documents d
+			 JOIN matches m ON m.document_id = d.id
+			 ${where}
+			 GROUP BY d.id
+			 ORDER BY d.agenda_date DESC`,
+		)
+		.all(...params) as unknown as MatchedDocumentWithSourceRow[];
 }
