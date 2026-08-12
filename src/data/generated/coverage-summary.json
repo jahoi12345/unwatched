@@ -1,8 +1,8 @@
 {
-  "ranAt": "2026-08-12T21:25:46.649Z",
+  "ranAt": "2026-08-12T22:08:52.675Z",
   "monthsLookback": 24,
   "totalCitiesTargeted": 48,
-  "citiesIngested": 26,
+  "citiesIngested": 30,
   "citiesNotFound": [
     {
       "name": "New York",
@@ -57,17 +57,6 @@
         "philadelphiagov",
         "cityofphiladelphia",
         "cityphiladelphia"
-      ]
-    },
-    {
-      "name": "San Diego",
-      "state": "CA",
-      "triedCandidates": [
-        "sandiego",
-        "sandiego",
-        "sandiegogov",
-        "cityofsandiego",
-        "citysandiego"
       ]
     },
     {
@@ -134,17 +123,6 @@
       ]
     },
     {
-      "name": "El Paso",
-      "state": "TX",
-      "triedCandidates": [
-        "elpaso",
-        "elpaso",
-        "elpasogov",
-        "cityofelpaso",
-        "cityelpaso"
-      ]
-    },
-    {
       "name": "Portland",
       "state": "OR",
       "triedCandidates": [
@@ -186,16 +164,6 @@
       ]
     },
     {
-      "name": "Omaha",
-      "state": "NE",
-      "triedCandidates": [
-        "omaha",
-        "omahagov",
-        "cityofomaha",
-        "cityomaha"
-      ]
-    },
-    {
       "name": "Virginia Beach",
       "state": "VA",
       "triedCandidates": [
@@ -225,18 +193,8 @@
         "cityofbakersfield",
         "citybakersfield"
       ]
-    },
-    {
-      "name": "Tampa",
-      "state": "FL",
-      "triedCandidates": [
-        "tampa",
-        "tampagov",
-        "cityoftampa",
-        "citytampa"
-      ]
     }
   ],
-  "totalMattersFetched": 51435,
-  "totalMatchesFound": 114
+  "totalMattersFetched": 65011,
+  "totalMatchesFound": 151
 }

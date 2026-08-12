@@ -1,5 +1,31 @@
 [
   {
+    "city": "Dallas, TX",
+    "title": "Dallas Police Department Flock Safety Camera Update\r\n[Daniel C. Comeaux, Chief of Police, Anthony Greer, Major of Police, Dallas Police Department]",
+    "currentStatus": "Agenda Ready",
+    "agendaDate": "2026-03-03T00:00:00",
+    "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=23858&GUID=98E3CF24-4359-4210-9E2C-6E4A334407E4",
+    "statusHistory": [
+      {
+        "status": "Agenda Ready",
+        "observed_at": "2026-08-12T21:59:03.344Z"
+      }
+    ]
+  },
+  {
+    "city": "El Paso, TX",
+    "title": "Discussion and action directing the City Manager to refrain from renewing any existing agreements and/or entering into any new agreement with Flock Group Inc., operating as Flock Safety, for the provision, operation, or use of Automated License Plate Recognition technology, and to refrain from utilizing future grant awards or City of El Paso funds to contract for similar technology. For clarity, this item does not pertain to user-operated handheld or vehicle-mounted license plate readers for parking enforcement or similar uses.",
+    "currentStatus": "Agenda Ready",
+    "agendaDate": "2026-03-03T00:00:00",
+    "url": "https://elpasotexas.legistar.com/LegislationDetail.aspx?ID=14865&GUID=56BCDFC7-FD14-48FA-844C-563E7719C6FF",
+    "statusHistory": [
+      {
+        "status": "Agenda Ready",
+        "observed_at": "2026-08-12T22:00:31.858Z"
+      }
+    ]
+  },
+  {
     "city": "Oakland, CA",
     "title": "Subject: \tOPD Community Safety Cameras Policy And FLOCK Agreement\r\nFrom: \t\tOakland Police Department \r\nRecommendation: Adopt A Resolution (1) Approving The Oakland Police Department Surveillance Use Policy “DGO I-32.1 - Community Safety Camera System” And The Acquisition Of Security Cameras And Related Technology; (2) Awarding A Two Year Agreement To Flock Safety For Acquisition Of Automated License Plate Reader And Pan Tilt Zoom Cameras, Operating System Technology, And Related Services At A Cost Not To Exceed Two-Million Two-Hundred Fifty-Two Thousand Five-Hundred Dollars ($2,252,500); And (3) Waiving The Competitive Multiple-Step Solicitation Process Required For The Acquisition Of Information Technology Systems And Waiving The Local And Small Local Business Enterprise Program Requirements",
     "currentStatus": "Passed",
@@ -52,6 +78,32 @@
     ]
   },
   {
+    "city": "Dallas, TX",
+    "title": "Authorize a three-year service contract, with two one-year renewal options with Flock Group, Inc. to provide automatic license plate reading cameras, installation, software subscription, maintenance, and support for the Dallas Police Department for the period June 15, 2025 through June 14, 2028 - Not to exceed $5,738,414.61 - Financing: General Fund ($3,922,914.61), MVCPA FY25 SB224 Catalytic Converter Grant Fund ($1,690,500.00) (subject to annual appropriations), and 2023 Homeland Security-Urban Area Security Initiative 24-26 Fund ($125,000.00)",
+    "currentStatus": "Approved",
+    "agendaDate": "2025-05-28T00:00:00",
+    "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=21263&GUID=28D0A7DC-7698-49D7-B55C-A661AD51B4A5",
+    "statusHistory": [
+      {
+        "status": "Approved",
+        "observed_at": "2026-08-12T21:59:03.388Z"
+      }
+    ]
+  },
+  {
+    "city": "Dallas, TX",
+    "title": "Authorize a three-year service contract, with two one-year renewal options, with Flock Group, Inc. to provide automatic license plate reading cameras, installation, software subscription, maintenance, and support for the Dallas Police Department for the period June 15, 2025 through June 14, 2028 - Not to Exceed $5,861,300.00- Financing: General Fund ($3,995,800.00); FY25 SB224 Catalytic Converter Grant Fund ($1,740,500.00); 2023 Homeland Security-UASI 24-26 Fund ($125,000.00)",
+    "currentStatus": "Agenda Ready",
+    "agendaDate": "2025-05-12T00:00:00",
+    "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=21299&GUID=4916A384-8544-4B84-B30E-FD34922ADB78",
+    "statusHistory": [
+      {
+        "status": "Agenda Ready",
+        "observed_at": "2026-08-12T21:59:03.386Z"
+      }
+    ]
+  },
+  {
     "city": "Denver, CO",
     "title": "A resolution approving a proposed Amendatory Agreement between the City and County of Denver and Flock Group, Inc. to provide solar-powered license plate recognition cameras.\r\nAmends a Framework Agreement with Flock Group Inc to add $666,000.00 for a new total of $1,005,450.00 and 24 months for a new end date of 02-28-2027 to provide solar-powered license plate recognition cameras, citywide (POLIC-202472539-00/POLIC-202578012-01). The last regularly scheduled Council meeting within the 30-day review period is on 5-19-2025. The Committee approved filing this item at its meeting on 4-2-2025.",
     "currentStatus": "Failed",
@@ -100,6 +152,19 @@
       {
         "status": "Passed",
         "observed_at": "2026-08-12T21:24:36.324Z"
+      }
+    ]
+  },
+  {
+    "city": "foia-pdf",
+    "title": "Flock Safety financial materials (FOIA R055178)",
+    "currentStatus": "received",
+    "agendaDate": "2024-05-21",
+    "url": "file:///Users/jamesli/anti-flock/ingest/foia-inbox/cook-county-flock-r055178.pdf",
+    "statusHistory": [
+      {
+        "status": "received",
+        "observed_at": "2026-08-12T21:26:29.851Z"
       }
     ]
   },

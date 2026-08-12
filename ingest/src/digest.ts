@@ -23,7 +23,10 @@ function main() {
 	const cityLabel = (row: MatchedDocumentWithSourceRow) => cityDisplayName(row.source, cityLookup);
 
 	const db = openDb(path.join(DATA_DIR, 'unwatched.db'));
-	const rows = queryAllMatchedDocuments(db, { sinceAgendaDate: sinceIso });
+	// Scoped to legistar: sources only — this drafts public comment for a
+	// council meeting, which doesn't make sense for a building permit or a
+	// FOIA response (there's no "public comment period" on those).
+	const rows = queryAllMatchedDocuments(db, { sinceAgendaDate: sinceIso, sourcePrefix: 'legistar:' });
 	db.close();
 
 	if (rows.length === 0) {

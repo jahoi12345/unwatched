@@ -238,7 +238,7 @@ export interface MatchedDocumentWithSourceRow extends MatchedDocumentRow {
  */
 export function queryAllMatchedDocuments(
 	db: DatabaseSync,
-	opts: { sinceAgendaDate?: string; keywordLike?: string } = {},
+	opts: { sinceAgendaDate?: string; keywordLike?: string; sourcePrefix?: string } = {},
 ): MatchedDocumentWithSourceRow[] {
 	const clauses: string[] = [];
 	const params: string[] = [];
@@ -250,6 +250,10 @@ export function queryAllMatchedDocuments(
 	if (opts.keywordLike) {
 		clauses.push('d.id IN (SELECT document_id FROM matches WHERE keyword LIKE ?)');
 		params.push(`%${opts.keywordLike}%`);
+	}
+	if (opts.sourcePrefix) {
+		clauses.push('d.source LIKE ?');
+		params.push(`${opts.sourcePrefix}%`);
 	}
 
 	const where = clauses.length > 0 ? `WHERE ${clauses.join(' AND ')}` : '';

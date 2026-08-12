@@ -27,7 +27,13 @@ export const TOP_50_CITIES: CityTarget[] = [
 	{ name: 'Phoenix', state: 'AZ', rank: 5, candidates: guesses('Phoenix') },
 	{ name: 'San Antonio', state: 'TX', rank: 6, candidates: guesses('San Antonio', ['sanantonio']) },
 	{ name: 'Philadelphia', state: 'PA', rank: 7, candidates: guesses('Philadelphia', ['phila']) },
-	{ name: 'San Diego', state: 'CA', rank: 8, candidates: guesses('San Diego', ['sandiego']) },
+	// San Diego's own city council isn't on the shared Legistar host (it may
+	// be self-hosted or on a different system); San Diego County is, and its
+	// board oversees county sheriff ALPR/surveillance procurement, so it's
+	// included as a labeled county entry rather than mislabeled as city
+	// coverage. (Philadelphia is also on Legistar at phila.legistar.com, but
+	// its API requires a token we don't have — noted, not silently dropped.)
+	{ name: 'San Diego County (San Diego)', state: 'CA', rank: 8, candidates: [...guesses('San Diego', ['sandiego']), 'sdcounty'] },
 	{ name: 'Dallas', state: 'TX', rank: 9, candidates: guesses('Dallas') },
 	{ name: 'Fort Worth', state: 'TX', rank: 10, candidates: guesses('Fort Worth', ['fortworth']) },
 	{ name: 'Jacksonville', state: 'FL', rank: 11, candidates: guesses('Jacksonville', ['coj']) },
@@ -43,7 +49,7 @@ export const TOP_50_CITIES: CityTarget[] = [
 	{ name: 'Nashville', state: 'TN', rank: 22, candidates: guesses('Nashville') },
 	{ name: 'Washington', state: 'DC', rank: 23, candidates: ['dc', 'dccouncil', 'dcgov'] },
 	{ name: 'Las Vegas', state: 'NV', rank: 24, candidates: guesses('Las Vegas', ['lasvegas']) },
-	{ name: 'El Paso', state: 'TX', rank: 25, candidates: guesses('El Paso', ['elpaso']) },
+	{ name: 'El Paso', state: 'TX', rank: 25, candidates: guesses('El Paso', ['elpaso', 'elpasotexas']) },
 	{ name: 'Boston', state: 'MA', rank: 26, candidates: guesses('Boston') },
 	{ name: 'Detroit', state: 'MI', rank: 27, candidates: guesses('Detroit') },
 	{ name: 'Louisville', state: 'KY', rank: 28, candidates: guesses('Louisville', ['louisvilleky']) },
@@ -61,11 +67,17 @@ export const TOP_50_CITIES: CityTarget[] = [
 	{ name: 'Raleigh', state: 'NC', rank: 40, candidates: guesses('Raleigh') },
 	{ name: 'Miami', state: 'FL', rank: 41, candidates: guesses('Miami', ['miamifl']) },
 	{ name: 'Colorado Springs', state: 'CO', rank: 43, candidates: guesses('Colorado Springs', ['coloradosprings']) },
-	{ name: 'Omaha', state: 'NE', rank: 44, candidates: guesses('Omaha') },
+	// Omaha's own city council isn't on Legistar; Douglas County (which Omaha
+	// is the seat of) is, and its records substantially overlap Omaha-area
+	// surveillance procurement, so it's included as a labeled county entry
+	// rather than mislabeled as city coverage.
+	{ name: 'Douglas County (Omaha)', state: 'NE', rank: 44, candidates: [...guesses('Omaha'), 'douglascounty'] },
 	{ name: 'Virginia Beach', state: 'VA', rank: 45, candidates: guesses('Virginia Beach', ['vbgov']) },
 	{ name: 'Long Beach', state: 'CA', rank: 46, candidates: guesses('Long Beach', ['longbeach']) },
 	{ name: 'Oakland', state: 'CA', rank: 47, candidates: guesses('Oakland') },
 	{ name: 'Minneapolis', state: 'MN', rank: 48, candidates: guesses('Minneapolis') },
 	{ name: 'Bakersfield', state: 'CA', rank: 49, candidates: guesses('Bakersfield') },
-	{ name: 'Tampa', state: 'FL', rank: 50, candidates: guesses('Tampa') },
+	// Same situation as Omaha/Douglas County above: Tampa's own council isn't
+	// on Legistar, but Hillsborough County (which contains Tampa) is.
+	{ name: 'Hillsborough County (Tampa)', state: 'FL', rank: 50, candidates: [...guesses('Tampa'), 'hillsboroughcounty'] },
 ];
