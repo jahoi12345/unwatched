@@ -1,0 +1,41 @@
+[
+  {
+    "city": "sfgov",
+    "id": 127,
+    "title": "3/f and 4/f: tenant improvement to include new telecom closets, installation of new convenience power outlets, modifications to the fire alarm and sprinkler systems, ventilation and cooling for new telecom rooms, and distribution of surveillance cameras and access control.",
+    "body": "1828 Egbert Av",
+    "doc_type": "permit",
+    "status": "issued",
+    "intro_date": "2025-10-17T13:22:28.000",
+    "agenda_date": "2026-02-23T11:18:28.000",
+    "url": "https://data.sfgov.org/resource/p4e4-a5a7.json?permit_number=202510177630",
+    "categories": "generic-surveillance",
+    "keywords": "surveillance permit"
+  },
+  {
+    "city": "sfgov",
+    "id": 128,
+    "title": "install 12' pole to new concrete footing. run a conduit from the pull box to the side of a 12' pole with a j box at the base. parking lot base and pole for license plate reader camera",
+    "body": "2860 16th St",
+    "doc_type": "permit",
+    "status": "complete",
+    "intro_date": "2023-11-03T12:02:48.000",
+    "agenda_date": "2023-11-30T07:50:19.000",
+    "url": "https://data.sfgov.org/resource/p4e4-a5a7.json?permit_number=202311030137",
+    "categories": "alpr",
+    "keywords": "license plate reader"
+  },
+  {
+    "city": "sfgov",
+    "id": 129,
+    "title": "installation of new surveillance cameras plus accompanying electrical work. new cooling equipment for the mdf room.",
+    "body": "375 Woodside Av",
+    "doc_type": "permit",
+    "status": "issued",
+    "intro_date": "2019-04-19T14:38:32.000",
+    "agenda_date": "2020-02-14T11:00:40.000",
+    "url": "https://data.sfgov.org/resource/p4e4-a5a7.json?permit_number=201904198535",
+    "categories": "generic-surveillance",
+    "keywords": "surveillance permit"
+  }
+]

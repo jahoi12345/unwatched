@@ -365,6 +365,35 @@ details.draft-comment blockquote {
 	line-height: 1.6;
 }
 
+.exposure-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 2.2fr) minmax(260px, 1fr);
+	gap: 20px;
+	align-items: start;
+}
+
+@media (max-width: 800px) {
+	.exposure-layout {
+		grid-template-columns: 1fr;
+	}
+}
+
+.map-container {
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.exposure-results {
+	background: var(--bg-raised);
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	padding: 16px 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
 .dashboard-note {
 	color: var(--text-dim);
 	font-size: 0.82rem;
