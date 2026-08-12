@@ -1,0 +1,242 @@
+{
+  "ranAt": "2026-08-11T07:30:17.506Z",
+  "monthsLookback": 24,
+  "totalCitiesTargeted": 48,
+  "citiesIngested": 26,
+  "citiesNotFound": [
+    {
+      "name": "New York",
+      "state": "NY",
+      "triedCandidates": [
+        "nyc",
+        "council",
+        "newyork",
+        "newyorkgov",
+        "cityofnewyork",
+        "citynewyork"
+      ]
+    },
+    {
+      "name": "Los Angeles",
+      "state": "CA",
+      "triedCandidates": [
+        "lacity",
+        "lacouncil",
+        "losangeles",
+        "losangelesgov",
+        "cityoflosangeles",
+        "citylosangeles"
+      ]
+    },
+    {
+      "name": "Chicago",
+      "state": "IL",
+      "triedCandidates": [
+        "chicago",
+        "chicagogov",
+        "cityofchicago",
+        "citychicago"
+      ]
+    },
+    {
+      "name": "Houston",
+      "state": "TX",
+      "triedCandidates": [
+        "houston",
+        "houstongov",
+        "cityofhouston",
+        "cityhouston"
+      ]
+    },
+    {
+      "name": "Philadelphia",
+      "state": "PA",
+      "triedCandidates": [
+        "phila",
+        "philadelphia",
+        "philadelphiagov",
+        "cityofphiladelphia",
+        "cityphiladelphia"
+      ]
+    },
+    {
+      "name": "San Diego",
+      "state": "CA",
+      "triedCandidates": [
+        "sandiego",
+        "sandiego",
+        "sandiegogov",
+        "cityofsandiego",
+        "citysandiego"
+      ]
+    },
+    {
+      "name": "Jacksonville",
+      "state": "FL",
+      "triedCandidates": [
+        "coj",
+        "jacksonville",
+        "jacksonvillegov",
+        "cityofjacksonville",
+        "cityjacksonville"
+      ]
+    },
+    {
+      "name": "Austin",
+      "state": "TX",
+      "triedCandidates": [
+        "austin",
+        "austingov",
+        "cityofaustin",
+        "cityaustin"
+      ]
+    },
+    {
+      "name": "Indianapolis",
+      "state": "IN",
+      "triedCandidates": [
+        "indy",
+        "indianapolis",
+        "indianapolisgov",
+        "cityofindianapolis",
+        "cityindianapolis"
+      ]
+    },
+    {
+      "name": "Oklahoma City",
+      "state": "OK",
+      "triedCandidates": [
+        "okc",
+        "oklahomacity",
+        "oklahomacitygov",
+        "cityofoklahomacity",
+        "cityoklahomacity"
+      ]
+    },
+    {
+      "name": "Washington",
+      "state": "DC",
+      "triedCandidates": [
+        "dc",
+        "dccouncil",
+        "dcgov"
+      ]
+    },
+    {
+      "name": "Las Vegas",
+      "state": "NV",
+      "triedCandidates": [
+        "lasvegas",
+        "lasvegas",
+        "lasvegasgov",
+        "cityoflasvegas",
+        "citylasvegas"
+      ]
+    },
+    {
+      "name": "El Paso",
+      "state": "TX",
+      "triedCandidates": [
+        "elpaso",
+        "elpaso",
+        "elpasogov",
+        "cityofelpaso",
+        "cityelpaso"
+      ]
+    },
+    {
+      "name": "Portland",
+      "state": "OR",
+      "triedCandidates": [
+        "portlandoregon",
+        "portland",
+        "portlandgov",
+        "cityofportland",
+        "cityportland"
+      ]
+    },
+    {
+      "name": "Memphis",
+      "state": "TN",
+      "triedCandidates": [
+        "memphis",
+        "memphisgov",
+        "cityofmemphis",
+        "citymemphis"
+      ]
+    },
+    {
+      "name": "Tucson",
+      "state": "AZ",
+      "triedCandidates": [
+        "tucson",
+        "tucsongov",
+        "cityoftucson",
+        "citytucson"
+      ]
+    },
+    {
+      "name": "Raleigh",
+      "state": "NC",
+      "triedCandidates": [
+        "raleigh",
+        "raleighgov",
+        "cityofraleigh",
+        "cityraleigh"
+      ]
+    },
+    {
+      "name": "Omaha",
+      "state": "NE",
+      "triedCandidates": [
+        "omaha",
+        "omahagov",
+        "cityofomaha",
+        "cityomaha"
+      ]
+    },
+    {
+      "name": "Virginia Beach",
+      "state": "VA",
+      "triedCandidates": [
+        "vbgov",
+        "virginiabeach",
+        "virginiabeachgov",
+        "cityofvirginiabeach",
+        "cityvirginiabeach"
+      ]
+    },
+    {
+      "name": "Minneapolis",
+      "state": "MN",
+      "triedCandidates": [
+        "minneapolis",
+        "minneapolisgov",
+        "cityofminneapolis",
+        "cityminneapolis"
+      ]
+    },
+    {
+      "name": "Bakersfield",
+      "state": "CA",
+      "triedCandidates": [
+        "bakersfield",
+        "bakersfieldgov",
+        "cityofbakersfield",
+        "citybakersfield"
+      ]
+    },
+    {
+      "name": "Tampa",
+      "state": "FL",
+      "triedCandidates": [
+        "tampa",
+        "tampagov",
+        "cityoftampa",
+        "citytampa"
+      ]
+    }
+  ],
+  "totalMattersFetched": 52047,
+  "totalMatchesFound": 125
+}
