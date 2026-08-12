@@ -27,6 +27,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# harness session state (not project config)
+.claude/scheduled_tasks.lock
+
 # agent instructions files (kept locally, not published)
 AGENTS.md
 CLAUDE.md
