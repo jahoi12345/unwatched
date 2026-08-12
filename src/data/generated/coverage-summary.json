@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-08-11T07:30:17.506Z",
+  "ranAt": "2026-08-12T21:25:46.649Z",
   "monthsLookback": 24,
   "totalCitiesTargeted": 48,
   "citiesIngested": 26,
@@ -237,6 +237,6 @@
       ]
     }
   ],
-  "totalMattersFetched": 52047,
-  "totalMatchesFound": 125
+  "totalMattersFetched": 51435,
+  "totalMatchesFound": 114
 }

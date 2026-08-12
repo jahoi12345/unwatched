@@ -1,19 +1,6 @@
 [
   {
-    "city": "cityofdallas",
-    "title": "Dallas Police Department Flock Safety Camera Update\r\n[Daniel C. Comeaux, Chief of Police, Anthony Greer, Major of Police, Dallas Police Department]",
-    "currentStatus": "Agenda Ready",
-    "agendaDate": "2026-03-03T00:00:00",
-    "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=23858&GUID=98E3CF24-4359-4210-9E2C-6E4A334407E4",
-    "statusHistory": [
-      {
-        "status": "Agenda Ready",
-        "observed_at": "2026-08-11T07:24:22.314Z"
-      }
-    ]
-  },
-  {
-    "city": "oakland",
+    "city": "Oakland, CA",
     "title": "Subject: \tOPD Community Safety Cameras Policy And FLOCK Agreement\r\nFrom: \t\tOakland Police Department \r\nRecommendation: Adopt A Resolution (1) Approving The Oakland Police Department Surveillance Use Policy “DGO I-32.1 - Community Safety Camera System” And The Acquisition Of Security Cameras And Related Technology; (2) Awarding A Two Year Agreement To Flock Safety For Acquisition Of Automated License Plate Reader And Pan Tilt Zoom Cameras, Operating System Technology, And Related Services At A Cost Not To Exceed Two-Million Two-Hundred Fifty-Two Thousand Five-Hundred Dollars ($2,252,500); And (3) Waiving The Competitive Multiple-Step Solicitation Process Required For The Acquisition Of Information Technology Systems And Waiving The Local And Small Local Business Enterprise Program Requirements",
     "currentStatus": "Passed",
     "agendaDate": "2025-12-16T00:00:00",
@@ -21,12 +8,12 @@
     "statusHistory": [
       {
         "status": "Passed",
-        "observed_at": "2026-08-11T07:30:17.471Z"
+        "observed_at": "2026-08-12T21:25:46.612Z"
       }
     ]
   },
   {
-    "city": "oakland",
+    "city": "Oakland, CA",
     "title": "Subject:\tOPD Community Safety Camera System, And FLOCK Safety Contract\nFrom:\t\tOakland Police Department\nRecommendation: Adopt A Resolution (1) Approving The Oakland Police Department Surveillance Use Policy “DGO I-32.1 - Community Safety Camera System” And The Acquisition Of Security Cameras And Related Technology; (2) Awarding A Two Year Agreement To Flock Safety For Acquisition Of Automated License Plate Reader And Pan Tilt Zoom Cameras, Operating System Technology, And Related Services At A Cost Not To Exceed Two-Million Two-Hundred Fifty-Two Thousand Five-Hundred Dollars ($2,252,500); And (3) Waiving The Competitive Multiple-Step Solicitation Process Required For The Acquisition Of Information Technology Systems And Waiving The Local And Small Local Business Enterprise Program Requirements",
     "currentStatus": "Failed",
     "agendaDate": "2025-12-02T00:00:00",
@@ -34,12 +21,12 @@
     "statusHistory": [
       {
         "status": "Failed",
-        "observed_at": "2026-08-11T07:30:17.476Z"
+        "observed_at": "2026-08-12T21:25:46.617Z"
       }
     ]
   },
   {
-    "city": "columbus",
+    "city": "Columbus, OH",
     "title": "To authorize the Director of the Department of Public Safety to amend an agreement with Flock Group Inc. to add the ForceMetrics Informed Responder Platform to the existing camera leasing services agreement for a free one-year, non-renewable, trial period; and to declare an emergency. ($0.00)",
     "currentStatus": "Passed",
     "agendaDate": "2025-06-23T00:00:00",
@@ -47,12 +34,12 @@
     "statusHistory": [
       {
         "status": "Passed",
-        "observed_at": "2026-08-11T07:25:23.626Z"
+        "observed_at": "2026-08-12T21:22:52.376Z"
       }
     ]
   },
   {
-    "city": "fortworthgov",
+    "city": "Fort Worth, TX",
     "title": "(ALL) Authorize Execution of a Public Right-of-Way Use Agreement Granting Flock Group, Inc. a License to Install and Maintain Non-Police Department Flock License Plate Reader Cameras on Public Rights-of Way and Establish Fees for Permitting, Inspection, and Usage\n",
     "currentStatus": "Passed",
     "agendaDate": "2025-06-10T00:00:00",
@@ -60,38 +47,12 @@
     "statusHistory": [
       {
         "status": "Passed",
-        "observed_at": "2026-08-11T07:24:36.325Z"
+        "observed_at": "2026-08-12T21:22:19.798Z"
       }
     ]
   },
   {
-    "city": "cityofdallas",
-    "title": "Authorize a three-year service contract, with two one-year renewal options with Flock Group, Inc. to provide automatic license plate reading cameras, installation, software subscription, maintenance, and support for the Dallas Police Department for the period June 15, 2025 through June 14, 2028 - Not to exceed $5,738,414.61 - Financing: General Fund ($3,922,914.61), MVCPA FY25 SB224 Catalytic Converter Grant Fund ($1,690,500.00) (subject to annual appropriations), and 2023 Homeland Security-Urban Area Security Initiative 24-26 Fund ($125,000.00)",
-    "currentStatus": "Approved",
-    "agendaDate": "2025-05-28T00:00:00",
-    "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=21263&GUID=28D0A7DC-7698-49D7-B55C-A661AD51B4A5",
-    "statusHistory": [
-      {
-        "status": "Approved",
-        "observed_at": "2026-08-11T07:24:22.365Z"
-      }
-    ]
-  },
-  {
-    "city": "cityofdallas",
-    "title": "Authorize a three-year service contract, with two one-year renewal options, with Flock Group, Inc. to provide automatic license plate reading cameras, installation, software subscription, maintenance, and support for the Dallas Police Department for the period June 15, 2025 through June 14, 2028 - Not to Exceed $5,861,300.00- Financing: General Fund ($3,995,800.00); FY25 SB224 Catalytic Converter Grant Fund ($1,740,500.00); 2023 Homeland Security-UASI 24-26 Fund ($125,000.00)",
-    "currentStatus": "Agenda Ready",
-    "agendaDate": "2025-05-12T00:00:00",
-    "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=21299&GUID=4916A384-8544-4B84-B30E-FD34922ADB78",
-    "statusHistory": [
-      {
-        "status": "Agenda Ready",
-        "observed_at": "2026-08-11T07:24:22.364Z"
-      }
-    ]
-  },
-  {
-    "city": "denver",
+    "city": "Denver, CO",
     "title": "A resolution approving a proposed Amendatory Agreement between the City and County of Denver and Flock Group, Inc. to provide solar-powered license plate recognition cameras.\r\nAmends a Framework Agreement with Flock Group Inc to add $666,000.00 for a new total of $1,005,450.00 and 24 months for a new end date of 02-28-2027 to provide solar-powered license plate recognition cameras, citywide (POLIC-202472539-00/POLIC-202578012-01). The last regularly scheduled Council meeting within the 30-day review period is on 5-19-2025. The Committee approved filing this item at its meeting on 4-2-2025.",
     "currentStatus": "Failed",
     "agendaDate": "2025-05-05T00:00:00",
@@ -99,12 +60,12 @@
     "statusHistory": [
       {
         "status": "Failed",
-        "observed_at": "2026-08-11T07:25:46.302Z"
+        "observed_at": "2026-08-12T21:23:18.742Z"
       }
     ]
   },
   {
-    "city": "columbus",
+    "city": "Columbus, OH",
     "title": "To authorize the Director of Public Safety, on behalf of the Division of Police, to enter into contract with Flock Group, Inc to lease and install License Plate Readers; to waive the competitive bidding provisions of the Columbus City Code; to authorize the expenditure of $228,000.00 from the FY24 Columbus LPR Project Grant; and to declare an emergency. ($228,000.00)",
     "currentStatus": "Passed",
     "agendaDate": "2024-12-09T00:00:00",
@@ -112,12 +73,12 @@
     "statusHistory": [
       {
         "status": "Passed",
-        "observed_at": "2026-08-11T07:25:23.661Z"
+        "observed_at": "2026-08-12T21:22:52.411Z"
       }
     ]
   },
   {
-    "city": "fresno",
+    "city": "Fresno, CA",
     "title": "Approve a Third Amendment to the Flock Safety Master Service Agreement between the City of Fresno Police Department and Flock Group Inc., increasing the agreement by $136,500.00, to an amount not to exceed $1,668,440.41, and adding the Department of Public Utilities for three (3) years for the subscription services of cameras and software (Citywide).",
     "currentStatus": "Passed",
     "agendaDate": "2024-11-21T00:00:00",
@@ -125,12 +86,12 @@
     "statusHistory": [
       {
         "status": "Passed",
-        "observed_at": "2026-08-11T07:27:52.113Z"
+        "observed_at": "2026-08-12T21:24:36.318Z"
       }
     ]
   },
   {
-    "city": "fresno",
+    "city": "Fresno, CA",
     "title": "Approve acceptance of donated funds from the Fresno Police Chief’s Foundation, in the total amount of $33,500 to secure five (5) additional Automated License Plate Readers subscriptions for two years from Flock Safety.",
     "currentStatus": "Passed",
     "agendaDate": "2024-09-26T00:00:00",
@@ -138,12 +99,12 @@
     "statusHistory": [
       {
         "status": "Passed",
-        "observed_at": "2026-08-11T07:27:52.119Z"
+        "observed_at": "2026-08-12T21:24:36.324Z"
       }
     ]
   },
   {
-    "city": "columbus",
+    "city": "Columbus, OH",
     "title": "Notice/Advertisement Title: Public Safety and Criminal Justice Committee Hearing - Flock Safety Audit\r\nContact Name: Pedro Mejia\r\nContact Telephone Number: 614-645-7565\r\nContact Email Address: pdmejia@columbus.gov",
     "currentStatus": "Clerk's Office for Bulletin",
     "agendaDate": null,
@@ -151,7 +112,33 @@
     "statusHistory": [
       {
         "status": "Clerk's Office for Bulletin",
-        "observed_at": "2026-08-11T07:25:23.545Z"
+        "observed_at": "2026-08-12T21:22:52.299Z"
+      }
+    ]
+  },
+  {
+    "city": "Milwaukee, WI",
+    "title": "Communication from the Milwaukee Police Department relating to its use of cameras including, but not limited to, body cameras, automated license plate readers, and point-tilt-zoom cameras, as well as those provided by Flock Safety.",
+    "currentStatus": "In Committee",
+    "agendaDate": null,
+    "url": "https://milwaukee.legistar.com/LegislationDetail.aspx?ID=72995&GUID=AF4B8E81-671D-4D53-BE76-F2CBF1872E99",
+    "statusHistory": [
+      {
+        "status": "In Committee",
+        "observed_at": "2026-08-12T21:24:22.529Z"
+      }
+    ]
+  },
+  {
+    "city": "Milwaukee, WI",
+    "title": "Substitute resolution approving an agreement between the City of Milwaukee and Flock Group Inc. for the provision of pole-mounted security cameras.",
+    "currentStatus": "Placed On File",
+    "agendaDate": null,
+    "url": "https://milwaukee.legistar.com/LegislationDetail.aspx?ID=70727&GUID=89456C88-8C20-44C3-8CBF-A6B67AAA89D4",
+    "statusHistory": [
+      {
+        "status": "Placed On File",
+        "observed_at": "2026-08-12T21:24:22.551Z"
       }
     ]
   }

@@ -5,7 +5,10 @@ import digestRaw from '../data/generated/digest.json';
 import foiaRaw from '../data/generated/foia-compliance.json';
 import permitsRaw from '../data/generated/permits.json';
 import trajectoryRaw from '../data/generated/trajectory.json';
+import camerasRaw from '../data/generated/cameras.json';
+import TrajectoryMap from '../components/TrajectoryMap';
 import type {
+	CameraDataset,
 	CoverageSummary,
 	DigestReport,
 	FlockTransparencyItem,
@@ -20,6 +23,7 @@ const digest = digestRaw as DigestReport;
 const foiaItems = foiaRaw as FoiaComplianceItem[];
 const permitItems = permitsRaw as PermitItem[];
 const trajectory = trajectoryRaw as TrajectoryReport;
+const cameraData = camerasRaw as CameraDataset;
 
 type Tab = 'overview' | 'digest' | 'flock' | 'foia' | 'trajectory' | 'permits';
 
@@ -39,20 +43,28 @@ function fmtDate(iso: string | null | undefined): string {
 export default function Dashboard() {
 	const [tab, setTab] = useState<Tab>('overview');
 	const [query, setQuery] = useState('');
+	const [cityFilter, setCityFilter] = useState('all');
 
 	const normalizedQuery = query.trim().toLowerCase();
 
+	const digestCities = useMemo(() => {
+		const cities = new Set((digest.items ?? []).map((item) => item.city));
+		return [...cities].sort();
+	}, []);
+
 	const filteredDigestItems = useMemo(() => {
 		const items = digest.items ?? [];
-		if (normalizedQuery === '') return items;
-		return items.filter(
-			(item) =>
+		return items.filter((item) => {
+			if (cityFilter !== 'all' && item.city !== cityFilter) return false;
+			if (normalizedQuery === '') return true;
+			return (
 				item.title.toLowerCase().includes(normalizedQuery) ||
 				item.city.toLowerCase().includes(normalizedQuery) ||
 				item.keywords.toLowerCase().includes(normalizedQuery) ||
-				(item.vendor ?? '').toLowerCase().includes(normalizedQuery),
-		);
-	}, [normalizedQuery]);
+				(item.vendor ?? '').toLowerCase().includes(normalizedQuery)
+			);
+		});
+	}, [normalizedQuery, cityFilter]);
 
 	return (
 		<>
@@ -73,7 +85,15 @@ export default function Dashboard() {
 
 			{tab === 'overview' && <Overview />}
 			{tab === 'digest' && (
-				<DigestTab items={filteredDigestItems} query={query} onQueryChange={setQuery} total={digest.items?.length ?? 0} />
+				<DigestTab
+					items={filteredDigestItems}
+					query={query}
+					onQueryChange={setQuery}
+					total={digest.items?.length ?? 0}
+					cities={digestCities}
+					cityFilter={cityFilter}
+					onCityFilterChange={setCityFilter}
+				/>
 			)}
 			{tab === 'flock' && <FlockTab items={flockItems} />}
 			{tab === 'foia' && <FoiaTab items={foiaItems} />}
@@ -131,15 +151,21 @@ function DigestTab({
 	query,
 	onQueryChange,
 	total,
+	cities,
+	cityFilter,
+	onCityFilterChange,
 }: {
 	items: NonNullable<DigestReport['items']>;
 	query: string;
 	onQueryChange: (q: string) => void;
 	total: number;
+	cities: string[];
+	cityFilter: string;
+	onCityFilterChange: (c: string) => void;
 }) {
 	return (
 		<main>
-			<div className="controls" style={{ borderBottom: 'none', padding: '0 0 20px' }}>
+			<div className="controls" style={{ borderBottom: 'none', padding: '0 0 12px' }}>
 				<input
 					type="search"
 					aria-label="Search advocacy digest"
@@ -148,7 +174,22 @@ function DigestTab({
 					onChange={(e) => onQueryChange(e.target.value)}
 				/>
 			</div>
-			<p className="cat-desc" style={{ marginTop: '-12px' }}>
+			<div className="subtabs" style={{ margin: '0 0 16px' }}>
+				<button className="chip" aria-pressed={cityFilter === 'all'} onClick={() => onCityFilterChange('all')}>
+					All cities
+				</button>
+				{cities.map((city) => (
+					<button
+						key={city}
+						className="chip"
+						aria-pressed={cityFilter === city}
+						onClick={() => onCityFilterChange(city)}
+					>
+						{city}
+					</button>
+				))}
+			</div>
+			<p className="cat-desc" style={{ marginTop: '-4px' }}>
 				Showing {items.length} of {total} matched agenda items, each with an auto-drafted public comment.
 			</p>
 			<div className="item-list">
@@ -320,9 +361,11 @@ function TrajectoryTab({ report }: { report: TrajectoryReport }) {
 					<h2>Example reconstruction</h2>
 					<p className="cat-desc">
 						One synthetic trip, {trips.exampleReconstruction.hitCount} camera hits — showing how a
-						sequence of real camera positions alone reconstructs an approximate timed route.
+						sequence of real camera positions alone reconstructs an approximate timed route. Press
+						"Simulate" to watch it play out.
 					</p>
-					<div className="item-list">
+					<TrajectoryMap cameraData={cameraData} report={report} />
+					<div className="item-list" style={{ marginTop: '16px' }}>
 						{trips.exampleReconstruction.sequence.map((hit, i) => (
 							<div className="item-card" key={i}>
 								<div className="item-meta">

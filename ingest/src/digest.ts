@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openDb, queryAllMatchedDocuments, type MatchedDocumentWithSourceRow } from './db.ts';
 import { draftPublicComment } from './comment-drafter.ts';
+import { cityDisplayName, loadCityLookup } from './city-lookup.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '..', 'data');
@@ -12,16 +13,14 @@ function parseDays(argv: string[]): number {
 	return arg ? Number(arg.split('=')[1]) : 30;
 }
 
-function cityLabel(row: MatchedDocumentWithSourceRow): string {
-	// source is "legistar:<slug>" — good enough as a label until we join back to cities.ts
-	return row.source.replace(/^legistar:/, '');
-}
-
 function main() {
 	const days = parseDays(process.argv.slice(2));
 	const since = new Date();
 	since.setDate(since.getDate() - days);
 	const sinceIso = since.toISOString().slice(0, 10);
+
+	const cityLookup = loadCityLookup(DATA_DIR);
+	const cityLabel = (row: MatchedDocumentWithSourceRow) => cityDisplayName(row.source, cityLookup);
 
 	const db = openDb(path.join(DATA_DIR, 'unwatched.db'));
 	const rows = queryAllMatchedDocuments(db, { sinceAgendaDate: sinceIso });
