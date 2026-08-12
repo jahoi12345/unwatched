@@ -40,6 +40,7 @@ function main() {
 		byCity.get(city)!.push(row);
 	}
 
+	const jsonItems: unknown[] = [];
 	const lines: string[] = [];
 	lines.push(`# Surveillance Advocacy Digest`);
 	lines.push('');
@@ -64,15 +65,33 @@ function main() {
 			lines.push('');
 			lines.push(`> ${drafted.text}`);
 			lines.push('');
+
+			jsonItems.push({
+				city,
+				title: row.title.split('\n')[0].slice(0, 200),
+				body: row.body,
+				agendaDate: row.agenda_date,
+				status: row.status,
+				keywords: row.keywords,
+				url: row.url,
+				draftedComment: drafted.text,
+				commentTemplate: drafted.template,
+				vendor: drafted.vendor,
+				dollarAmount: drafted.dollarAmount,
+			});
 		}
 	}
 
 	mkdirSync(DATA_DIR, { recursive: true });
-	const outPath = path.join(DATA_DIR, `digest-${new Date().toISOString().slice(0, 10)}.md`);
-	writeFileSync(outPath, lines.join('\n'));
+	const dateStr = new Date().toISOString().slice(0, 10);
+	writeFileSync(path.join(DATA_DIR, `digest-${dateStr}.md`), lines.join('\n'));
+	writeFileSync(
+		path.join(DATA_DIR, 'digest-items.json'),
+		JSON.stringify({ generatedAt: new Date().toISOString(), sinceDate: sinceIso, days, items: jsonItems }, null, 2),
+	);
 
 	console.log(`${rows.length} item(s) across ${byCity.size} cities.`);
-	console.log(`Digest written to ${outPath}`);
+	console.log(`Digest written to data/digest-${dateStr}.md and data/digest-items.json`);
 }
 
 main();
