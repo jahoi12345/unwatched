@@ -120,6 +120,17 @@ async function main() {
 	writeFileSync(combinedPath, JSON.stringify(combined, null, 2));
 	console.log(`Combined matched-record export written to ${combinedPath}`);
 
+	const cityLookupPath = path.join(DATA_DIR, 'resolved-cities.json');
+	writeFileSync(
+		cityLookupPath,
+		JSON.stringify(
+			runnable.map((c) => ({ slug: c.slug, name: c.name, state: c.state })),
+			null,
+			2,
+		),
+	);
+	console.log(`City name lookup written to ${cityLookupPath}`);
+
 	db.close();
 }
 

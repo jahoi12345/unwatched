@@ -2,6 +2,7 @@ import type { RawDocument } from '../types.ts';
 
 export interface PermitSourceConfig {
 	citySlug: string;
+	displayName: string; // e.g. 'San Francisco, CA'
 	host: string; // e.g. 'data.sfgov.org'
 	resourceId: string; // e.g. 'p4e4-a5a7'
 	descriptionField: string;
@@ -16,6 +17,7 @@ export interface PermitSourceConfig {
 export const PERMIT_SOURCES: PermitSourceConfig[] = [
 	{
 		citySlug: 'sfgov',
+		displayName: 'San Francisco, CA',
 		host: 'data.sfgov.org',
 		resourceId: 'p4e4-a5a7',
 		descriptionField: 'description',

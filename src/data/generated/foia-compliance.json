@@ -17,5 +17,40 @@
       "Language suggests a partial exemption/withholding claim.",
       "Response took 47 business day(s); IL's statutory deadline is 5."
     ]
+  },
+  {
+    "file": "philadelphia-facial-recognition-final.pdf",
+    "title": "Facial Recognition Systems (Philadelphia Police Department)",
+    "agency": "Philadelphia Police Department",
+    "state": "PA",
+    "surveillanceKeywords": [
+      "Cellebrite"
+    ],
+    "complianceFlags": [
+      "late-response"
+    ],
+    "complianceDetail": [
+      "Response took 31 business day(s); PA's statutory deadline is 5."
+    ]
+  },
+  {
+    "file": "philadelphia-facial-recognition-response-letter.pdf",
+    "title": "Facial Recognition Systems (Philadelphia Police Department) — response letter",
+    "agency": "Philadelphia Police Department",
+    "state": "PA",
+    "surveillanceKeywords": [
+      "Cognitec",
+      "facial recognition"
+    ],
+    "complianceFlags": [
+      "redaction",
+      "partial-denial",
+      "late-response"
+    ],
+    "complianceDetail": [
+      "Document contains redaction language.",
+      "Language suggests a partial exemption/withholding claim.",
+      "Response took 30 business day(s); PA's statutory deadline is 5."
+    ]
   }
 ]

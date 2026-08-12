@@ -95,6 +95,8 @@ export interface TrajectoryReport {
 		captureRatePercent: number;
 		avgHitsPerCapturedTrip: number;
 		exampleReconstruction: {
+			origin: { lat: number; lon: number };
+			destination: { lat: number; lon: number };
 			hitCount: number;
 			sequence: { manufacturer: string | null; lat: number; lon: number; approxSecondsIntoTrip: number }[];
 		} | null;

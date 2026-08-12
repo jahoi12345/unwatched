@@ -2,15 +2,15 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openDb, queryAllMatchedDocuments, queryStatusHistory, type MatchedDocumentWithSourceRow } from './db.ts';
+import { cityDisplayName, loadCityLookup } from './city-lookup.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
-function cityLabel(row: MatchedDocumentWithSourceRow): string {
-	return row.source.replace(/^legistar:/, '');
-}
-
 function main() {
+	const cityLookup = loadCityLookup(DATA_DIR);
+	const cityLabel = (row: MatchedDocumentWithSourceRow) => cityDisplayName(row.source, cityLookup);
+
 	const db = openDb(path.join(DATA_DIR, 'unwatched.db'));
 	// keywordLike scoped to "Flock" catches both "Flock Safety" and "Flock Group" without
 	// pulling in unrelated matches — it's a targeted LIKE against the matches.keyword column.

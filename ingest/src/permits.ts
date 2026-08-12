@@ -34,7 +34,7 @@ async function main() {
 			console.log(`— [${config.citySlug}] ${row.title.slice(0, 100)}`);
 			console.log(`  address: ${row.body} | status: ${row.status} | filed: ${row.intro_date?.slice(0, 10) ?? 'n/a'}`);
 			console.log(`  keywords: ${row.keywords}\n`);
-			combined.push({ city: config.citySlug, ...row });
+			combined.push({ city: config.displayName, ...row });
 		}
 	}
 
