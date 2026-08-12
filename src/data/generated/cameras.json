@@ -1,0 +1,6860 @@
+{
+  "city": "Oakland, California",
+  "bbox": {
+    "south": 37.6301063,
+    "west": -122.3558935,
+    "north": 37.8854257,
+    "east": -122.1144203
+  },
+  "fetchedAt": "2026-08-12T06:18:49.261Z",
+  "cameras": [
+    {
+      "id": 53092228,
+      "lat": 37.8231383,
+      "lon": -122.2171989,
+      "manufacturer": "Flock Safety",
+      "direction": "160",
+      "zone": "traffic"
+    },
+    {
+      "id": 53119037,
+      "lat": 37.8322866,
+      "lon": -122.2271013,
+      "manufacturer": "Flock Safety",
+      "direction": "130",
+      "zone": "traffic"
+    },
+    {
+      "id": 2672282131,
+      "lat": 37.8300353,
+      "lon": -122.2252068,
+      "manufacturer": "Flock Safety",
+      "direction": "220",
+      "zone": "traffic"
+    },
+    {
+      "id": 2672298945,
+      "lat": 37.830025,
+      "lon": -122.2430845,
+      "manufacturer": null,
+      "direction": "95",
+      "zone": "traffic"
+    },
+    {
+      "id": 3974497356,
+      "lat": 37.7398132,
+      "lon": -122.1976211,
+      "manufacturer": "Flock Safety",
+      "direction": "145",
+      "zone": "traffic"
+    },
+    {
+      "id": 7293411585,
+      "lat": 37.825249,
+      "lon": -122.3138399,
+      "manufacturer": null,
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 7293411586,
+      "lat": 37.825183,
+      "lon": -122.3138219,
+      "manufacturer": null,
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 7293411587,
+      "lat": 37.8244996,
+      "lon": -122.3136824,
+      "manufacturer": null,
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 7293411590,
+      "lat": 37.8250093,
+      "lon": -122.3138103,
+      "manufacturer": null,
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 7293411592,
+      "lat": 37.8246204,
+      "lon": -122.3137127,
+      "manufacturer": null,
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 7293411593,
+      "lat": 37.8248052,
+      "lon": -122.3137588,
+      "manufacturer": null,
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449078,
+      "lat": 37.7380408,
+      "lon": -122.1992645,
+      "manufacturer": null,
+      "direction": "198",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449079,
+      "lat": 37.7378951,
+      "lon": -122.1991978,
+      "manufacturer": null,
+      "direction": "28",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449080,
+      "lat": 37.7376645,
+      "lon": -122.1981096,
+      "manufacturer": null,
+      "direction": "185",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449081,
+      "lat": 37.7375108,
+      "lon": -122.1980149,
+      "manufacturer": null,
+      "direction": "358",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449082,
+      "lat": 37.7401104,
+      "lon": -122.1989142,
+      "manufacturer": null,
+      "direction": "163",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449083,
+      "lat": 37.7410789,
+      "lon": -122.1979977,
+      "manufacturer": null,
+      "direction": "181",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449084,
+      "lat": 37.7408608,
+      "lon": -122.1978805,
+      "manufacturer": null,
+      "direction": "320",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449085,
+      "lat": 37.7397725,
+      "lon": -122.1984747,
+      "manufacturer": null,
+      "direction": "293",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449086,
+      "lat": 37.750534,
+      "lon": -122.2108557,
+      "manufacturer": null,
+      "direction": "217",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449087,
+      "lat": 37.7525515,
+      "lon": -122.2092115,
+      "manufacturer": null,
+      "direction": "264",
+      "zone": "traffic"
+    },
+    {
+      "id": 12050449088,
+      "lat": 37.7530289,
+      "lon": -122.2098726,
+      "manufacturer": null,
+      "direction": "39",
+      "zone": "traffic"
+    },
+    {
+      "id": 12077718743,
+      "lat": 37.7426764,
+      "lon": -122.1964588,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "185",
+      "zone": "traffic"
+    },
+    {
+      "id": 12077718746,
+      "lat": 37.7376839,
+      "lon": -122.19649,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "6",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858007,
+      "lat": 37.8336962,
+      "lon": -122.2528823,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858013,
+      "lat": 37.8494599,
+      "lon": -122.2521687,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858088,
+      "lat": 37.8417427,
+      "lon": -122.2741866,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858093,
+      "lat": 37.8297003,
+      "lon": -122.2683327,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858095,
+      "lat": 37.8334359,
+      "lon": -122.2703235,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858102,
+      "lat": 37.8052716,
+      "lon": -122.293516,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "17",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858103,
+      "lat": 37.8048033,
+      "lon": -122.2938379,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "180",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858107,
+      "lat": 37.7448847,
+      "lon": -122.1967261,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858146,
+      "lat": 37.8072377,
+      "lon": -122.3022053,
+      "manufacturer": "Flock Safety",
+      "direction": "350",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858147,
+      "lat": 37.818009,
+      "lon": -122.2919499,
+      "manufacturer": "Flock Safety",
+      "direction": "100",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858157,
+      "lat": 37.7530276,
+      "lon": -122.1962714,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858169,
+      "lat": 37.8374045,
+      "lon": -122.2621644,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858196,
+      "lat": 37.7318759,
+      "lon": -122.1702273,
+      "manufacturer": "Flock Safety",
+      "direction": "295",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858261,
+      "lat": 37.8074163,
+      "lon": -122.3034416,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858277,
+      "lat": 37.8317773,
+      "lon": -122.2152009,
+      "manufacturer": "Flock Safety",
+      "direction": "300",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858279,
+      "lat": 37.8101408,
+      "lon": -122.2490069,
+      "manufacturer": "Flock Safety",
+      "direction": "180",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858280,
+      "lat": 37.8049388,
+      "lon": -122.2319899,
+      "manufacturer": "Flock Safety",
+      "direction": "130",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858281,
+      "lat": 37.8034725,
+      "lon": -122.2347012,
+      "manufacturer": "Flock Safety",
+      "direction": "220",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858285,
+      "lat": 37.7335723,
+      "lon": -122.1855071,
+      "manufacturer": "Flock Safety",
+      "direction": "20",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858288,
+      "lat": 37.7595932,
+      "lon": -122.1876482,
+      "manufacturer": "Flock Safety",
+      "direction": "270",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858290,
+      "lat": 37.7576246,
+      "lon": -122.1884288,
+      "manufacturer": "Flock Safety",
+      "direction": "250",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858291,
+      "lat": 37.7341537,
+      "lon": -122.1977654,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858292,
+      "lat": 37.7587603,
+      "lon": -122.1864319,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858296,
+      "lat": 37.8025971,
+      "lon": -122.2827039,
+      "manufacturer": "Flock Safety",
+      "direction": "70",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858357,
+      "lat": 37.8311459,
+      "lon": -122.2672009,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858365,
+      "lat": 37.8526054,
+      "lon": -122.2226334,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858366,
+      "lat": 37.8537386,
+      "lon": -122.2217218,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858368,
+      "lat": 37.8521905,
+      "lon": -122.2221579,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858371,
+      "lat": 37.8412398,
+      "lon": -122.2602295,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858398,
+      "lat": 37.8046281,
+      "lon": -122.302533,
+      "manufacturer": "Flock Safety",
+      "direction": "300",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858423,
+      "lat": 37.7401515,
+      "lon": -122.196849,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "230",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858440,
+      "lat": 37.8244937,
+      "lon": -122.2914297,
+      "manufacturer": "Flock Safety",
+      "direction": "180",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858441,
+      "lat": 37.8192945,
+      "lon": -122.2938646,
+      "manufacturer": "Flock Safety",
+      "direction": "10",
+      "zone": "traffic"
+    },
+    {
+      "id": 12125858442,
+      "lat": 37.8235069,
+      "lon": -122.3013663,
+      "manufacturer": "Flock Safety",
+      "direction": "280",
+      "zone": "traffic"
+    },
+    {
+      "id": 12177679937,
+      "lat": 37.8464986,
+      "lon": -122.2994441,
+      "manufacturer": null,
+      "direction": "110",
+      "zone": "traffic"
+    },
+    {
+      "id": 12177679938,
+      "lat": 37.8462015,
+      "lon": -122.2995732,
+      "manufacturer": null,
+      "direction": "115",
+      "zone": "traffic"
+    },
+    {
+      "id": 12338737781,
+      "lat": 37.7225711,
+      "lon": -122.156057,
+      "manufacturer": null,
+      "direction": "35",
+      "zone": "traffic"
+    },
+    {
+      "id": 12338737782,
+      "lat": 37.7227483,
+      "lon": -122.1562528,
+      "manufacturer": null,
+      "direction": "310",
+      "zone": "traffic"
+    },
+    {
+      "id": 12338737783,
+      "lat": 37.7225849,
+      "lon": -122.1564486,
+      "manufacturer": null,
+      "direction": "220",
+      "zone": "traffic"
+    },
+    {
+      "id": 12338756767,
+      "lat": 37.7224661,
+      "lon": -122.1562709,
+      "manufacturer": null,
+      "direction": "125",
+      "zone": "traffic"
+    },
+    {
+      "id": 12345564618,
+      "lat": 37.7062165,
+      "lon": -122.1297376,
+      "manufacturer": null,
+      "direction": "295",
+      "zone": "traffic"
+    },
+    {
+      "id": 12345566312,
+      "lat": 37.7139849,
+      "lon": -122.1579759,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "125",
+      "zone": "traffic"
+    },
+    {
+      "id": 12345566313,
+      "lat": 37.7119968,
+      "lon": -122.1633591,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "220",
+      "zone": "traffic"
+    },
+    {
+      "id": 12348933884,
+      "lat": 37.7006171,
+      "lon": -122.1405228,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "120",
+      "zone": "traffic"
+    },
+    {
+      "id": 12349019254,
+      "lat": 37.7152423,
+      "lon": -122.1432691,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "200",
+      "zone": "traffic"
+    },
+    {
+      "id": 12349057616,
+      "lat": 37.7117608,
+      "lon": -122.1736439,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "40",
+      "zone": "traffic"
+    },
+    {
+      "id": 12349938272,
+      "lat": 37.7143895,
+      "lon": -122.1570579,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "40",
+      "zone": "traffic"
+    },
+    {
+      "id": 12349942268,
+      "lat": 37.7136696,
+      "lon": -122.1593321,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "220",
+      "zone": "traffic"
+    },
+    {
+      "id": 12349949114,
+      "lat": 37.7126994,
+      "lon": -122.1613296,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12350248213,
+      "lat": 37.7130591,
+      "lon": -122.1485436,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "175",
+      "zone": "traffic"
+    },
+    {
+      "id": 12350252697,
+      "lat": 37.7014603,
+      "lon": -122.1239109,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "330",
+      "zone": "traffic"
+    },
+    {
+      "id": 12350255314,
+      "lat": 37.7166689,
+      "lon": -122.1774486,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "225",
+      "zone": "traffic"
+    },
+    {
+      "id": 12352725555,
+      "lat": 37.7067524,
+      "lon": -122.1619031,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "110",
+      "zone": "traffic"
+    },
+    {
+      "id": 12352775729,
+      "lat": 37.7046931,
+      "lon": -122.1657677,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "305",
+      "zone": "traffic"
+    },
+    {
+      "id": 12352775730,
+      "lat": 37.7048819,
+      "lon": -122.1660949,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "125",
+      "zone": "traffic"
+    },
+    {
+      "id": 12353343499,
+      "lat": 37.7067664,
+      "lon": -122.1674244,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "115",
+      "zone": "traffic"
+    },
+    {
+      "id": 12353343500,
+      "lat": 37.7067479,
+      "lon": -122.1671615,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "290",
+      "zone": "traffic"
+    },
+    {
+      "id": 12353368285,
+      "lat": 37.7292442,
+      "lon": -122.1406932,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "240",
+      "zone": "traffic"
+    },
+    {
+      "id": 12353391139,
+      "lat": 37.700082,
+      "lon": -122.1209582,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12353417271,
+      "lat": 37.7179683,
+      "lon": -122.1791817,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "60",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477165,
+      "lat": 37.86781,
+      "lon": -122.25902,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477167,
+      "lat": 37.86569,
+      "lon": -122.25391,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477169,
+      "lat": 37.8705901,
+      "lon": -122.2818346,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477170,
+      "lat": 37.8792477,
+      "lon": -122.3014159,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477171,
+      "lat": 37.8753418,
+      "lon": -122.2933501,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477172,
+      "lat": 37.8752254,
+      "lon": -122.2942382,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477173,
+      "lat": 37.8691725,
+      "lon": -122.292359,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477174,
+      "lat": 37.8690416,
+      "lon": -122.2919303,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477181,
+      "lat": 37.8480294,
+      "lon": -122.277669,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477182,
+      "lat": 37.875634,
+      "lon": -122.2567225,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477183,
+      "lat": 37.848771,
+      "lon": -122.2717602,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477185,
+      "lat": 37.8702436,
+      "lon": -122.282112,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477186,
+      "lat": 37.85529,
+      "lon": -122.26652,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477189,
+      "lat": 37.8797866,
+      "lon": -122.2831775,
+      "manufacturer": "Flock Safety Inc",
+      "direction": "180",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477190,
+      "lat": 37.8816028,
+      "lon": -122.2699916,
+      "manufacturer": "Flock Safety Inc",
+      "direction": "350",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477191,
+      "lat": 37.85464,
+      "lon": -122.26915,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477192,
+      "lat": 37.85429,
+      "lon": -122.27106,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477194,
+      "lat": 37.8533593,
+      "lon": -122.2792333,
+      "manufacturer": "Flock Safety",
+      "direction": "258",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477195,
+      "lat": 37.8532535,
+      "lon": -122.2787867,
+      "manufacturer": "Flock Safety",
+      "direction": "69",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477196,
+      "lat": 37.8562,
+      "lon": -122.25977,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477197,
+      "lat": 37.8562,
+      "lon": -122.25977,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477198,
+      "lat": 37.85296,
+      "lon": -122.26014,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477199,
+      "lat": 37.85703,
+      "lon": -122.25306,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357477200,
+      "lat": 37.85703,
+      "lon": -122.25306,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503901,
+      "lat": 37.85685,
+      "lon": -122.24151,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503903,
+      "lat": 37.8521895,
+      "lon": -122.2868906,
+      "manufacturer": "Flock Safety",
+      "direction": "250",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503905,
+      "lat": 37.8520389,
+      "lon": -122.2867952,
+      "manufacturer": "Flock Safety",
+      "direction": "160",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503906,
+      "lat": 37.8804876,
+      "lon": -122.2957074,
+      "manufacturer": "Flock Safety",
+      "direction": "58",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503907,
+      "lat": 37.880556,
+      "lon": -122.2957374,
+      "manufacturer": "Flock Safety",
+      "direction": "324",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503908,
+      "lat": 37.88226,
+      "lon": -122.29645,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503909,
+      "lat": 37.86873,
+      "lon": -122.25921,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503910,
+      "lat": 37.8833148,
+      "lon": -122.2469258,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503911,
+      "lat": 37.8689,
+      "lon": -122.30029,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503912,
+      "lat": 37.86797,
+      "lon": -122.29771,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503913,
+      "lat": 37.8689,
+      "lon": -122.30029,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503914,
+      "lat": 37.86635,
+      "lon": -122.30553,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503915,
+      "lat": 37.85105,
+      "lon": -122.29108,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357503916,
+      "lat": 37.85105,
+      "lon": -122.29108,
+      "manufacturer": "Flock Safety Inc",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504370,
+      "lat": 37.7511149,
+      "lon": -122.1640745,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504373,
+      "lat": 37.776358,
+      "lon": -122.2318494,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504374,
+      "lat": 37.7877645,
+      "lon": -122.2029938,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504375,
+      "lat": 37.8196695,
+      "lon": -122.2617957,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504376,
+      "lat": 37.7790545,
+      "lon": -122.2165807,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504377,
+      "lat": 37.7565936,
+      "lon": -122.1894502,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504378,
+      "lat": 37.7565541,
+      "lon": -122.18984,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504381,
+      "lat": 37.7898592,
+      "lon": -122.1861824,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "328",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504382,
+      "lat": 37.8313589,
+      "lon": -122.215234,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504383,
+      "lat": 37.8228274,
+      "lon": -122.2574796,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "225",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504384,
+      "lat": 37.7986611,
+      "lon": -122.2085114,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504385,
+      "lat": 37.7983904,
+      "lon": -122.2089654,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504387,
+      "lat": 37.8491504,
+      "lon": -122.2523645,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504388,
+      "lat": 37.806613,
+      "lon": -122.2772824,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504389,
+      "lat": 37.8072194,
+      "lon": -122.2720883,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "304-14",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504390,
+      "lat": 37.8113321,
+      "lon": -122.2736891,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504391,
+      "lat": 37.7362446,
+      "lon": -122.1406953,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504392,
+      "lat": 37.7994153,
+      "lon": -122.2164522,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504393,
+      "lat": 37.7847162,
+      "lon": -122.1884854,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504394,
+      "lat": 37.7834078,
+      "lon": -122.1883465,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504395,
+      "lat": 37.8037003,
+      "lon": -122.2917071,
+      "manufacturer": "Flock Safety",
+      "direction": "240",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504397,
+      "lat": 37.7376809,
+      "lon": -122.1882272,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504398,
+      "lat": 37.7392415,
+      "lon": -122.16694,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504399,
+      "lat": 37.7877882,
+      "lon": -122.2026456,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504400,
+      "lat": 37.8348445,
+      "lon": -122.2528759,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504401,
+      "lat": 37.8233075,
+      "lon": -122.2563983,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "34",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504402,
+      "lat": 37.8286082,
+      "lon": -122.2449274,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504403,
+      "lat": 37.7727317,
+      "lon": -122.1956618,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504404,
+      "lat": 37.7727344,
+      "lon": -122.1959405,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504405,
+      "lat": 37.7727026,
+      "lon": -122.196166,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504406,
+      "lat": 37.7723671,
+      "lon": -122.1963875,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504407,
+      "lat": 37.772401,
+      "lon": -122.1951995,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504408,
+      "lat": 37.7996588,
+      "lon": -122.2130986,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504409,
+      "lat": 37.798438,
+      "lon": -122.2086643,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504410,
+      "lat": 37.7998841,
+      "lon": -122.2145679,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504411,
+      "lat": 37.8005391,
+      "lon": -122.2238158,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504412,
+      "lat": 37.8007069,
+      "lon": -122.2239589,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504413,
+      "lat": 37.8467186,
+      "lon": -122.2448981,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504414,
+      "lat": 37.8215166,
+      "lon": -122.2604652,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "41",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504415,
+      "lat": 37.7576439,
+      "lon": -122.1835591,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504416,
+      "lat": 37.7544717,
+      "lon": -122.206623,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "58",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504417,
+      "lat": 37.8410868,
+      "lon": -122.2589244,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504418,
+      "lat": 37.8205618,
+      "lon": -122.2080439,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504419,
+      "lat": 37.791895,
+      "lon": -122.203985,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504420,
+      "lat": 37.8372598,
+      "lon": -122.2677931,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504421,
+      "lat": 37.7366704,
+      "lon": -122.1720189,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504422,
+      "lat": 37.7519083,
+      "lon": -122.1952794,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504423,
+      "lat": 37.7755207,
+      "lon": -122.2109975,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504424,
+      "lat": 37.7988753,
+      "lon": -122.1873277,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504425,
+      "lat": 37.7943955,
+      "lon": -122.1815635,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504426,
+      "lat": 37.8494685,
+      "lon": -122.2656055,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504427,
+      "lat": 37.8408735,
+      "lon": -122.2828816,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "62",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504428,
+      "lat": 37.8110219,
+      "lon": -122.2625531,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504429,
+      "lat": 37.8190399,
+      "lon": -122.255037,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504430,
+      "lat": 37.7983949,
+      "lon": -122.2153273,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504431,
+      "lat": 37.820983,
+      "lon": -122.205693,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "347",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504432,
+      "lat": 37.8103632,
+      "lon": -122.1981978,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504433,
+      "lat": 37.810959,
+      "lon": -122.1968742,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504434,
+      "lat": 37.8412047,
+      "lon": -122.2238483,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504435,
+      "lat": 37.8428552,
+      "lon": -122.2281592,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504436,
+      "lat": 37.8441054,
+      "lon": -122.2752076,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504437,
+      "lat": 37.7425519,
+      "lon": -122.1464906,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504438,
+      "lat": 37.7898929,
+      "lon": -122.2425818,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504439,
+      "lat": 37.8264059,
+      "lon": -122.2693997,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504440,
+      "lat": 37.7753518,
+      "lon": -122.2127032,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504441,
+      "lat": 37.7659345,
+      "lon": -122.1530528,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504442,
+      "lat": 37.7648145,
+      "lon": -122.1525124,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504443,
+      "lat": 37.8471892,
+      "lon": -122.2443492,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504444,
+      "lat": 37.8176824,
+      "lon": -122.275348,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504445,
+      "lat": 37.8276479,
+      "lon": -122.2568702,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "329",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504446,
+      "lat": 37.8274266,
+      "lon": -122.256545,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "165",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504447,
+      "lat": 37.7628233,
+      "lon": -122.1648968,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504448,
+      "lat": 37.7626291,
+      "lon": -122.1651311,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504449,
+      "lat": 37.762307,
+      "lon": -122.1646975,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504450,
+      "lat": 37.8192586,
+      "lon": -122.253486,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "57",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504451,
+      "lat": 37.7988632,
+      "lon": -122.2700454,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504452,
+      "lat": 37.7989269,
+      "lon": -122.2619686,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504453,
+      "lat": 37.821674,
+      "lon": -122.2545416,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "340",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504454,
+      "lat": 37.8215975,
+      "lon": -122.2546674,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504455,
+      "lat": 37.7485086,
+      "lon": -122.1738101,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "217",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504456,
+      "lat": 37.7833328,
+      "lon": -122.2211957,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504457,
+      "lat": 37.7739932,
+      "lon": -122.2146863,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504458,
+      "lat": 37.841036,
+      "lon": -122.2743945,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504459,
+      "lat": 37.8502475,
+      "lon": -122.2606989,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504460,
+      "lat": 37.8417694,
+      "lon": -122.2743882,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504462,
+      "lat": 37.8413718,
+      "lon": -122.2745536,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504463,
+      "lat": 37.7774633,
+      "lon": -122.1635362,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504464,
+      "lat": 37.772458,
+      "lon": -122.155273,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504465,
+      "lat": 37.8302928,
+      "lon": -122.2711332,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "276",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504467,
+      "lat": 37.8343909,
+      "lon": -122.2673893,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504469,
+      "lat": 37.8309466,
+      "lon": -122.2737681,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "345",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504470,
+      "lat": 37.8086846,
+      "lon": -122.2192335,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504471,
+      "lat": 37.8085093,
+      "lon": -122.2196951,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504472,
+      "lat": 37.7738594,
+      "lon": -122.2275931,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504473,
+      "lat": 37.8125942,
+      "lon": -122.2737636,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504474,
+      "lat": 37.8130263,
+      "lon": -122.2748666,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504477,
+      "lat": 37.8161775,
+      "lon": -122.2897064,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504478,
+      "lat": 37.8169675,
+      "lon": -122.2891033,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504479,
+      "lat": 37.8283128,
+      "lon": -122.2874006,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "250",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504480,
+      "lat": 37.7448847,
+      "lon": -122.1967261,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504481,
+      "lat": 37.7525816,
+      "lon": -122.1767771,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504482,
+      "lat": 37.7557872,
+      "lon": -122.1798996,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504483,
+      "lat": 37.7601972,
+      "lon": -122.1703892,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504484,
+      "lat": 37.7595509,
+      "lon": -122.1703441,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504485,
+      "lat": 37.8128774,
+      "lon": -122.2613283,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504486,
+      "lat": 37.8130113,
+      "lon": -122.2615744,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504487,
+      "lat": 37.8509286,
+      "lon": -122.251225,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504488,
+      "lat": 37.8516136,
+      "lon": -122.260441,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504489,
+      "lat": 37.845817,
+      "lon": -122.2734726,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504490,
+      "lat": 37.7761103,
+      "lon": -122.2132921,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504491,
+      "lat": 37.7543848,
+      "lon": -122.2063541,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504492,
+      "lat": 37.754131,
+      "lon": -122.152248,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504493,
+      "lat": 37.7447956,
+      "lon": -122.1495996,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504494,
+      "lat": 37.7454303,
+      "lon": -122.1502976,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504495,
+      "lat": 37.8469446,
+      "lon": -122.2718107,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "130",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504497,
+      "lat": 37.7550297,
+      "lon": -122.1612529,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504498,
+      "lat": 37.7388321,
+      "lon": -122.1662493,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504499,
+      "lat": 37.8280181,
+      "lon": -122.2753686,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504500,
+      "lat": 37.8004669,
+      "lon": -122.2162508,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504501,
+      "lat": 37.7649551,
+      "lon": -122.1994558,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504502,
+      "lat": 37.7659732,
+      "lon": -122.2011089,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504503,
+      "lat": 37.7715144,
+      "lon": -122.1570196,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504504,
+      "lat": 37.7759491,
+      "lon": -122.1646779,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504506,
+      "lat": 37.8154474,
+      "lon": -122.2841463,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504507,
+      "lat": 37.7833769,
+      "lon": -122.2218651,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504508,
+      "lat": 37.7840643,
+      "lon": -122.2225674,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504509,
+      "lat": 37.7839268,
+      "lon": -122.2230674,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504510,
+      "lat": 37.7777638,
+      "lon": -122.2259135,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504511,
+      "lat": 37.7446007,
+      "lon": -122.1497654,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504512,
+      "lat": 37.7710672,
+      "lon": -122.1547531,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504513,
+      "lat": 37.7713084,
+      "lon": -122.1567212,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504514,
+      "lat": 37.7667495,
+      "lon": -122.2186633,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504515,
+      "lat": 37.801596,
+      "lon": -122.2284797,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504516,
+      "lat": 37.7978565,
+      "lon": -122.2173273,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504517,
+      "lat": 37.7873533,
+      "lon": -122.1946446,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504518,
+      "lat": 37.7802411,
+      "lon": -122.1752575,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504521,
+      "lat": 37.7685486,
+      "lon": -122.2197854,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504522,
+      "lat": 37.7753806,
+      "lon": -122.1855088,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504523,
+      "lat": 37.7754586,
+      "lon": -122.185231,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504524,
+      "lat": 37.7486973,
+      "lon": -122.1611481,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504525,
+      "lat": 37.7482401,
+      "lon": -122.1619721,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504526,
+      "lat": 37.7479349,
+      "lon": -122.1630925,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504527,
+      "lat": 37.7487091,
+      "lon": -122.1618157,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504528,
+      "lat": 37.7947068,
+      "lon": -122.2126351,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504529,
+      "lat": 37.7947929,
+      "lon": -122.2124304,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504530,
+      "lat": 37.7530276,
+      "lon": -122.1962714,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504531,
+      "lat": 37.7705202,
+      "lon": -122.2171209,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504532,
+      "lat": 37.7707415,
+      "lon": -122.2171689,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504533,
+      "lat": 37.7659012,
+      "lon": -122.1873635,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504534,
+      "lat": 37.7657247,
+      "lon": -122.1874071,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504535,
+      "lat": 37.7821386,
+      "lon": -122.219273,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504536,
+      "lat": 37.7822441,
+      "lon": -122.2190102,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504537,
+      "lat": 37.7755508,
+      "lon": -122.1856972,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504538,
+      "lat": 37.7755904,
+      "lon": -122.1854551,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504539,
+      "lat": 37.7650514,
+      "lon": -122.1997607,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504540,
+      "lat": 37.7652046,
+      "lon": -122.1993302,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504541,
+      "lat": 37.8289353,
+      "lon": -122.2790398,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504543,
+      "lat": 37.7828252,
+      "lon": -122.2351487,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504544,
+      "lat": 37.8254737,
+      "lon": -122.2753553,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504545,
+      "lat": 37.8263826,
+      "lon": -122.2749176,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504546,
+      "lat": 37.8345203,
+      "lon": -122.2521204,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504547,
+      "lat": 37.8342582,
+      "lon": -122.252304,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504548,
+      "lat": 37.7778139,
+      "lon": -122.2265087,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504549,
+      "lat": 37.7760538,
+      "lon": -122.1833437,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504550,
+      "lat": 37.7692225,
+      "lon": -122.1723583,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504551,
+      "lat": 37.7994357,
+      "lon": -122.2504429,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504552,
+      "lat": 37.7393991,
+      "lon": -122.1798422,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504554,
+      "lat": 37.7635983,
+      "lon": -122.1902613,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504555,
+      "lat": 37.7898073,
+      "lon": -122.2204504,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504556,
+      "lat": 37.790627,
+      "lon": -122.2201648,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504557,
+      "lat": 37.7906069,
+      "lon": -122.2199636,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504558,
+      "lat": 37.7939468,
+      "lon": -122.2006964,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504559,
+      "lat": 37.7937651,
+      "lon": -122.2004817,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504560,
+      "lat": 37.7938085,
+      "lon": -122.200862,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504561,
+      "lat": 37.7872135,
+      "lon": -122.1948445,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504562,
+      "lat": 37.7874947,
+      "lon": -122.1948198,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504563,
+      "lat": 37.7927701,
+      "lon": -122.1998747,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504564,
+      "lat": 37.7410846,
+      "lon": -122.14898,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504565,
+      "lat": 37.7561898,
+      "lon": -122.1804137,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504566,
+      "lat": 37.8253431,
+      "lon": -122.2781946,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504567,
+      "lat": 37.8171195,
+      "lon": -122.2711423,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504568,
+      "lat": 37.7378916,
+      "lon": -122.1416392,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504569,
+      "lat": 37.7318759,
+      "lon": -122.1702273,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504570,
+      "lat": 37.7487679,
+      "lon": -122.1739543,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "137",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504571,
+      "lat": 37.7508891,
+      "lon": -122.1751822,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504572,
+      "lat": 37.7498071,
+      "lon": -122.173722,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504573,
+      "lat": 37.7511893,
+      "lon": -122.1642054,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504574,
+      "lat": 37.7513144,
+      "lon": -122.1636681,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504575,
+      "lat": 37.7334162,
+      "lon": -122.1783431,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504576,
+      "lat": 37.7333167,
+      "lon": -122.1782318,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504577,
+      "lat": 37.7386246,
+      "lon": -122.1546291,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504578,
+      "lat": 37.8032879,
+      "lon": -122.2906956,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "70",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504580,
+      "lat": 37.8106902,
+      "lon": -122.2618048,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504581,
+      "lat": 37.8085803,
+      "lon": -122.275538,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504582,
+      "lat": 37.8003283,
+      "lon": -122.2291858,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504583,
+      "lat": 37.7992751,
+      "lon": -122.2616987,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504584,
+      "lat": 37.8095339,
+      "lon": -122.2470881,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "214",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504585,
+      "lat": 37.7419152,
+      "lon": -122.1577223,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504586,
+      "lat": 37.7416798,
+      "lon": -122.156961,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504587,
+      "lat": 37.7414592,
+      "lon": -122.1572726,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504588,
+      "lat": 37.7402165,
+      "lon": -122.1560523,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504589,
+      "lat": 37.7415409,
+      "lon": -122.1566659,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504590,
+      "lat": 37.7939982,
+      "lon": -122.2400841,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504591,
+      "lat": 37.7953766,
+      "lon": -122.2369435,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504592,
+      "lat": 37.793513,
+      "lon": -122.2398632,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504593,
+      "lat": 37.7938244,
+      "lon": -122.2398695,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504594,
+      "lat": 37.8085125,
+      "lon": -122.2758755,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504595,
+      "lat": 37.7557649,
+      "lon": -122.1613579,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504596,
+      "lat": 37.7534209,
+      "lon": -122.1663572,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504597,
+      "lat": 37.7538064,
+      "lon": -122.1650933,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504598,
+      "lat": 37.7537935,
+      "lon": -122.1656491,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504599,
+      "lat": 37.7715431,
+      "lon": -122.1971882,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504600,
+      "lat": 37.7717583,
+      "lon": -122.1974893,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504601,
+      "lat": 37.7673677,
+      "lon": -122.203244,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504602,
+      "lat": 37.7712902,
+      "lon": -122.1890203,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504603,
+      "lat": 37.7716443,
+      "lon": -122.1904073,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504604,
+      "lat": 37.7724481,
+      "lon": -122.2153134,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504605,
+      "lat": 37.773145,
+      "lon": -122.2162944,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504606,
+      "lat": 37.773276,
+      "lon": -122.2158352,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504607,
+      "lat": 37.7865413,
+      "lon": -122.1965722,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504608,
+      "lat": 37.7962085,
+      "lon": -122.2111552,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504609,
+      "lat": 37.7852987,
+      "lon": -122.2341803,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504610,
+      "lat": 37.7851031,
+      "lon": -122.2340728,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504611,
+      "lat": 37.7829226,
+      "lon": -122.2365231,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504612,
+      "lat": 37.7834923,
+      "lon": -122.2358112,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504613,
+      "lat": 37.7841031,
+      "lon": -122.2369244,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504614,
+      "lat": 37.7954216,
+      "lon": -122.2262188,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504615,
+      "lat": 37.7807438,
+      "lon": -122.2057413,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504616,
+      "lat": 37.7808933,
+      "lon": -122.2059031,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "208",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504617,
+      "lat": 37.7808317,
+      "lon": -122.205732,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "40",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504618,
+      "lat": 37.7705193,
+      "lon": -122.1819539,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504619,
+      "lat": 37.7703332,
+      "lon": -122.1817272,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504620,
+      "lat": 37.7695277,
+      "lon": -122.1822709,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504621,
+      "lat": 37.7957359,
+      "lon": -122.2661189,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504622,
+      "lat": 37.7956995,
+      "lon": -122.2690453,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504623,
+      "lat": 37.8357423,
+      "lon": -122.2670058,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "330",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504624,
+      "lat": 37.7659627,
+      "lon": -122.1767868,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504625,
+      "lat": 37.7310426,
+      "lon": -122.1904137,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504626,
+      "lat": 37.8100418,
+      "lon": -122.2458314,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "66",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504627,
+      "lat": 37.8270518,
+      "lon": -122.2689734,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "92",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504628,
+      "lat": 37.8273333,
+      "lon": -122.2689566,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504629,
+      "lat": 37.8273203,
+      "lon": -122.269237,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "277",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504630,
+      "lat": 37.749434,
+      "lon": -122.1586846,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504631,
+      "lat": 37.7503523,
+      "lon": -122.1590597,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504632,
+      "lat": 37.7676254,
+      "lon": -122.1699885,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504633,
+      "lat": 37.769428,
+      "lon": -122.1724865,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504635,
+      "lat": 37.8114909,
+      "lon": -122.2940406,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504636,
+      "lat": 37.8112695,
+      "lon": -122.2938693,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504637,
+      "lat": 37.8080749,
+      "lon": -122.281064,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504638,
+      "lat": 37.8083117,
+      "lon": -122.2807502,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504640,
+      "lat": 37.7655525,
+      "lon": -122.1774129,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504641,
+      "lat": 37.7652657,
+      "lon": -122.1763863,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504642,
+      "lat": 37.7446895,
+      "lon": -122.1697058,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504643,
+      "lat": 37.7441985,
+      "lon": -122.170561,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504644,
+      "lat": 37.7440838,
+      "lon": -122.1713209,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504645,
+      "lat": 37.7446291,
+      "lon": -122.1705881,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504646,
+      "lat": 37.7894587,
+      "lon": -122.245992,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504647,
+      "lat": 37.7891252,
+      "lon": -122.2457585,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504648,
+      "lat": 37.7895829,
+      "lon": -122.2462922,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504649,
+      "lat": 37.832614,
+      "lon": -122.2144909,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504651,
+      "lat": 37.8116055,
+      "lon": -122.2477229,
+      "manufacturer": "Flock Safety",
+      "direction": "350",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504655,
+      "lat": 37.7601604,
+      "lon": -122.1857578,
+      "manufacturer": "Flock Safety",
+      "direction": "70",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504656,
+      "lat": 37.7417779,
+      "lon": -122.1954391,
+      "manufacturer": "Flock Safety",
+      "direction": "310",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504657,
+      "lat": 37.7408344,
+      "lon": -122.1949561,
+      "manufacturer": "Flock Safety",
+      "direction": "120",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504659,
+      "lat": 37.8047879,
+      "lon": -122.2785392,
+      "manufacturer": "Flock Safety",
+      "direction": "50",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504660,
+      "lat": 37.8046649,
+      "lon": -122.2782875,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504662,
+      "lat": 37.7575908,
+      "lon": -122.1887895,
+      "manufacturer": "Flock Safety",
+      "direction": "200",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504666,
+      "lat": 37.8025953,
+      "lon": -122.2831398,
+      "manufacturer": "Flock Safety",
+      "direction": "160",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504667,
+      "lat": 37.8029393,
+      "lon": -122.2827174,
+      "manufacturer": "Flock Safety",
+      "direction": "340",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504668,
+      "lat": 37.8029255,
+      "lon": -122.2831283,
+      "manufacturer": "Flock Safety",
+      "direction": "240",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504694,
+      "lat": 37.6829539,
+      "lon": -122.1287318,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504695,
+      "lat": 37.8371196,
+      "lon": -122.2958006,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504696,
+      "lat": 37.8376041,
+      "lon": -122.2971629,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504697,
+      "lat": 37.8385874,
+      "lon": -122.2962697,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504698,
+      "lat": 37.8396846,
+      "lon": -122.2973163,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "167",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504700,
+      "lat": 37.8465873,
+      "lon": -122.2993381,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504701,
+      "lat": 37.8474757,
+      "lon": -122.2974166,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504702,
+      "lat": 37.7080629,
+      "lon": -122.1214062,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504717,
+      "lat": 37.7078952,
+      "lon": -122.1226167,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504719,
+      "lat": 37.8778761,
+      "lon": -122.3076519,
+      "manufacturer": "Flock Safety",
+      "direction": "143",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504720,
+      "lat": 37.8784412,
+      "lon": -122.3069019,
+      "manufacturer": "Flock Safety",
+      "direction": "300",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504722,
+      "lat": 37.8664982,
+      "lon": -122.3040399,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504723,
+      "lat": 37.867157,
+      "lon": -122.3034785,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504724,
+      "lat": 37.8654082,
+      "lon": -122.3030385,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504729,
+      "lat": 37.8837334,
+      "lon": -122.3082206,
+      "manufacturer": "Flock Safety",
+      "direction": "345",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504731,
+      "lat": 37.8426141,
+      "lon": -122.25841,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504733,
+      "lat": 37.8253387,
+      "lon": -122.2741795,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504735,
+      "lat": 37.8475877,
+      "lon": -122.2461413,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "230",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504737,
+      "lat": 37.8500256,
+      "lon": -122.2305687,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504740,
+      "lat": 37.8536613,
+      "lon": -122.2207551,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "30",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504742,
+      "lat": 37.8490199,
+      "lon": -122.2417528,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504747,
+      "lat": 37.8430918,
+      "lon": -122.2254701,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504748,
+      "lat": 37.839337,
+      "lon": -122.2227435,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504749,
+      "lat": 37.8322755,
+      "lon": -122.2158546,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504750,
+      "lat": 37.8315171,
+      "lon": -122.2154523,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504751,
+      "lat": 37.8313053,
+      "lon": -122.2153075,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504752,
+      "lat": 37.8207758,
+      "lon": -122.2059358,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504753,
+      "lat": 37.820308,
+      "lon": -122.2057964,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504754,
+      "lat": 37.8109441,
+      "lon": -122.1977289,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504755,
+      "lat": 37.8105542,
+      "lon": -122.1970316,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504756,
+      "lat": 37.7991133,
+      "lon": -122.1855058,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504757,
+      "lat": 37.7974814,
+      "lon": -122.1833064,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504758,
+      "lat": 37.7939437,
+      "lon": -122.181456,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504759,
+      "lat": 37.7853226,
+      "lon": -122.1782725,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504760,
+      "lat": 37.8045248,
+      "lon": -122.2801356,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504761,
+      "lat": 37.7967383,
+      "lon": -122.2714252,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504762,
+      "lat": 37.8088824,
+      "lon": -122.2772755,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504763,
+      "lat": 37.806287,
+      "lon": -122.2790052,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504764,
+      "lat": 37.8102406,
+      "lon": -122.2762876,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504765,
+      "lat": 37.8172888,
+      "lon": -122.2709316,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504766,
+      "lat": 37.8176635,
+      "lon": -122.2695748,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504767,
+      "lat": 37.8099504,
+      "lon": -122.2752882,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504768,
+      "lat": 37.8056952,
+      "lon": -122.2779812,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504769,
+      "lat": 37.8085349,
+      "lon": -122.2761895,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504770,
+      "lat": 37.8021692,
+      "lon": -122.2797914,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "337",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504772,
+      "lat": 37.8032188,
+      "lon": -122.2918578,
+      "manufacturer": "Flock Safety",
+      "direction": "200",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504773,
+      "lat": 37.8019825,
+      "lon": -122.2829101,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504774,
+      "lat": 37.7970382,
+      "lon": -122.2705871,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504775,
+      "lat": 37.7976672,
+      "lon": -122.2718899,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504776,
+      "lat": 37.7954228,
+      "lon": -122.2661516,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504778,
+      "lat": 37.7794751,
+      "lon": -122.2375678,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "338",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504779,
+      "lat": 37.7793012,
+      "lon": -122.2368758,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "354",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504780,
+      "lat": 37.7752929,
+      "lon": -122.2333998,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504781,
+      "lat": 37.7752089,
+      "lon": -122.2329712,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504782,
+      "lat": 37.7709949,
+      "lon": -122.222052,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504783,
+      "lat": 37.7657655,
+      "lon": -122.2180329,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504784,
+      "lat": 37.7552755,
+      "lon": -122.2088259,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "321",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504785,
+      "lat": 37.7476455,
+      "lon": -122.2022257,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504787,
+      "lat": 37.7409228,
+      "lon": -122.1956854,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504789,
+      "lat": 37.7327025,
+      "lon": -122.1873184,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504790,
+      "lat": 37.7320668,
+      "lon": -122.1875481,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504791,
+      "lat": 37.7323443,
+      "lon": -122.1872355,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504792,
+      "lat": 37.7311591,
+      "lon": -122.1892918,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504793,
+      "lat": 37.7314831,
+      "lon": -122.189398,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504794,
+      "lat": 37.7312671,
+      "lon": -122.190058,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504797,
+      "lat": 37.7394567,
+      "lon": -122.1970451,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504798,
+      "lat": 37.7532775,
+      "lon": -122.2079016,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504799,
+      "lat": 37.7535148,
+      "lon": -122.2095414,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504800,
+      "lat": 37.7651379,
+      "lon": -122.2182358,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "150",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504801,
+      "lat": 37.7694308,
+      "lon": -122.2217489,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504802,
+      "lat": 37.7742484,
+      "lon": -122.2316103,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "126",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504803,
+      "lat": 37.7746568,
+      "lon": -122.2335943,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504804,
+      "lat": 37.7768654,
+      "lon": -122.2374347,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504805,
+      "lat": 37.7801075,
+      "lon": -122.2385639,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504806,
+      "lat": 37.7861748,
+      "lon": -122.2459631,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "96",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504807,
+      "lat": 37.788734,
+      "lon": -122.2526237,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "121",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504808,
+      "lat": 37.7948162,
+      "lon": -122.2666545,
+      "manufacturer": "CoStar",
+      "direction": "119",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504809,
+      "lat": 37.7979544,
+      "lon": -122.2746221,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504810,
+      "lat": 37.8020807,
+      "lon": -122.2856818,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504812,
+      "lat": 37.8043276,
+      "lon": -122.303298,
+      "manufacturer": "Flock Safety",
+      "direction": "110",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504816,
+      "lat": 37.8233648,
+      "lon": -122.3026905,
+      "manufacturer": "Flock Safety",
+      "direction": "100",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504817,
+      "lat": 37.7516551,
+      "lon": -122.151506,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "350",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504818,
+      "lat": 37.745402,
+      "lon": -122.1485242,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504819,
+      "lat": 37.7456604,
+      "lon": -122.1500275,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504820,
+      "lat": 37.7530797,
+      "lon": -122.1525366,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504821,
+      "lat": 37.7831729,
+      "lon": -122.1758224,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504822,
+      "lat": 37.7814902,
+      "lon": -122.1734271,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504823,
+      "lat": 37.7767232,
+      "lon": -122.1640301,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504824,
+      "lat": 37.7728452,
+      "lon": -122.1567228,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504825,
+      "lat": 37.7707671,
+      "lon": -122.154745,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504826,
+      "lat": 37.7536032,
+      "lon": -122.1507808,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "28",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504827,
+      "lat": 37.7542564,
+      "lon": -122.1519074,
+      "manufacturer": "Flock Safety",
+      "direction": "249",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504828,
+      "lat": 37.7710015,
+      "lon": -122.1561332,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504829,
+      "lat": 37.7716884,
+      "lon": -122.1570129,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504830,
+      "lat": 37.7761915,
+      "lon": -122.164609,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504831,
+      "lat": 37.7802195,
+      "lon": -122.1733744,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504832,
+      "lat": 37.8182987,
+      "lon": -122.2524128,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504833,
+      "lat": 37.8123122,
+      "lon": -122.2490847,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504834,
+      "lat": 37.811548,
+      "lon": -122.2482047,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504836,
+      "lat": 37.8056764,
+      "lon": -122.2351623,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "299",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504837,
+      "lat": 37.801348,
+      "lon": -122.2284649,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504838,
+      "lat": 37.7991904,
+      "lon": -122.2192139,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504839,
+      "lat": 37.7958229,
+      "lon": -122.2081612,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "289",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504840,
+      "lat": 37.7926479,
+      "lon": -122.2030234,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "300",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504841,
+      "lat": 37.7871164,
+      "lon": -122.1957414,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504842,
+      "lat": 37.7845895,
+      "lon": -122.1889046,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504843,
+      "lat": 37.7845116,
+      "lon": -122.18717,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504844,
+      "lat": 37.7843746,
+      "lon": -122.1809433,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504845,
+      "lat": 37.7822114,
+      "lon": -122.1767199,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504846,
+      "lat": 37.7846662,
+      "lon": -122.1914711,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504847,
+      "lat": 37.7843305,
+      "lon": -122.1910311,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504848,
+      "lat": 37.7866926,
+      "lon": -122.19645,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504849,
+      "lat": 37.7935089,
+      "lon": -122.2052069,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "150",
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504850,
+      "lat": 37.7962558,
+      "lon": -122.2108022,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504851,
+      "lat": 37.7980352,
+      "lon": -122.2175006,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504852,
+      "lat": 37.8004498,
+      "lon": -122.2286071,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504853,
+      "lat": 37.8047535,
+      "lon": -122.2351147,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504854,
+      "lat": 37.8093124,
+      "lon": -122.2462581,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504855,
+      "lat": 37.8110542,
+      "lon": -122.2500561,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504856,
+      "lat": 37.8172153,
+      "lon": -122.2524624,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504857,
+      "lat": 37.8205818,
+      "lon": -122.2568581,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504858,
+      "lat": 37.8225971,
+      "lon": -122.262072,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12357504859,
+      "lat": 37.8273791,
+      "lon": -122.2834593,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 12360257186,
+      "lat": 37.7037135,
+      "lon": -122.1675359,
+      "manufacturer": "Flock Safety",
+      "direction": "41",
+      "zone": "traffic"
+    },
+    {
+      "id": 12360257187,
+      "lat": 37.7037268,
+      "lon": -122.1676727,
+      "manufacturer": "Flock Safety",
+      "direction": "210",
+      "zone": "traffic"
+    },
+    {
+      "id": 12360257188,
+      "lat": 37.7036665,
+      "lon": -122.1676109,
+      "manufacturer": "Flock Safety",
+      "direction": "125",
+      "zone": "traffic"
+    },
+    {
+      "id": 12360316844,
+      "lat": 37.705075,
+      "lon": -122.1680132,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "285",
+      "zone": "traffic"
+    },
+    {
+      "id": 12360316845,
+      "lat": 37.7043584,
+      "lon": -122.1676541,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "275",
+      "zone": "traffic"
+    },
+    {
+      "id": 12360498371,
+      "lat": 37.7055469,
+      "lon": -122.1641685,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "120",
+      "zone": "traffic"
+    },
+    {
+      "id": 12360671950,
+      "lat": 37.705449,
+      "lon": -122.1639308,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "310",
+      "zone": "traffic"
+    },
+    {
+      "id": 12369741085,
+      "lat": 37.7280959,
+      "lon": -122.1481767,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "310",
+      "zone": "traffic"
+    },
+    {
+      "id": 12369741086,
+      "lat": 37.7252987,
+      "lon": -122.147187,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "115",
+      "zone": "traffic"
+    },
+    {
+      "id": 12372203708,
+      "lat": 37.7051066,
+      "lon": -122.1301541,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "140",
+      "zone": "traffic"
+    },
+    {
+      "id": 12372203709,
+      "lat": 37.7053947,
+      "lon": -122.1299683,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "50",
+      "zone": "traffic"
+    },
+    {
+      "id": 12372203710,
+      "lat": 37.7027854,
+      "lon": -122.1269137,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "200",
+      "zone": "traffic"
+    },
+    {
+      "id": 12372203711,
+      "lat": 37.702013,
+      "lon": -122.1309416,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "245",
+      "zone": "traffic"
+    },
+    {
+      "id": 12387145598,
+      "lat": 37.8059251,
+      "lon": -122.2378346,
+      "manufacturer": null,
+      "direction": "245",
+      "zone": "traffic"
+    },
+    {
+      "id": 12405292665,
+      "lat": 37.7253556,
+      "lon": -122.1622964,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "185",
+      "zone": "traffic"
+    },
+    {
+      "id": 12405292666,
+      "lat": 37.7252994,
+      "lon": -122.1622589,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "5",
+      "zone": "traffic"
+    },
+    {
+      "id": 12405306711,
+      "lat": 37.7368025,
+      "lon": -122.1532731,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "305",
+      "zone": "traffic"
+    },
+    {
+      "id": 12405306712,
+      "lat": 37.7362456,
+      "lon": -122.1531007,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "120",
+      "zone": "traffic"
+    },
+    {
+      "id": 12408466068,
+      "lat": 37.7174699,
+      "lon": -122.183605,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "195",
+      "zone": "traffic"
+    },
+    {
+      "id": 12408466069,
+      "lat": 37.7174306,
+      "lon": -122.1837525,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "120",
+      "zone": "traffic"
+    },
+    {
+      "id": 12409004305,
+      "lat": 37.7099327,
+      "lon": -122.1217323,
+      "manufacturer": null,
+      "direction": "30",
+      "zone": "traffic"
+    },
+    {
+      "id": 12409016978,
+      "lat": 37.7102032,
+      "lon": -122.1233339,
+      "manufacturer": null,
+      "direction": "270",
+      "zone": "traffic"
+    },
+    {
+      "id": 12424223836,
+      "lat": 37.6930353,
+      "lon": -122.1633608,
+      "manufacturer": null,
+      "direction": "135",
+      "zone": "traffic"
+    },
+    {
+      "id": 12424223837,
+      "lat": 37.6934668,
+      "lon": -122.1631827,
+      "manufacturer": null,
+      "direction": "320",
+      "zone": "traffic"
+    },
+    {
+      "id": 12469921225,
+      "lat": 37.7263912,
+      "lon": -122.1394688,
+      "manufacturer": "Flock Safety",
+      "direction": "135",
+      "zone": "traffic"
+    },
+    {
+      "id": 12469921226,
+      "lat": 37.7268235,
+      "lon": -122.139385,
+      "manufacturer": "Flock Safety",
+      "direction": "320",
+      "zone": "traffic"
+    },
+    {
+      "id": 12583433670,
+      "lat": 37.7146134,
+      "lon": -122.1580985,
+      "manufacturer": "Flock Safety",
+      "direction": "305",
+      "zone": "traffic"
+    },
+    {
+      "id": 12590389434,
+      "lat": 37.7138232,
+      "lon": -122.1488551,
+      "manufacturer": "Flock Safety",
+      "direction": "305",
+      "zone": "traffic"
+    },
+    {
+      "id": 12682521593,
+      "lat": 37.8846946,
+      "lon": -122.2896425,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12682563391,
+      "lat": 37.8590452,
+      "lon": -122.2459427,
+      "manufacturer": "Flock Safety",
+      "direction": "120",
+      "zone": "traffic"
+    },
+    {
+      "id": 12682563392,
+      "lat": 37.857993,
+      "lon": -122.2440375,
+      "manufacturer": "Flock Safety",
+      "direction": "160",
+      "zone": "traffic"
+    },
+    {
+      "id": 12682563393,
+      "lat": 37.8542386,
+      "lon": -122.2479119,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12686017890,
+      "lat": 37.8824407,
+      "lon": -122.2871051,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 12695508194,
+      "lat": 37.8534301,
+      "lon": -122.2487458,
+      "manufacturer": "Flock Safety",
+      "direction": "170",
+      "zone": "traffic"
+    },
+    {
+      "id": 12695508195,
+      "lat": 37.8569423,
+      "lon": -122.2427942,
+      "manufacturer": "Flock Safety",
+      "direction": "155",
+      "zone": "traffic"
+    },
+    {
+      "id": 12695604632,
+      "lat": 37.8552701,
+      "lon": -122.2471864,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 12697555021,
+      "lat": 37.8563034,
+      "lon": -122.2465217,
+      "manufacturer": "Flock Safety",
+      "direction": "80",
+      "zone": "traffic"
+    },
+    {
+      "id": 12697555022,
+      "lat": 37.8552455,
+      "lon": -122.2394076,
+      "manufacturer": "Flock Safety",
+      "direction": "115",
+      "zone": "traffic"
+    },
+    {
+      "id": 12697555023,
+      "lat": 37.8542145,
+      "lon": -122.2369895,
+      "manufacturer": "Flock Safety",
+      "direction": "165",
+      "zone": "traffic"
+    },
+    {
+      "id": 12697555024,
+      "lat": 37.8509336,
+      "lon": -122.238012,
+      "manufacturer": "Flock Safety",
+      "direction": "85",
+      "zone": "traffic"
+    },
+    {
+      "id": 12700633794,
+      "lat": 37.8519401,
+      "lon": -122.241864,
+      "manufacturer": "Flock Safety",
+      "direction": "330",
+      "zone": "traffic"
+    },
+    {
+      "id": 12732264719,
+      "lat": 37.7870461,
+      "lon": -122.2783864,
+      "manufacturer": null,
+      "direction": "187",
+      "zone": "traffic"
+    },
+    {
+      "id": 12732264720,
+      "lat": 37.7835725,
+      "lon": -122.2771204,
+      "manufacturer": null,
+      "direction": "266",
+      "zone": "traffic"
+    },
+    {
+      "id": 12732264721,
+      "lat": 37.7890655,
+      "lon": -122.2786575,
+      "manufacturer": null,
+      "direction": "22",
+      "zone": "traffic"
+    },
+    {
+      "id": 12732264732,
+      "lat": 37.7834281,
+      "lon": -122.2774711,
+      "manufacturer": null,
+      "direction": "101",
+      "zone": "traffic"
+    },
+    {
+      "id": 12732264733,
+      "lat": 37.7871158,
+      "lon": -122.2817029,
+      "manufacturer": null,
+      "direction": "270",
+      "zone": "traffic"
+    },
+    {
+      "id": 12732264734,
+      "lat": 37.7847653,
+      "lon": -122.2763889,
+      "manufacturer": null,
+      "direction": "337",
+      "zone": "traffic"
+    },
+    {
+      "id": 12761566540,
+      "lat": 37.7167186,
+      "lon": -122.2103419,
+      "manufacturer": "Flock Safety",
+      "direction": "270",
+      "zone": "traffic"
+    },
+    {
+      "id": 12761566541,
+      "lat": 37.7165658,
+      "lon": -122.2103553,
+      "manufacturer": "Flock Safety",
+      "direction": "270",
+      "zone": "traffic"
+    },
+    {
+      "id": 12761566542,
+      "lat": 37.7129762,
+      "lon": -122.2079692,
+      "manufacturer": "Flock Safety",
+      "direction": "30",
+      "zone": "traffic"
+    },
+    {
+      "id": 12771178138,
+      "lat": 37.8837572,
+      "lon": -122.1918338,
+      "manufacturer": "Flock Safety",
+      "direction": "20",
+      "zone": null
+    },
+    {
+      "id": 12832745683,
+      "lat": 37.8851246,
+      "lon": -122.2819668,
+      "manufacturer": "Flock Safety",
+      "direction": "240",
+      "zone": "traffic"
+    },
+    {
+      "id": 12832830235,
+      "lat": 37.8826092,
+      "lon": -122.3023142,
+      "manufacturer": "Flock Safety",
+      "direction": "320",
+      "zone": "traffic"
+    },
+    {
+      "id": 12872484439,
+      "lat": 37.8261889,
+      "lon": -122.2475591,
+      "manufacturer": "Flock Safety",
+      "direction": "30",
+      "zone": "traffic"
+    },
+    {
+      "id": 12981786266,
+      "lat": 37.7035826,
+      "lon": -122.1506615,
+      "manufacturer": "Flock Safety",
+      "direction": "290",
+      "zone": "traffic"
+    },
+    {
+      "id": 13125725972,
+      "lat": 37.7799895,
+      "lon": -122.2904195,
+      "manufacturer": "Flock Safety",
+      "direction": "115",
+      "zone": "street"
+    },
+    {
+      "id": 13125754192,
+      "lat": 37.7603074,
+      "lon": -122.2531996,
+      "manufacturer": "Flock Safety",
+      "direction": "100",
+      "zone": "street"
+    },
+    {
+      "id": 13126345757,
+      "lat": 37.7357628,
+      "lon": -122.2138081,
+      "manufacturer": "Flock Safety",
+      "direction": "40",
+      "zone": "traffic"
+    },
+    {
+      "id": 13126345758,
+      "lat": 37.7451095,
+      "lon": -122.227304,
+      "manufacturer": "Flock Safety",
+      "direction": "70",
+      "zone": null
+    },
+    {
+      "id": 13126345759,
+      "lat": 37.7419201,
+      "lon": -122.2172883,
+      "manufacturer": "Flock Safety",
+      "direction": "40",
+      "zone": "parking"
+    },
+    {
+      "id": 13126345760,
+      "lat": 37.7467411,
+      "lon": -122.2343103,
+      "manufacturer": "Flock Safety",
+      "direction": "250",
+      "zone": "traffic"
+    },
+    {
+      "id": 13126345761,
+      "lat": 37.7294943,
+      "lon": -122.2079593,
+      "manufacturer": "Flock Safety",
+      "direction": "190",
+      "zone": "traffic"
+    },
+    {
+      "id": 13126345762,
+      "lat": 37.7338337,
+      "lon": -122.2268747,
+      "manufacturer": "Flock Safety",
+      "direction": "190",
+      "zone": "street"
+    },
+    {
+      "id": 13126378927,
+      "lat": 37.7275247,
+      "lon": -122.2295964,
+      "manufacturer": "Flock Safety",
+      "direction": "270",
+      "zone": "street"
+    },
+    {
+      "id": 13126378928,
+      "lat": 37.7439232,
+      "lon": -122.2370172,
+      "manufacturer": "Flock Safety",
+      "direction": "345",
+      "zone": "traffic"
+    },
+    {
+      "id": 13131636826,
+      "lat": 37.8658438,
+      "lon": -122.1416836,
+      "manufacturer": "Flock Safety",
+      "direction": "100",
+      "zone": null
+    },
+    {
+      "id": 13134494782,
+      "lat": 37.880579,
+      "lon": -122.1864086,
+      "manufacturer": "Flock Safety",
+      "direction": "10",
+      "zone": "street"
+    },
+    {
+      "id": 13181151928,
+      "lat": 37.8807441,
+      "lon": -122.1873622,
+      "manufacturer": "Flock Safety",
+      "direction": "280",
+      "zone": "traffic"
+    },
+    {
+      "id": 13181151929,
+      "lat": 37.8836354,
+      "lon": -122.1922312,
+      "manufacturer": "Flock Safety",
+      "direction": "130",
+      "zone": "traffic"
+    },
+    {
+      "id": 13188151335,
+      "lat": 37.7578107,
+      "lon": -122.2491303,
+      "manufacturer": "Flock Safety",
+      "direction": "210",
+      "zone": "entrance"
+    },
+    {
+      "id": 13188151336,
+      "lat": 37.755484,
+      "lon": -122.2502003,
+      "manufacturer": "Flock Safety",
+      "direction": "5",
+      "zone": null
+    },
+    {
+      "id": 13201568280,
+      "lat": 37.7532387,
+      "lon": -122.2470715,
+      "manufacturer": "Flock Safety",
+      "direction": "270",
+      "zone": null
+    },
+    {
+      "id": 13231385773,
+      "lat": 37.8178566,
+      "lon": -122.239196,
+      "manufacturer": "Flock Safety",
+      "direction": "35",
+      "zone": null
+    },
+    {
+      "id": 13231385774,
+      "lat": 37.8179143,
+      "lon": -122.2393156,
+      "manufacturer": "Flock Safety",
+      "direction": "315",
+      "zone": null
+    },
+    {
+      "id": 13231391918,
+      "lat": 37.8191559,
+      "lon": -122.2440822,
+      "manufacturer": "Flock Safety",
+      "direction": "60",
+      "zone": "traffic"
+    },
+    {
+      "id": 13250945065,
+      "lat": 37.7706559,
+      "lon": -122.2373086,
+      "manufacturer": "Flock Safety",
+      "direction": "350",
+      "zone": null
+    },
+    {
+      "id": 13260844701,
+      "lat": 37.8253241,
+      "lon": -122.2480702,
+      "manufacturer": "Flock Safety",
+      "direction": "150",
+      "zone": "traffic"
+    },
+    {
+      "id": 13260844702,
+      "lat": 37.8252046,
+      "lon": -122.2478838,
+      "manufacturer": "Flock Safety",
+      "direction": "290",
+      "zone": "traffic"
+    },
+    {
+      "id": 13300950689,
+      "lat": 37.8294174,
+      "lon": -122.2853824,
+      "manufacturer": "Flock Safety",
+      "direction": "160",
+      "zone": "street"
+    },
+    {
+      "id": 13300950690,
+      "lat": 37.8303532,
+      "lon": -122.2799138,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "entrance"
+    },
+    {
+      "id": 13300950691,
+      "lat": 37.8306299,
+      "lon": -122.2810343,
+      "manufacturer": "Flock Safety",
+      "direction": "170",
+      "zone": "traffic"
+    },
+    {
+      "id": 13305529573,
+      "lat": 37.8284319,
+      "lon": -122.2871702,
+      "manufacturer": "Flock Safety",
+      "direction": "340",
+      "zone": "street"
+    },
+    {
+      "id": 13305529574,
+      "lat": 37.8292189,
+      "lon": -122.2876432,
+      "manufacturer": "Flock Safety",
+      "direction": "140",
+      "zone": "street"
+    },
+    {
+      "id": 13305529575,
+      "lat": 37.8292127,
+      "lon": -122.2882974,
+      "manufacturer": "Flock Safety",
+      "direction": "60",
+      "zone": null
+    },
+    {
+      "id": 13305529576,
+      "lat": 37.8290688,
+      "lon": -122.2887419,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "entrance"
+    },
+    {
+      "id": 13305529577,
+      "lat": 37.8291555,
+      "lon": -122.2804478,
+      "manufacturer": "Flock Safety",
+      "direction": "330",
+      "zone": null
+    },
+    {
+      "id": 13305529578,
+      "lat": 37.8294651,
+      "lon": -122.286265,
+      "manufacturer": "Flock Safety",
+      "direction": "190",
+      "zone": "entrance"
+    },
+    {
+      "id": 13305839286,
+      "lat": 37.7214576,
+      "lon": -122.1626696,
+      "manufacturer": "Flock Safety",
+      "direction": "110",
+      "zone": null
+    },
+    {
+      "id": 13307646001,
+      "lat": 37.8416112,
+      "lon": -122.2214032,
+      "manufacturer": "Flock Safety",
+      "direction": "56",
+      "zone": "traffic"
+    },
+    {
+      "id": 13314930724,
+      "lat": 37.8278498,
+      "lon": -122.2845814,
+      "manufacturer": "Flock Safety",
+      "direction": "330",
+      "zone": null
+    },
+    {
+      "id": 13320201902,
+      "lat": 37.7678757,
+      "lon": -122.2318807,
+      "manufacturer": "Flock Safety",
+      "direction": "47",
+      "zone": "traffic"
+    },
+    {
+      "id": 13320204401,
+      "lat": 37.7680003,
+      "lon": -122.23228,
+      "manufacturer": "Flock Safety",
+      "direction": "229",
+      "zone": "traffic"
+    },
+    {
+      "id": 13320393501,
+      "lat": 37.8053799,
+      "lon": -122.2319643,
+      "manufacturer": "Flock Safety",
+      "direction": "187",
+      "zone": "traffic"
+    },
+    {
+      "id": 13323162301,
+      "lat": 37.722541,
+      "lon": -122.2335476,
+      "manufacturer": "Flock Safety",
+      "direction": "76",
+      "zone": "traffic"
+    },
+    {
+      "id": 13323177101,
+      "lat": 37.7361833,
+      "lon": -122.2129675,
+      "manufacturer": "Flock Safety",
+      "direction": "227",
+      "zone": "traffic"
+    },
+    {
+      "id": 13323183801,
+      "lat": 37.8190609,
+      "lon": -122.2444957,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13323183901,
+      "lat": 37.8192622,
+      "lon": -122.2447693,
+      "manufacturer": "Flock Safety",
+      "direction": "166",
+      "zone": "traffic"
+    },
+    {
+      "id": 13324826001,
+      "lat": 37.7901751,
+      "lon": -122.2819236,
+      "manufacturer": "Flock Safety",
+      "direction": "332",
+      "zone": "traffic"
+    },
+    {
+      "id": 13324964401,
+      "lat": 37.7578222,
+      "lon": -122.2510155,
+      "manufacturer": "Flock Safety",
+      "direction": "131",
+      "zone": "traffic"
+    },
+    {
+      "id": 13324965801,
+      "lat": 37.7578222,
+      "lon": -122.2510155,
+      "manufacturer": "Flock Safety",
+      "direction": "131",
+      "zone": "traffic"
+    },
+    {
+      "id": 13324966001,
+      "lat": 37.7582373,
+      "lon": -122.2506568,
+      "manufacturer": "Flock Safety",
+      "direction": "113",
+      "zone": "traffic"
+    },
+    {
+      "id": 13325035802,
+      "lat": 37.7259589,
+      "lon": -122.2023536,
+      "manufacturer": "Flock Safety",
+      "direction": "257",
+      "zone": "traffic"
+    },
+    {
+      "id": 13325040705,
+      "lat": 37.7290521,
+      "lon": -122.2078655,
+      "manufacturer": "Flock Safety",
+      "direction": "24",
+      "zone": "traffic"
+    },
+    {
+      "id": 13325041302,
+      "lat": 37.7259589,
+      "lon": -122.2023536,
+      "manufacturer": "Flock Safety",
+      "direction": "257",
+      "zone": "traffic"
+    },
+    {
+      "id": 13327140010,
+      "lat": 37.8103228,
+      "lon": -122.2448254,
+      "manufacturer": "Flock Safety",
+      "direction": "142",
+      "zone": "traffic"
+    },
+    {
+      "id": 13327140107,
+      "lat": 37.8110854,
+      "lon": -122.2340833,
+      "manufacturer": "Flock Safety",
+      "direction": "147",
+      "zone": "traffic"
+    },
+    {
+      "id": 13327144601,
+      "lat": 37.8166114,
+      "lon": -122.2333421,
+      "manufacturer": "Flock Safety",
+      "direction": "46",
+      "zone": "traffic"
+    },
+    {
+      "id": 13331524702,
+      "lat": 37.7744688,
+      "lon": -122.2324638,
+      "manufacturer": "Flock Safety",
+      "direction": "88",
+      "zone": "traffic"
+    },
+    {
+      "id": 13331524801,
+      "lat": 37.7705674,
+      "lon": -122.237587,
+      "manufacturer": "Flock Safety",
+      "direction": "187",
+      "zone": "traffic"
+    },
+    {
+      "id": 13331527101,
+      "lat": 37.7706985,
+      "lon": -122.2375478,
+      "manufacturer": "Flock Safety",
+      "direction": "279",
+      "zone": "traffic"
+    },
+    {
+      "id": 13331532601,
+      "lat": 37.7711894,
+      "lon": -122.2236191,
+      "manufacturer": "Flock Safety",
+      "direction": "117",
+      "zone": "traffic"
+    },
+    {
+      "id": 13334437536,
+      "lat": 37.8411977,
+      "lon": -122.2593338,
+      "manufacturer": "Flock Safety",
+      "direction": "120",
+      "zone": null
+    },
+    {
+      "id": 13334446876,
+      "lat": 37.8433152,
+      "lon": -122.256238,
+      "manufacturer": "Flock Safety",
+      "direction": "245",
+      "zone": null
+    },
+    {
+      "id": 13334447382,
+      "lat": 37.722256,
+      "lon": -122.1940887,
+      "manufacturer": "Flock Safety",
+      "direction": "30",
+      "zone": null
+    },
+    {
+      "id": 13334468401,
+      "lat": 37.770525,
+      "lon": -122.2374452,
+      "manufacturer": "Flock Safety",
+      "direction": "112",
+      "zone": "traffic"
+    },
+    {
+      "id": 13334875801,
+      "lat": 37.779587,
+      "lon": -122.2770141,
+      "manufacturer": "Flock Safety",
+      "direction": "268",
+      "zone": "traffic"
+    },
+    {
+      "id": 13341766901,
+      "lat": 37.811257,
+      "lon": -122.2414518,
+      "manufacturer": "Flock Safety",
+      "direction": "285",
+      "zone": "traffic"
+    },
+    {
+      "id": 13341766902,
+      "lat": 37.805166,
+      "lon": -122.2330203,
+      "manufacturer": "Flock Safety",
+      "direction": "316",
+      "zone": "traffic"
+    },
+    {
+      "id": 13343313802,
+      "lat": 37.8052909,
+      "lon": -122.2323302,
+      "manufacturer": "Flock Safety",
+      "direction": "319",
+      "zone": "traffic"
+    },
+    {
+      "id": 13343316801,
+      "lat": 37.8283125,
+      "lon": -122.2869789,
+      "manufacturer": "Flock Safety",
+      "direction": "106",
+      "zone": "traffic"
+    },
+    {
+      "id": 13352339674,
+      "lat": 37.8500518,
+      "lon": -122.2410677,
+      "manufacturer": "Flock Group Inc.",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 13354548950,
+      "lat": 37.8282757,
+      "lon": -122.2441574,
+      "manufacturer": "Flock Safety",
+      "direction": "120",
+      "zone": null
+    },
+    {
+      "id": 13354596563,
+      "lat": 37.8283069,
+      "lon": -122.2439301,
+      "manufacturer": "Flock Safety",
+      "direction": "285",
+      "zone": null
+    },
+    {
+      "id": 13358276301,
+      "lat": 37.7402771,
+      "lon": -122.2516812,
+      "manufacturer": "Flock Safety",
+      "direction": "180",
+      "zone": "traffic"
+    },
+    {
+      "id": 13358279201,
+      "lat": 37.7429203,
+      "lon": -122.2479005,
+      "manufacturer": "Flock Safety",
+      "direction": "167",
+      "zone": "traffic"
+    },
+    {
+      "id": 13358282501,
+      "lat": 37.746773,
+      "lon": -122.2361057,
+      "manufacturer": "Flock Safety",
+      "direction": "182",
+      "zone": "traffic"
+    },
+    {
+      "id": 13367512770,
+      "lat": 37.8285963,
+      "lon": -122.2440911,
+      "manufacturer": "Flock Safety",
+      "direction": "10",
+      "zone": null
+    },
+    {
+      "id": 13367564780,
+      "lat": 37.7233405,
+      "lon": -122.1935721,
+      "manufacturer": "Flock Safety",
+      "direction": "30",
+      "zone": null
+    },
+    {
+      "id": 13367566210,
+      "lat": 37.7233501,
+      "lon": -122.1936779,
+      "manufacturer": "Flock Safety",
+      "direction": "150",
+      "zone": null
+    },
+    {
+      "id": 13367580317,
+      "lat": 37.7276515,
+      "lon": -122.1898501,
+      "manufacturer": "Flock Safety",
+      "direction": "285",
+      "zone": null
+    },
+    {
+      "id": 13378931201,
+      "lat": 37.884992,
+      "lon": -122.297131,
+      "manufacturer": "Flock Safety",
+      "direction": "320",
+      "zone": "traffic"
+    },
+    {
+      "id": 13382753778,
+      "lat": 37.8463235,
+      "lon": -122.2482222,
+      "manufacturer": "Flock Safety",
+      "direction": "230",
+      "zone": null
+    },
+    {
+      "id": 13399297617,
+      "lat": 37.8464667,
+      "lon": -122.2462033,
+      "manufacturer": "Flock Safety",
+      "direction": "55",
+      "zone": null
+    },
+    {
+      "id": 13417310619,
+      "lat": 37.8810097,
+      "lon": -122.3083174,
+      "manufacturer": "Flock Safety",
+      "direction": "170",
+      "zone": null
+    },
+    {
+      "id": 13417310620,
+      "lat": 37.8756307,
+      "lon": -122.3061359,
+      "manufacturer": "Flock Safety",
+      "direction": "335",
+      "zone": null
+    },
+    {
+      "id": 13417310621,
+      "lat": 37.8669521,
+      "lon": -122.305118,
+      "manufacturer": "Flock Safety",
+      "direction": "345",
+      "zone": null
+    },
+    {
+      "id": 13417310622,
+      "lat": 37.866214,
+      "lon": -122.3063282,
+      "manufacturer": "Flock Safety",
+      "direction": "270",
+      "zone": null
+    },
+    {
+      "id": 13417310623,
+      "lat": 37.8649309,
+      "lon": -122.3028611,
+      "manufacturer": "Flock Safety",
+      "direction": "330",
+      "zone": null
+    },
+    {
+      "id": 13417310624,
+      "lat": 37.8454512,
+      "lon": -122.2977029,
+      "manufacturer": "Flock Safety",
+      "direction": "340",
+      "zone": null
+    },
+    {
+      "id": 13417310625,
+      "lat": 37.850214,
+      "lon": -122.2988404,
+      "manufacturer": "Flock Safety",
+      "direction": "330",
+      "zone": null
+    },
+    {
+      "id": 13421809401,
+      "lat": 37.8378017,
+      "lon": -122.2945421,
+      "manufacturer": "Flock Safety",
+      "direction": "161",
+      "zone": "traffic"
+    },
+    {
+      "id": 13436202001,
+      "lat": 37.807405,
+      "lon": -122.2021503,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13451932503,
+      "lat": 37.8266709,
+      "lon": -122.1318706,
+      "manufacturer": "Flock Safety",
+      "direction": "205",
+      "zone": null
+    },
+    {
+      "id": 13463106483,
+      "lat": 37.8159764,
+      "lon": -122.2288573,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": null
+    },
+    {
+      "id": 13463124009,
+      "lat": 37.8147302,
+      "lon": -122.2252603,
+      "manufacturer": "Flock Safety",
+      "direction": "10",
+      "zone": null
+    },
+    {
+      "id": 13463133470,
+      "lat": 37.8143381,
+      "lon": -122.2231263,
+      "manufacturer": "Flock Safety",
+      "direction": "40",
+      "zone": null
+    },
+    {
+      "id": 13463135644,
+      "lat": 37.830144,
+      "lon": -122.2433842,
+      "manufacturer": "Flock Safety",
+      "direction": "255",
+      "zone": null
+    },
+    {
+      "id": 13482558201,
+      "lat": 37.8097655,
+      "lon": -122.2450095,
+      "manufacturer": "Flock Safety",
+      "direction": "31",
+      "zone": "traffic"
+    },
+    {
+      "id": 13485000901,
+      "lat": 37.7469026,
+      "lon": -122.1891503,
+      "manufacturer": "Flock Safety",
+      "direction": "359",
+      "zone": "traffic"
+    },
+    {
+      "id": 13485173116,
+      "lat": 37.8237926,
+      "lon": -122.2490845,
+      "manufacturer": "Flock Safety",
+      "direction": "20",
+      "zone": null
+    },
+    {
+      "id": 13507538401,
+      "lat": 37.6868074,
+      "lon": -122.1307432,
+      "manufacturer": "Flock Safety",
+      "direction": "234",
+      "zone": "traffic"
+    },
+    {
+      "id": 13509981429,
+      "lat": 37.8266474,
+      "lon": -122.2250441,
+      "manufacturer": "Flock Safety",
+      "direction": "145",
+      "zone": null
+    },
+    {
+      "id": 13513056301,
+      "lat": 37.8372285,
+      "lon": -122.3044354,
+      "manufacturer": "Flock Safety",
+      "direction": "336",
+      "zone": "traffic"
+    },
+    {
+      "id": 13513242702,
+      "lat": 37.837229,
+      "lon": -122.3029046,
+      "manufacturer": "Flock Safety",
+      "direction": "324",
+      "zone": "traffic"
+    },
+    {
+      "id": 13513249701,
+      "lat": 37.8372289,
+      "lon": -122.3060057,
+      "manufacturer": "Flock Safety",
+      "direction": "334",
+      "zone": "traffic"
+    },
+    {
+      "id": 13513249801,
+      "lat": 37.8372297,
+      "lon": -122.3074142,
+      "manufacturer": "Flock Safety",
+      "direction": "315",
+      "zone": "traffic"
+    },
+    {
+      "id": 13513484001,
+      "lat": 37.686558,
+      "lon": -122.1170051,
+      "manufacturer": "Flock Safety",
+      "direction": "160",
+      "zone": "traffic"
+    },
+    {
+      "id": 13513506901,
+      "lat": 37.6866078,
+      "lon": -122.1167382,
+      "manufacturer": "Flock Safety",
+      "direction": "69",
+      "zone": "traffic"
+    },
+    {
+      "id": 13517781501,
+      "lat": 37.8372284,
+      "lon": -122.3021346,
+      "manufacturer": "Flock Safety",
+      "direction": "319",
+      "zone": "traffic"
+    },
+    {
+      "id": 13520446197,
+      "lat": 37.671144,
+      "lon": -122.123094,
+      "manufacturer": "Flock Safety",
+      "direction": "65",
+      "zone": null
+    },
+    {
+      "id": 13520653202,
+      "lat": 37.6865146,
+      "lon": -122.1301931,
+      "manufacturer": "Motorola Solutions",
+      "direction": "167",
+      "zone": "traffic"
+    },
+    {
+      "id": 13520654401,
+      "lat": 37.6868629,
+      "lon": -122.1299115,
+      "manufacturer": "Motorola Solutions",
+      "direction": "320",
+      "zone": "traffic"
+    },
+    {
+      "id": 13533162801,
+      "lat": 37.6634985,
+      "lon": -122.1171167,
+      "manufacturer": "Flock Safety",
+      "direction": "198",
+      "zone": "traffic"
+    },
+    {
+      "id": 13541766901,
+      "lat": 37.7413369,
+      "lon": -122.2441348,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13556191302,
+      "lat": 37.6920867,
+      "lon": -122.1300622,
+      "manufacturer": "Flock Safety",
+      "direction": "210",
+      "zone": "traffic"
+    },
+    {
+      "id": 13564899901,
+      "lat": 37.7582518,
+      "lon": -122.2506549,
+      "manufacturer": "Flock Safety",
+      "direction": "126",
+      "zone": "traffic"
+    },
+    {
+      "id": 13565661201,
+      "lat": 37.6999839,
+      "lon": -122.1761731,
+      "manufacturer": "Flock Safety",
+      "direction": "116",
+      "zone": "traffic"
+    },
+    {
+      "id": 13565661601,
+      "lat": 37.7001785,
+      "lon": -122.175682,
+      "manufacturer": "Flock Safety",
+      "direction": "94",
+      "zone": "traffic"
+    },
+    {
+      "id": 13565666801,
+      "lat": 37.6993462,
+      "lon": -122.1762116,
+      "manufacturer": "Flock Safety",
+      "direction": "211",
+      "zone": "traffic"
+    },
+    {
+      "id": 13565668701,
+      "lat": 37.698718,
+      "lon": -122.1757996,
+      "manufacturer": "Flock Safety",
+      "direction": "291",
+      "zone": "traffic"
+    },
+    {
+      "id": 13584128996,
+      "lat": 37.8187821,
+      "lon": -122.2432334,
+      "manufacturer": "Flock Safety",
+      "direction": "30",
+      "zone": null
+    },
+    {
+      "id": 13584132360,
+      "lat": 37.8217388,
+      "lon": -122.2472879,
+      "manufacturer": "Flock Safety",
+      "direction": "230",
+      "zone": null
+    },
+    {
+      "id": 13584138700,
+      "lat": 37.8169021,
+      "lon": -122.2353074,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": null
+    },
+    {
+      "id": 13584138983,
+      "lat": 37.8171708,
+      "lon": -122.236271,
+      "manufacturer": "Flock Safety",
+      "direction": "350",
+      "zone": null
+    },
+    {
+      "id": 13584145118,
+      "lat": 37.8174553,
+      "lon": -122.2376571,
+      "manufacturer": "Flock Safety",
+      "direction": "30",
+      "zone": null
+    },
+    {
+      "id": 13584146209,
+      "lat": 37.8215962,
+      "lon": -122.2470628,
+      "manufacturer": "Flock Safety",
+      "direction": "50",
+      "zone": null
+    },
+    {
+      "id": 13584149298,
+      "lat": 37.8185896,
+      "lon": -122.2421472,
+      "manufacturer": "Flock Safety",
+      "direction": "70",
+      "zone": null
+    },
+    {
+      "id": 13584155711,
+      "lat": 37.8169215,
+      "lon": -122.2348479,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": null
+    },
+    {
+      "id": 13591467758,
+      "lat": 37.8182431,
+      "lon": -122.2556752,
+      "manufacturer": "Flock Safety",
+      "direction": "235",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591477303,
+      "lat": 37.8468584,
+      "lon": -122.2916305,
+      "manufacturer": "Flock Safety",
+      "direction": "158",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591566101,
+      "lat": 37.8459573,
+      "lon": -122.2911582,
+      "manufacturer": "Flock Safety",
+      "direction": "326",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591792301,
+      "lat": 37.8374467,
+      "lon": -122.2995329,
+      "manufacturer": "Flock Safety",
+      "direction": "259",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591792801,
+      "lat": 37.8374467,
+      "lon": -122.2995329,
+      "manufacturer": "Flock Safety",
+      "direction": "259",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591803101,
+      "lat": 37.8334789,
+      "lon": -122.2929715,
+      "manufacturer": "Flock Safety",
+      "direction": "172",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591805601,
+      "lat": 37.8335928,
+      "lon": -122.2931028,
+      "manufacturer": "Flock Safety",
+      "direction": "269",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591808801,
+      "lat": 37.8326723,
+      "lon": -122.2930349,
+      "manufacturer": "Flock Safety",
+      "direction": "68",
+      "zone": "traffic"
+    },
+    {
+      "id": 13591818401,
+      "lat": 37.8291409,
+      "lon": -122.2890666,
+      "manufacturer": "Flock Safety",
+      "direction": "253",
+      "zone": "traffic"
+    },
+    {
+      "id": 13594320789,
+      "lat": 37.8772647,
+      "lon": -122.1801764,
+      "manufacturer": "Flock Safety",
+      "direction": "110",
+      "zone": "traffic"
+    },
+    {
+      "id": 13594349115,
+      "lat": 37.8847996,
+      "lon": -122.19085,
+      "manufacturer": "Flock Safety",
+      "direction": "310",
+      "zone": "traffic"
+    },
+    {
+      "id": 13597023201,
+      "lat": 37.8323747,
+      "lon": -122.2805293,
+      "manufacturer": "Flock Safety",
+      "direction": "232",
+      "zone": "traffic"
+    },
+    {
+      "id": 13606906701,
+      "lat": 37.8321566,
+      "lon": -122.2800753,
+      "manufacturer": "Flock Safety",
+      "direction": "314",
+      "zone": "traffic"
+    },
+    {
+      "id": 13607078301,
+      "lat": 37.8105778,
+      "lon": -122.2417953,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13621548918,
+      "lat": 37.6625583,
+      "lon": -122.1190567,
+      "manufacturer": "Flock Safety",
+      "direction": "344-54",
+      "zone": "traffic"
+    },
+    {
+      "id": 13621561601,
+      "lat": 37.6621477,
+      "lon": -122.1169596,
+      "manufacturer": "Flock Safety",
+      "direction": "294",
+      "zone": "traffic"
+    },
+    {
+      "id": 13628766727,
+      "lat": 37.6867634,
+      "lon": -122.1170081,
+      "manufacturer": "Flock Safety",
+      "direction": "255",
+      "zone": "traffic"
+    },
+    {
+      "id": 13629046201,
+      "lat": 37.8416776,
+      "lon": -122.2236749,
+      "manufacturer": "Flock Safety",
+      "direction": "32",
+      "zone": "traffic"
+    },
+    {
+      "id": 13630543990,
+      "lat": 37.8075027,
+      "lon": -122.214678,
+      "manufacturer": "Flock Safety",
+      "direction": "245",
+      "zone": "traffic"
+    },
+    {
+      "id": 13634328401,
+      "lat": 37.7593531,
+      "lon": -122.2468166,
+      "manufacturer": "Flock Safety",
+      "direction": "227",
+      "zone": "traffic"
+    },
+    {
+      "id": 13639809401,
+      "lat": 37.7373528,
+      "lon": -122.2471833,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13639813601,
+      "lat": 37.7376015,
+      "lon": -122.2486338,
+      "manufacturer": "Flock Safety",
+      "direction": "39",
+      "zone": "traffic"
+    },
+    {
+      "id": 13639813901,
+      "lat": 37.7369943,
+      "lon": -122.2447144,
+      "manufacturer": "Flock Safety",
+      "direction": "359",
+      "zone": "traffic"
+    },
+    {
+      "id": 13648080221,
+      "lat": 37.8392647,
+      "lon": -122.293487,
+      "manufacturer": "Flock Safety",
+      "direction": "174",
+      "zone": "traffic"
+    },
+    {
+      "id": 13648080305,
+      "lat": 37.8394003,
+      "lon": -122.2933971,
+      "manufacturer": "Flock Safety",
+      "direction": "345",
+      "zone": "traffic"
+    },
+    {
+      "id": 13648177704,
+      "lat": 37.8397609,
+      "lon": -122.2891761,
+      "manufacturer": "Flock Safety",
+      "direction": "336",
+      "zone": "traffic"
+    },
+    {
+      "id": 13648184903,
+      "lat": 37.8393617,
+      "lon": -122.2891758,
+      "manufacturer": "Flock Safety",
+      "direction": "162",
+      "zone": "traffic"
+    },
+    {
+      "id": 13648652201,
+      "lat": 37.788893,
+      "lon": -122.2811623,
+      "manufacturer": "Flock Safety",
+      "direction": "58",
+      "zone": "traffic"
+    },
+    {
+      "id": 13648656201,
+      "lat": 37.7568644,
+      "lon": -122.2491528,
+      "manufacturer": "Flock Safety",
+      "direction": "267",
+      "zone": "traffic"
+    },
+    {
+      "id": 13650252503,
+      "lat": 37.8467761,
+      "lon": -122.2908384,
+      "manufacturer": "Flock Safety",
+      "direction": "172",
+      "zone": "traffic"
+    },
+    {
+      "id": 13665996601,
+      "lat": 37.7640214,
+      "lon": -122.2256243,
+      "manufacturer": "Flock Safety",
+      "direction": "213",
+      "zone": "traffic"
+    },
+    {
+      "id": 13676733416,
+      "lat": 37.8473315,
+      "lon": -122.271755,
+      "manufacturer": "Flock Group Inc.",
+      "direction": "10",
+      "zone": "traffic"
+    },
+    {
+      "id": 13676778108,
+      "lat": 37.855803,
+      "lon": -122.2686859,
+      "manufacturer": "Flock Safety",
+      "direction": "38",
+      "zone": "traffic"
+    },
+    {
+      "id": 13689470601,
+      "lat": 37.7569272,
+      "lon": -122.2333576,
+      "manufacturer": "Flock Safety",
+      "direction": "21",
+      "zone": "traffic"
+    },
+    {
+      "id": 13689492201,
+      "lat": 37.7639138,
+      "lon": -122.225623,
+      "manufacturer": "Flock Safety",
+      "direction": "24",
+      "zone": "traffic"
+    },
+    {
+      "id": 13689497401,
+      "lat": 37.7691712,
+      "lon": -122.2190011,
+      "manufacturer": "Flock Safety",
+      "direction": "26",
+      "zone": "traffic"
+    },
+    {
+      "id": 13696668501,
+      "lat": 37.8146945,
+      "lon": -122.2172793,
+      "manufacturer": "Flock Safety",
+      "direction": "162",
+      "zone": "traffic"
+    },
+    {
+      "id": 13696668502,
+      "lat": 37.8140887,
+      "lon": -122.2226308,
+      "manufacturer": "Flock Safety",
+      "direction": "32",
+      "zone": "traffic"
+    },
+    {
+      "id": 13696672901,
+      "lat": 37.8134093,
+      "lon": -122.2156237,
+      "manufacturer": "Flock Safety",
+      "direction": "262",
+      "zone": "traffic"
+    },
+    {
+      "id": 13704305625,
+      "lat": 37.8102661,
+      "lon": -122.2421632,
+      "manufacturer": "Flock Safety",
+      "direction": "254",
+      "zone": "traffic"
+    },
+    {
+      "id": 13708833301,
+      "lat": 37.8677503,
+      "lon": -122.2988289,
+      "manufacturer": "Flock Safety",
+      "direction": "100",
+      "zone": "traffic"
+    },
+    {
+      "id": 13709720701,
+      "lat": 37.7179127,
+      "lon": -122.2058582,
+      "manufacturer": "Flock Safety",
+      "direction": "242",
+      "zone": "traffic"
+    },
+    {
+      "id": 13709875201,
+      "lat": 37.8370646,
+      "lon": -122.2819908,
+      "manufacturer": "Flock Safety",
+      "direction": "151",
+      "zone": "traffic"
+    },
+    {
+      "id": 13723486885,
+      "lat": 37.8226344,
+      "lon": -122.258005,
+      "manufacturer": "Flock Safety",
+      "direction": "145",
+      "zone": null
+    },
+    {
+      "id": 13723516813,
+      "lat": 37.8226291,
+      "lon": -122.2579419,
+      "manufacturer": "Flock Safety",
+      "direction": "325",
+      "zone": null
+    },
+    {
+      "id": 13735743101,
+      "lat": 37.8400811,
+      "lon": -122.2979422,
+      "manufacturer": "Flock Safety",
+      "direction": "243",
+      "zone": "traffic"
+    },
+    {
+      "id": 13751150401,
+      "lat": 37.8600941,
+      "lon": -122.294115,
+      "manufacturer": "Flock Safety",
+      "direction": "153",
+      "zone": "traffic"
+    },
+    {
+      "id": 13757345001,
+      "lat": 37.7685365,
+      "lon": -122.2306022,
+      "manufacturer": "Flock Safety",
+      "direction": "33",
+      "zone": "traffic"
+    },
+    {
+      "id": 13763971801,
+      "lat": 37.8118144,
+      "lon": -122.212795,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13764502901,
+      "lat": 37.8231772,
+      "lon": -122.2590582,
+      "manufacturer": "Flock Safety",
+      "direction": "115",
+      "zone": "traffic"
+    },
+    {
+      "id": 13764509601,
+      "lat": 37.8231017,
+      "lon": -122.2588627,
+      "manufacturer": "Flock Safety",
+      "direction": "298",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807115604,
+      "lat": 37.8272815,
+      "lon": -122.2821787,
+      "manufacturer": "CoStar",
+      "direction": "286",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807121301,
+      "lat": 37.8216593,
+      "lon": -122.3294527,
+      "manufacturer": "Bosch Security Systems",
+      "direction": "278",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807121302,
+      "lat": 37.8024099,
+      "lon": -122.2804608,
+      "manufacturer": "CoStar",
+      "direction": "30",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807121401,
+      "lat": 37.8265314,
+      "lon": -122.2976725,
+      "manufacturer": "CoStar",
+      "direction": "57",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807126101,
+      "lat": 37.7984232,
+      "lon": -122.2754969,
+      "manufacturer": "CoStar",
+      "direction": "101",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807127801,
+      "lat": 37.796644,
+      "lon": -122.2708121,
+      "manufacturer": "Flock Safety",
+      "direction": "110",
+      "zone": "traffic"
+    },
+    {
+      "id": 13807754012,
+      "lat": 37.8675628,
+      "lon": -122.2542155,
+      "manufacturer": "Flock Safety",
+      "direction": "310",
+      "zone": "traffic"
+    },
+    {
+      "id": 13812363101,
+      "lat": 37.8416166,
+      "lon": -122.2976518,
+      "manufacturer": "Flock Safety",
+      "direction": "173",
+      "zone": "traffic"
+    },
+    {
+      "id": 13841150401,
+      "lat": 37.8026415,
+      "lon": -122.2820443,
+      "manufacturer": "Flock Safety",
+      "direction": "146",
+      "zone": "traffic"
+    },
+    {
+      "id": 13843506659,
+      "lat": 37.7441369,
+      "lon": -122.1827789,
+      "manufacturer": "Flock Safety",
+      "direction": "110",
+      "zone": "traffic"
+    },
+    {
+      "id": 13851187464,
+      "lat": 37.7406601,
+      "lon": -122.1790799,
+      "manufacturer": "Flock Safety",
+      "direction": "10;165",
+      "zone": "traffic"
+    },
+    {
+      "id": 13854465401,
+      "lat": 37.8033673,
+      "lon": -122.1772975,
+      "manufacturer": "Flock Safety",
+      "direction": "43",
+      "zone": "traffic"
+    },
+    {
+      "id": 13869261301,
+      "lat": 37.8535782,
+      "lon": -122.278943,
+      "manufacturer": "Flock Safety",
+      "direction": "330",
+      "zone": "traffic"
+    },
+    {
+      "id": 13873346101,
+      "lat": 37.7796984,
+      "lon": -122.2634606,
+      "manufacturer": "Flock Safety",
+      "direction": "42",
+      "zone": "traffic"
+    },
+    {
+      "id": 13873348601,
+      "lat": 37.7796881,
+      "lon": -122.274516,
+      "manufacturer": "Flock Safety",
+      "direction": "65",
+      "zone": "traffic"
+    },
+    {
+      "id": 13874450336,
+      "lat": 37.7181172,
+      "lon": -122.1323722,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13876361181,
+      "lat": 37.7252845,
+      "lon": -122.1553809,
+      "manufacturer": "Genetec",
+      "direction": "165",
+      "zone": "parking"
+    },
+    {
+      "id": 13876385280,
+      "lat": 37.6868641,
+      "lon": -122.1299008,
+      "manufacturer": "Motorola Solutions",
+      "direction": "335",
+      "zone": "traffic"
+    },
+    {
+      "id": 13876390004,
+      "lat": 37.7252812,
+      "lon": -122.1553317,
+      "manufacturer": "Genetec",
+      "direction": "345",
+      "zone": "parking"
+    },
+    {
+      "id": 13876406060,
+      "lat": 37.7259353,
+      "lon": -122.1555262,
+      "manufacturer": "Genetec",
+      "direction": "250",
+      "zone": "parking"
+    },
+    {
+      "id": 13876416962,
+      "lat": 37.7258885,
+      "lon": -122.1555357,
+      "manufacturer": "Genetec",
+      "direction": "70",
+      "zone": "parking"
+    },
+    {
+      "id": 13876458647,
+      "lat": 37.6868674,
+      "lon": -122.1298491,
+      "manufacturer": "Motorola Solutions",
+      "direction": "335",
+      "zone": "traffic"
+    },
+    {
+      "id": 13883805286,
+      "lat": 37.7287979,
+      "lon": -122.141781,
+      "manufacturer": "Flock Safety",
+      "direction": "40",
+      "zone": "traffic"
+    },
+    {
+      "id": 13892907802,
+      "lat": 37.8486991,
+      "lon": -122.2712707,
+      "manufacturer": "Flock Safety",
+      "direction": null,
+      "zone": "traffic"
+    },
+    {
+      "id": 13897977767,
+      "lat": 37.7302411,
+      "lon": -122.1381092,
+      "manufacturer": "Flock Safety",
+      "direction": "315",
+      "zone": "traffic"
+    },
+    {
+      "id": 13902981933,
+      "lat": 37.6865159,
+      "lon": -122.1301762,
+      "manufacturer": "Motorola Solutions",
+      "direction": "150",
+      "zone": "traffic"
+    },
+    {
+      "id": 13902981934,
+      "lat": 37.6865146,
+      "lon": -122.1302332,
+      "manufacturer": "Motorola Solutions",
+      "direction": "160",
+      "zone": "traffic"
+    },
+    {
+      "id": 13903009580,
+      "lat": 37.6866039,
+      "lon": -122.1297538,
+      "manufacturer": "Motorola Solutions",
+      "direction": "85",
+      "zone": "traffic"
+    },
+    {
+      "id": 13903009581,
+      "lat": 37.6866163,
+      "lon": -122.1297588,
+      "manufacturer": "Motorola Solutions",
+      "direction": "65",
+      "zone": "traffic"
+    },
+    {
+      "id": 13903009991,
+      "lat": 37.6921432,
+      "lon": -122.1302391,
+      "manufacturer": "Flock Safety",
+      "direction": "150",
+      "zone": "traffic"
+    },
+    {
+      "id": 13908757805,
+      "lat": 37.6891574,
+      "lon": -122.1392602,
+      "manufacturer": "Flock Safety",
+      "direction": "150",
+      "zone": "traffic"
+    },
+    {
+      "id": 13909026702,
+      "lat": 37.7867908,
+      "lon": -122.2214969,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13910888450,
+      "lat": 37.8164822,
+      "lon": -122.2053988,
+      "manufacturer": "Flock Safety",
+      "direction": "175",
+      "zone": "traffic"
+    },
+    {
+      "id": 13915565601,
+      "lat": 37.8194623,
+      "lon": -122.2185179,
+      "manufacturer": "Flock Safety",
+      "direction": "318",
+      "zone": "traffic"
+    },
+    {
+      "id": 13936379602,
+      "lat": 37.7795662,
+      "lon": -122.1704117,
+      "manufacturer": "Flock Safety",
+      "direction": "298",
+      "zone": "traffic"
+    },
+    {
+      "id": 13936402001,
+      "lat": 37.8163399,
+      "lon": -122.2512924,
+      "manufacturer": "CoStar",
+      "direction": "290",
+      "zone": "traffic"
+    },
+    {
+      "id": 13937542702,
+      "lat": 37.6709229,
+      "lon": -122.1213766,
+      "manufacturer": "Flock Safety",
+      "direction": "339",
+      "zone": "traffic"
+    },
+    {
+      "id": 13937542703,
+      "lat": 37.6742571,
+      "lon": -122.1231901,
+      "manufacturer": "Flock Safety",
+      "direction": "47",
+      "zone": "traffic"
+    },
+    {
+      "id": 13937542704,
+      "lat": 37.6742949,
+      "lon": -122.1237452,
+      "manufacturer": "Flock Safety",
+      "direction": "224",
+      "zone": "traffic"
+    },
+    {
+      "id": 13938331249,
+      "lat": 37.7343799,
+      "lon": -122.1403485,
+      "manufacturer": "Flock Safety",
+      "direction": "135",
+      "zone": "traffic"
+    },
+    {
+      "id": 13938344096,
+      "lat": 37.7306449,
+      "lon": -122.1391787,
+      "manufacturer": "Flock Safety",
+      "direction": "10",
+      "zone": "traffic"
+    },
+    {
+      "id": 13948923501,
+      "lat": 37.8553346,
+      "lon": -122.1562966,
+      "manufacturer": "Flock Safety",
+      "direction": "222",
+      "zone": "traffic"
+    },
+    {
+      "id": 13950960701,
+      "lat": 37.850529,
+      "lon": -122.246109,
+      "manufacturer": "Flock Safety",
+      "direction": "289",
+      "zone": "traffic"
+    },
+    {
+      "id": 13954973401,
+      "lat": 37.8195539,
+      "lon": -122.2113863,
+      "manufacturer": "Flock Safety",
+      "direction": "59",
+      "zone": "traffic"
+    },
+    {
+      "id": 13959312701,
+      "lat": 37.7525684,
+      "lon": -122.2441854,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13959313401,
+      "lat": 37.7537266,
+      "lon": -122.2430737,
+      "manufacturer": "Flock Safety",
+      "direction": "239",
+      "zone": "traffic"
+    },
+    {
+      "id": 13959313901,
+      "lat": 37.7441556,
+      "lon": -122.2474889,
+      "manufacturer": "Flock Safety",
+      "direction": "224",
+      "zone": "traffic"
+    },
+    {
+      "id": 13959314701,
+      "lat": 37.7528924,
+      "lon": -122.2453743,
+      "manufacturer": "Flock Safety",
+      "direction": "77",
+      "zone": "traffic"
+    },
+    {
+      "id": 13961624001,
+      "lat": 37.6946339,
+      "lon": -122.1855501,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 13961648301,
+      "lat": 37.6949041,
+      "lon": -122.1857495,
+      "manufacturer": "Flock Safety",
+      "direction": "288",
+      "zone": "traffic"
+    },
+    {
+      "id": 13961653701,
+      "lat": 37.699873,
+      "lon": -122.1768106,
+      "manufacturer": "Flock Safety",
+      "direction": "202",
+      "zone": "traffic"
+    },
+    {
+      "id": 13961656301,
+      "lat": 37.6998093,
+      "lon": -122.1770145,
+      "manufacturer": "Flock Safety",
+      "direction": "105",
+      "zone": "traffic"
+    },
+    {
+      "id": 13961680402,
+      "lat": 37.679927,
+      "lon": -122.1558999,
+      "manufacturer": "Flock Safety",
+      "direction": "312",
+      "zone": "traffic"
+    },
+    {
+      "id": 13961868501,
+      "lat": 37.6796697,
+      "lon": -122.1558467,
+      "manufacturer": "Flock Safety",
+      "direction": "318",
+      "zone": "traffic"
+    },
+    {
+      "id": 13962939801,
+      "lat": 37.8200327,
+      "lon": -122.2193798,
+      "manufacturer": "Flock Safety",
+      "direction": "300",
+      "zone": "traffic"
+    },
+    {
+      "id": 13962968101,
+      "lat": 37.8141654,
+      "lon": -122.2139766,
+      "manufacturer": "Flock Safety",
+      "direction": "13",
+      "zone": "traffic"
+    },
+    {
+      "id": 13962968103,
+      "lat": 37.8141467,
+      "lon": -122.2139725,
+      "manufacturer": "Flock Safety",
+      "direction": "141",
+      "zone": "traffic"
+    },
+    {
+      "id": 13962979302,
+      "lat": 37.8198967,
+      "lon": -122.2121485,
+      "manufacturer": "Flock Safety",
+      "direction": "284",
+      "zone": "traffic"
+    },
+    {
+      "id": 13962984001,
+      "lat": 37.8196831,
+      "lon": -122.211292,
+      "manufacturer": "Flock Safety",
+      "direction": "179",
+      "zone": "traffic"
+    },
+    {
+      "id": 13969266201,
+      "lat": 37.8775343,
+      "lon": -122.181649,
+      "manufacturer": "Flock Safety",
+      "direction": "286",
+      "zone": "traffic"
+    },
+    {
+      "id": 13971118801,
+      "lat": 37.7631451,
+      "lon": -122.2210439,
+      "manufacturer": "Flock Safety",
+      "direction": "214",
+      "zone": "traffic"
+    },
+    {
+      "id": 13972954501,
+      "lat": 37.8261338,
+      "lon": -122.2105498,
+      "manufacturer": "Flock Safety",
+      "direction": "137",
+      "zone": "traffic"
+    },
+    {
+      "id": 13972957302,
+      "lat": 37.8275754,
+      "lon": -122.2224885,
+      "manufacturer": "Flock Safety",
+      "direction": "81",
+      "zone": "traffic"
+    },
+    {
+      "id": 13976352204,
+      "lat": 37.7113496,
+      "lon": -122.1638048,
+      "manufacturer": "Flock Safety",
+      "direction": "145",
+      "zone": "traffic"
+    },
+    {
+      "id": 13976352205,
+      "lat": 37.7115206,
+      "lon": -122.1623087,
+      "manufacturer": "Flock Safety",
+      "direction": "275",
+      "zone": "traffic"
+    },
+    {
+      "id": 13981241704,
+      "lat": 37.8270989,
+      "lon": -122.2235581,
+      "manufacturer": "Flock Safety",
+      "direction": "241",
+      "zone": "traffic"
+    },
+    {
+      "id": 13981718101,
+      "lat": 37.8300261,
+      "lon": -122.2350962,
+      "manufacturer": "Flock Safety",
+      "direction": "133",
+      "zone": "traffic"
+    },
+    {
+      "id": 13982080205,
+      "lat": 37.8198968,
+      "lon": -122.2284332,
+      "manufacturer": "Flock Safety",
+      "direction": "65",
+      "zone": "traffic"
+    },
+    {
+      "id": 13983770301,
+      "lat": 37.7124074,
+      "lon": -122.2128238,
+      "manufacturer": "Flock Safety",
+      "direction": "131",
+      "zone": "traffic"
+    },
+    {
+      "id": 13984008101,
+      "lat": 37.7361935,
+      "lon": -122.2421089,
+      "manufacturer": "Flock Safety",
+      "direction": "319",
+      "zone": "traffic"
+    },
+    {
+      "id": 13987066501,
+      "lat": 37.7125858,
+      "lon": -122.2131324,
+      "manufacturer": "Flock Safety",
+      "direction": "127",
+      "zone": "traffic"
+    },
+    {
+      "id": 14001173101,
+      "lat": 37.7733772,
+      "lon": -122.1590944,
+      "manufacturer": "Flock Safety",
+      "direction": "107",
+      "zone": "traffic"
+    },
+    {
+      "id": 14011497901,
+      "lat": 37.8225815,
+      "lon": -122.2595813,
+      "manufacturer": "Flock Safety",
+      "direction": "115",
+      "zone": "traffic"
+    },
+    {
+      "id": 14011498001,
+      "lat": 37.8226513,
+      "lon": -122.2595406,
+      "manufacturer": "Flock Safety",
+      "direction": "121",
+      "zone": "traffic"
+    },
+    {
+      "id": 14020725001,
+      "lat": 37.8746828,
+      "lon": -122.1850785,
+      "manufacturer": "Flock Safety",
+      "direction": "175",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024456601,
+      "lat": 37.8239759,
+      "lon": -122.3170694,
+      "manufacturer": "Flock Safety",
+      "direction": "261",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024457201,
+      "lat": 37.8240435,
+      "lon": -122.317086,
+      "manufacturer": "Flock Safety",
+      "direction": "260",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024457202,
+      "lat": 37.8241187,
+      "lon": -122.3171068,
+      "manufacturer": "Flock Safety",
+      "direction": "260",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024459001,
+      "lat": 37.82419,
+      "lon": -122.3171324,
+      "manufacturer": "Flock Safety",
+      "direction": "251",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024459201,
+      "lat": 37.8242549,
+      "lon": -122.3171456,
+      "manufacturer": "Flock Safety",
+      "direction": "256",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024459202,
+      "lat": 37.8243207,
+      "lon": -122.3171628,
+      "manufacturer": "Flock Safety",
+      "direction": "254",
+      "zone": "traffic"
+    },
+    {
+      "id": 14024460501,
+      "lat": 37.8243863,
+      "lon": -122.3171762,
+      "manufacturer": "Flock Safety",
+      "direction": "253",
+      "zone": "traffic"
+    },
+    {
+      "id": 14047749701,
+      "lat": 37.8151173,
+      "lon": -122.2217764,
+      "manufacturer": "Flock Safety",
+      "direction": "217",
+      "zone": "traffic"
+    },
+    {
+      "id": 14047777201,
+      "lat": 37.8778528,
+      "lon": -122.1803033,
+      "manufacturer": "Flock Safety",
+      "direction": "292",
+      "zone": "traffic"
+    },
+    {
+      "id": 14050700401,
+      "lat": 37.6796117,
+      "lon": -122.1370004,
+      "manufacturer": "Flock Safety",
+      "direction": "221",
+      "zone": "traffic"
+    },
+    {
+      "id": 14052931042,
+      "lat": 37.8113123,
+      "lon": -122.2112578,
+      "manufacturer": "Flock Safety",
+      "direction": "200",
+      "zone": "traffic"
+    },
+    {
+      "id": 14054161502,
+      "lat": 37.8230461,
+      "lon": -122.2634475,
+      "manufacturer": "Flock Safety",
+      "direction": "85",
+      "zone": "traffic"
+    },
+    {
+      "id": 14055358101,
+      "lat": 37.8621916,
+      "lon": -122.1685839,
+      "manufacturer": "Flock Safety",
+      "direction": "54",
+      "zone": "traffic"
+    },
+    {
+      "id": 14055363501,
+      "lat": 37.8622838,
+      "lon": -122.1683243,
+      "manufacturer": "Flock Safety",
+      "direction": "251",
+      "zone": "traffic"
+    },
+    {
+      "id": 14060513503,
+      "lat": 37.8852517,
+      "lon": -122.182794,
+      "manufacturer": "Flock Safety",
+      "direction": "316",
+      "zone": "traffic"
+    },
+    {
+      "id": 14061888401,
+      "lat": 37.7381122,
+      "lon": -122.14296,
+      "manufacturer": "Flock Safety",
+      "direction": "109",
+      "zone": "traffic"
+    },
+    {
+      "id": 14062529902,
+      "lat": 37.7895308,
+      "lon": -122.2546292,
+      "manufacturer": "Flock Safety",
+      "direction": "287",
+      "zone": "traffic"
+    },
+    {
+      "id": 14064708701,
+      "lat": 37.734254,
+      "lon": -122.1468318,
+      "manufacturer": "Flock Safety",
+      "direction": "86",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065076801,
+      "lat": 37.7294659,
+      "lon": -122.1389375,
+      "manufacturer": "Flock Safety",
+      "direction": "164",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065079101,
+      "lat": 37.7481275,
+      "lon": -122.1501914,
+      "manufacturer": "Flock Safety",
+      "direction": "335",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065079102,
+      "lat": 37.7685288,
+      "lon": -122.1541406,
+      "manufacturer": "Flock Safety",
+      "direction": "146",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065080601,
+      "lat": 37.7686065,
+      "lon": -122.1534771,
+      "manufacturer": "Flock Safety",
+      "direction": "319",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065080901,
+      "lat": 37.7786372,
+      "lon": -122.1697936,
+      "manufacturer": "Flock Safety",
+      "direction": "97",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065081501,
+      "lat": 37.7843996,
+      "lon": -122.185079,
+      "manufacturer": "Flock Safety",
+      "direction": "267",
+      "zone": "traffic"
+    },
+    {
+      "id": 14065412602,
+      "lat": 37.8364416,
+      "lon": -122.1354137,
+      "manufacturer": "Flock Safety",
+      "direction": "220",
+      "zone": "traffic"
+    },
+    {
+      "id": 14066502801,
+      "lat": 37.6872673,
+      "lon": -122.1389372,
+      "manufacturer": "Flock Safety",
+      "direction": "338",
+      "zone": "traffic"
+    },
+    {
+      "id": 14067020302,
+      "lat": 37.7297591,
+      "lon": -122.1380992,
+      "manufacturer": "Flock Safety",
+      "direction": "143",
+      "zone": "traffic"
+    },
+    {
+      "id": 14067057601,
+      "lat": 37.6874742,
+      "lon": -122.1390722,
+      "manufacturer": "Flock Safety",
+      "direction": "16",
+      "zone": "traffic"
+    },
+    {
+      "id": 14067287201,
+      "lat": 37.8566208,
+      "lon": -122.155143,
+      "manufacturer": "Flock Safety",
+      "direction": "340",
+      "zone": "traffic"
+    },
+    {
+      "id": 14069015801,
+      "lat": 37.7824115,
+      "lon": -122.2718767,
+      "manufacturer": "Flock Safety",
+      "direction": "90",
+      "zone": "traffic"
+    },
+    {
+      "id": 14071723901,
+      "lat": 37.7996961,
+      "lon": -122.2743638,
+      "manufacturer": "Flock Safety",
+      "direction": "125",
+      "zone": "traffic"
+    },
+    {
+      "id": 14075679501,
+      "lat": 37.717942,
+      "lon": -122.1794002,
+      "manufacturer": "Flock Safety",
+      "direction": "141",
+      "zone": "traffic"
+    },
+    {
+      "id": 14077557001,
+      "lat": 37.8091127,
+      "lon": -122.2433763,
+      "manufacturer": "Flock Safety",
+      "direction": "300",
+      "zone": "traffic"
+    },
+    {
+      "id": 14077566301,
+      "lat": 37.826837,
+      "lon": -122.2858406,
+      "manufacturer": "Flock Safety",
+      "direction": "80",
+      "zone": "traffic"
+    },
+    {
+      "id": 14077573901,
+      "lat": 37.851009,
+      "lon": -122.2909597,
+      "manufacturer": "Flock Safety",
+      "direction": "53",
+      "zone": "traffic"
+    },
+    {
+      "id": 14081006401,
+      "lat": 37.7063727,
+      "lon": -122.1438193,
+      "manufacturer": "Flock Safety",
+      "direction": "0",
+      "zone": "traffic"
+    },
+    {
+      "id": 14085558702,
+      "lat": 37.7398412,
+      "lon": -122.2593313,
+      "manufacturer": "Flock Safety",
+      "direction": "276",
+      "zone": "traffic"
+    }
+  ]
+}

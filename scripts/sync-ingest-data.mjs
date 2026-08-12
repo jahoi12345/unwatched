@@ -21,6 +21,9 @@ const FILES = [
 	{ from: 'flock-transparency-report.json', to: 'flock-transparency.json', required: false },
 	{ from: 'digest-items.json', to: 'digest.json', required: false },
 	{ from: 'foia-compliance-report.json', to: 'foia-compliance.json', required: false },
+	{ from: 'surveillance-permits.json', to: 'permits.json', required: false },
+	{ from: 'trajectory-report-oakland-california.json', to: 'trajectory.json', required: false },
+	{ from: 'cameras-oakland-california.json', to: 'cameras.json', required: false },
 ];
 
 let syncedAt = new Date().toISOString();
@@ -35,7 +38,9 @@ for (const file of FILES) {
 		console.log(`✓ ${file.from} -> src/data/generated/${file.to}`);
 	} else {
 		// Write an empty-but-valid placeholder so the frontend doesn't fail to import.
-		const isArrayShaped = file.to === 'surveillance-matters.json' || file.to === 'flock-transparency.json' || file.to === 'foia-compliance.json';
+		const isArrayShaped = ['surveillance-matters.json', 'flock-transparency.json', 'foia-compliance.json', 'permits.json'].includes(
+			file.to,
+		);
 		writeFileSync(dest, isArrayShaped ? '[]' : '{}');
 		console.log(`- ${file.from} not found (run the corresponding ingest script first) — wrote empty placeholder`);
 	}

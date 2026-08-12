@@ -10,6 +10,8 @@
     "digest": "tsx src/digest.ts",
     "flock-monitor": "tsx src/flock-monitor.ts",
     "foia": "tsx src/foia.ts",
+    "trajectory": "tsx src/trajectory.ts",
+    "permits": "tsx src/permits.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

@@ -1,0 +1,62 @@
+{
+  "city": "Oakland, California",
+  "bbox": {
+    "south": 37.6301063,
+    "west": -122.3558935,
+    "north": 37.8854257,
+    "east": -122.1144203
+  },
+  "generatedAt": "2026-08-12T06:18:50.459Z",
+  "cameraCount": 856,
+  "coverage": {
+    "gridSize": 80,
+    "radiusMeters": 50,
+    "total": 6400,
+    "covered": 44,
+    "coveragePercent": 0.6875
+  },
+  "trips": {
+    "count": 500,
+    "corridorMeters": 80,
+    "capturedTripCount": 285,
+    "captureRatePercent": 56.99999999999999,
+    "avgHitsPerCapturedTrip": 3.512280701754386,
+    "exampleReconstruction": {
+      "origin": {
+        "lat": 37.80350830914851,
+        "lon": -122.33870652311036
+      },
+      "destination": {
+        "lat": 37.809691222591475,
+        "lon": -122.20558914019544
+      },
+      "hitCount": 3,
+      "sequence": [
+        {
+          "manufacturer": "Flock Group Inc.",
+          "lat": 37.8052716,
+          "lon": -122.293516,
+          "approxSecondsIntoTrip": 355
+        },
+        {
+          "manufacturer": "Flock Group Inc.",
+          "lat": 37.806287,
+          "lon": -122.2790052,
+          "approxSecondsIntoTrip": 469
+        },
+        {
+          "manufacturer": "Flock Group Inc.",
+          "lat": 37.806613,
+          "lon": -122.2772824,
+          "approxSecondsIntoTrip": 483
+        }
+      ]
+    }
+  },
+  "methodology": [
+    "Camera locations are real: every point comes from OpenStreetMap nodes tagged surveillance:type=ALPR, the same crowdsourced, volunteer-surveyed dataset DeFlock is built on.",
+    "Trip origins and destinations are synthetic: uniformly random points generated fresh on each run, never derived from any real person’s address, device, or movement history.",
+    "A trip is modeled as a straight line between two random points with a fixed-width travel corridor, not real street routing. This is a conservative simplification — actual driving routes follow streets, which are less direct than a straight line and disproportionately pass through arterial roads where ALPR cameras are concentrated, so real capture rates are likely higher than this estimate, not lower.",
+    "Area coverage is computed on a regular grid sampled across the city’s bounding box, not its exact administrative boundary, so a thin edge margin may include neighboring jurisdictions."
+  ]
+}

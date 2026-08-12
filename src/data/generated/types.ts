@@ -60,6 +60,62 @@ export interface DigestReport {
 	items?: DigestItem[];
 }
 
+export interface CameraRecord {
+	id: number;
+	lat: number;
+	lon: number;
+	manufacturer: string | null;
+	direction: string | null;
+	zone: string | null;
+}
+
+export interface CameraDataset {
+	city?: string;
+	bbox?: { south: number; west: number; north: number; east: number };
+	fetchedAt?: string;
+	cameras?: CameraRecord[];
+}
+
+export interface TrajectoryReport {
+	city?: string;
+	bbox?: { south: number; west: number; north: number; east: number };
+	generatedAt?: string;
+	cameraCount?: number;
+	coverage?: {
+		gridSize: number;
+		radiusMeters: number;
+		total: number;
+		covered: number;
+		coveragePercent: number;
+	};
+	trips?: {
+		count: number;
+		corridorMeters: number;
+		capturedTripCount: number;
+		captureRatePercent: number;
+		avgHitsPerCapturedTrip: number;
+		exampleReconstruction: {
+			hitCount: number;
+			sequence: { manufacturer: string | null; lat: number; lon: number; approxSecondsIntoTrip: number }[];
+		} | null;
+	};
+	methodology?: string[];
+}
+
+export interface PermitItem {
+	city: string;
+	id: number;
+	title: string;
+	body: string | null;
+	doc_type: string | null;
+	status: string | null;
+	intro_date: string | null;
+	agenda_date: string | null;
+	url: string | null;
+	categories: string;
+	keywords: string;
+}
+
 export interface FoiaComplianceItem {
 	file: string;
 	title: string;

@@ -3,20 +3,33 @@ import coverageRaw from '../data/generated/coverage-summary.json';
 import flockRaw from '../data/generated/flock-transparency.json';
 import digestRaw from '../data/generated/digest.json';
 import foiaRaw from '../data/generated/foia-compliance.json';
-import type { CoverageSummary, DigestReport, FlockTransparencyItem, FoiaComplianceItem } from '../data/generated/types';
+import permitsRaw from '../data/generated/permits.json';
+import trajectoryRaw from '../data/generated/trajectory.json';
+import type {
+	CoverageSummary,
+	DigestReport,
+	FlockTransparencyItem,
+	FoiaComplianceItem,
+	PermitItem,
+	TrajectoryReport,
+} from '../data/generated/types';
 
 const coverage = coverageRaw as CoverageSummary;
 const flockItems = flockRaw as FlockTransparencyItem[];
 const digest = digestRaw as DigestReport;
 const foiaItems = foiaRaw as FoiaComplianceItem[];
+const permitItems = permitsRaw as PermitItem[];
+const trajectory = trajectoryRaw as TrajectoryReport;
 
-type Tab = 'overview' | 'digest' | 'flock' | 'foia';
+type Tab = 'overview' | 'digest' | 'flock' | 'foia' | 'trajectory' | 'permits';
 
 const TABS: { id: Tab; label: string }[] = [
 	{ id: 'overview', label: 'Coverage' },
 	{ id: 'digest', label: 'Advocacy Digest' },
 	{ id: 'flock', label: 'Flock Monitor' },
 	{ id: 'foia', label: 'FOIA Compliance' },
+	{ id: 'trajectory', label: 'Trajectory Simulator' },
+	{ id: 'permits', label: 'Permit Filings' },
 ];
 
 function fmtDate(iso: string | null | undefined): string {
@@ -64,6 +77,8 @@ export default function Dashboard() {
 			)}
 			{tab === 'flock' && <FlockTab items={flockItems} />}
 			{tab === 'foia' && <FoiaTab items={foiaItems} />}
+			{tab === 'trajectory' && <TrajectoryTab report={trajectory} />}
+			{tab === 'permits' && <PermitsTab items={permitItems} />}
 		</>
 	);
 }
@@ -254,6 +269,118 @@ function FoiaTab({ items }: { items: FoiaComplianceItem[] }) {
 					<p className="empty-state" style={{ display: 'block' }}>
 						No FOIA responses processed yet — drop PDFs into <code>ingest/foia-inbox/</code> and run{' '}
 						<code>npm run foia</code>.
+					</p>
+				)}
+			</div>
+		</main>
+	);
+}
+
+function TrajectoryTab({ report }: { report: TrajectoryReport }) {
+	if (!report.coverage || !report.trips) {
+		return (
+			<main>
+				<p className="empty-state" style={{ display: 'block' }}>
+					No trajectory report yet — run <code>npm run trajectory -- --city="City, State"</code> in{' '}
+					<code>ingest/</code>.
+				</p>
+			</main>
+		);
+	}
+
+	const { coverage: cov, trips } = report;
+
+	return (
+		<main>
+			<p className="cat-desc">
+				Synthetic-trip simulation over {report.city}'s real, OpenStreetMap-tagged ALPR camera locations
+				({(report.cameraCount ?? 0).toLocaleString()} cameras). Built to give city councils and advocates a
+				quantifiable answer to "how much of this city is actually covered" — see methodology below for
+				exactly what's real data versus simulated.
+			</p>
+			<div className="stat-row">
+				<div className="stat-tile">
+					<div className="value">{cov.coveragePercent.toFixed(1)}%</div>
+					<div className="label">
+						of sampled area within {cov.radiusMeters}m of a known camera
+					</div>
+				</div>
+				<div className="stat-tile">
+					<div className="value">{trips.captureRatePercent.toFixed(1)}%</div>
+					<div className="label">of {trips.count.toLocaleString()} synthetic trips passed a camera</div>
+				</div>
+				<div className="stat-tile">
+					<div className="value">{trips.avgHitsPerCapturedTrip.toFixed(1)}</div>
+					<div className="label">avg. camera hits per captured trip</div>
+				</div>
+			</div>
+
+			{trips.exampleReconstruction && (
+				<section className="category-block">
+					<h2>Example reconstruction</h2>
+					<p className="cat-desc">
+						One synthetic trip, {trips.exampleReconstruction.hitCount} camera hits — showing how a
+						sequence of real camera positions alone reconstructs an approximate timed route.
+					</p>
+					<div className="item-list">
+						{trips.exampleReconstruction.sequence.map((hit, i) => (
+							<div className="item-card" key={i}>
+								<div className="item-meta">
+									<span className="badge">T+{hit.approxSecondsIntoTrip}s</span>
+									<span className="badge">
+										{hit.lat.toFixed(5)}, {hit.lon.toFixed(5)}
+									</span>
+									{hit.manufacturer && <span className="badge">{hit.manufacturer}</span>}
+								</div>
+							</div>
+						))}
+					</div>
+				</section>
+			)}
+
+			<section className="category-block">
+				<h2>Methodology</h2>
+				<ul style={{ color: 'var(--text-dim)', fontSize: '0.85rem', lineHeight: 1.7, paddingLeft: '18px' }}>
+					{(report.methodology ?? []).map((line, i) => (
+						<li key={i}>{line}</li>
+					))}
+				</ul>
+			</section>
+		</main>
+	);
+}
+
+function PermitsTab({ items }: { items: PermitItem[] }) {
+	return (
+		<main>
+			<p className="cat-desc">
+				Public building/electrical permits whose filed description mentions surveillance hardware —
+				this is how private, non-governmental camera deployments (businesses, parking lots, HOAs) show up
+				in public records, since there's no police purchase order to FOIA for them.
+			</p>
+			<div className="item-list">
+				{items.map((item, i) => (
+					<article className="item-card" key={i}>
+						<h3 className="item-title">
+							{item.url ? (
+								<a href={item.url} target="_blank" rel="noopener noreferrer">
+									{item.title}
+								</a>
+							) : (
+								item.title
+							)}
+						</h3>
+						<div className="item-meta">
+							<span className="badge">{item.city}</span>
+							<span className="badge">{item.status ?? 'unknown'}</span>
+							<span className="badge">{fmtDate(item.intro_date)}</span>
+							{item.body && <span className="badge">{item.body}</span>}
+						</div>
+					</article>
+				))}
+				{items.length === 0 && (
+					<p className="empty-state" style={{ display: 'block' }}>
+						No permits processed yet — run <code>npm run permits</code> in <code>ingest/</code>.
 					</p>
 				)}
 			</div>

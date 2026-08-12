@@ -1,6 +1,12 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import Directory from './pages/Directory';
-import Dashboard from './pages/Dashboard';
+
+// Dashboard bundles ~130KB of JSON snapshots, and Exposure bundles Leaflet
+// plus the camera dataset — split both out so browsing the directory (the
+// landing page) doesn't pay for either.
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const Exposure = lazy(() => import('./pages/Exposure'));
 
 export default function App() {
 	return (
@@ -20,13 +26,19 @@ export default function App() {
 						<NavLink to="/tools" className={({ isActive }) => (isActive ? 'active' : '')}>
 							Our Tools
 						</NavLink>
+						<NavLink to="/exposure" className={({ isActive }) => (isActive ? 'active' : '')}>
+							Privacy Check
+						</NavLink>
 					</nav>
 				</header>
 
-				<Routes>
-					<Route path="/" element={<Directory />} />
-					<Route path="/tools" element={<Dashboard />} />
-				</Routes>
+				<Suspense fallback={<main className="cat-desc">Loading…</main>}>
+					<Routes>
+						<Route path="/" element={<Directory />} />
+						<Route path="/tools" element={<Dashboard />} />
+						<Route path="/exposure" element={<Exposure />} />
+					</Routes>
+				</Suspense>
 
 				<footer className="site">
 					<p>
