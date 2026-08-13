@@ -334,16 +334,17 @@ function TrajectoryTab({ report }: { report: TrajectoryReport }) {
 	return (
 		<main>
 			<p className="cat-desc">
-				Synthetic-trip simulation over {report.city}'s real, OpenStreetMap-tagged ALPR camera locations
-				({(report.cameraCount ?? 0).toLocaleString()} cameras). Built to give city councils and advocates a
-				quantifiable answer to "how much of this city is actually covered" — see methodology below for
-				exactly what's real data versus simulated.
+				Synthetic trips routed over {report.city}'s real arterial street network
+				{report.roadNetwork ? ` (${report.roadNetwork.nodeCount.toLocaleString()} road nodes)` : ''}, checked
+				against real, OpenStreetMap-tagged ALPR camera locations ({(report.cameraCount ?? 0).toLocaleString()}{' '}
+				cameras). Built to give city councils and advocates a quantifiable answer to "how much of this city is
+				actually covered" — see methodology below for exactly what's real data versus simulated.
 			</p>
 			<div className="stat-row">
 				<div className="stat-tile">
 					<div className="value">{cov.coveragePercent.toFixed(1)}%</div>
 					<div className="label">
-						of sampled area within {cov.radiusMeters}m of a known camera
+						of arterial road length within {cov.radiusMeters}m of a known camera
 					</div>
 				</div>
 				<div className="stat-tile">
