@@ -76,16 +76,30 @@ export interface CameraDataset {
 	cameras?: CameraRecord[];
 }
 
+export interface RouteHit {
+	manufacturer: string | null;
+	lat: number;
+	lon: number;
+	distanceAlongMeters?: number;
+	approxSecondsIntoTrip: number;
+}
+
+export interface SampleRoute {
+	path: { lat: number; lon: number }[];
+	totalMeters: number;
+	hits: RouteHit[];
+}
+
 export interface TrajectoryReport {
 	city?: string;
 	bbox?: { south: number; west: number; north: number; east: number };
 	generatedAt?: string;
 	cameraCount?: number;
+	roadNetwork?: { nodeCount: number; wayCount: number };
 	coverage?: {
-		gridSize: number;
 		radiusMeters: number;
-		total: number;
-		covered: number;
+		totalMeters: number;
+		coveredMeters: number;
 		coveragePercent: number;
 	};
 	trips?: {
@@ -95,12 +109,11 @@ export interface TrajectoryReport {
 		captureRatePercent: number;
 		avgHitsPerCapturedTrip: number;
 		exampleReconstruction: {
-			origin: { lat: number; lon: number };
-			destination: { lat: number; lon: number };
 			hitCount: number;
-			sequence: { manufacturer: string | null; lat: number; lon: number; approxSecondsIntoTrip: number }[];
+			sequence: RouteHit[];
 		} | null;
 	};
+	sampleRoutes?: SampleRoute[];
 	methodology?: string[];
 }
 

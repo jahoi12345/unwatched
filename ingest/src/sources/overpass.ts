@@ -35,10 +35,39 @@ export async function fetchCityBoundingBox(cityQuery: string): Promise<BoundingB
 }
 
 interface OverpassElement {
+	type: 'node' | 'way' | 'relation';
 	id: number;
-	lat: number;
-	lon: number;
+	lat?: number;
+	lon?: number;
+	nodes?: number[];
 	tags?: Record<string, string>;
+}
+
+async function runOverpassQuery(query: string, timeoutMs: number): Promise<OverpassElement[]> {
+	let lastErr: unknown;
+	for (const endpoint of OVERPASS_ENDPOINTS) {
+		try {
+			const controller = new AbortController();
+			const timer = setTimeout(() => controller.abort(), timeoutMs);
+			const res = await fetch(endpoint, {
+				method: 'POST',
+				body: new URLSearchParams({ data: query }),
+				headers: { 'User-Agent': USER_AGENT, 'Content-Type': 'application/x-www-form-urlencoded' },
+				signal: controller.signal,
+			});
+			clearTimeout(timer);
+			const text = await res.text();
+			if (!res.ok || text.trim().startsWith('<')) {
+				throw new Error(`Overpass endpoint ${endpoint} returned an error (HTTP ${res.status})`);
+			}
+			const json = JSON.parse(text) as { elements: OverpassElement[] };
+			return json.elements;
+		} catch (err) {
+			lastErr = err;
+			continue;
+		}
+	}
+	throw new Error(`All Overpass endpoints failed. Last error: ${lastErr}`);
 }
 
 /**
@@ -50,32 +79,43 @@ interface OverpassElement {
  */
 export async function fetchAlprCameras(bbox: BoundingBox): Promise<AlprCamera[]> {
 	const query = `[out:json][timeout:60];\nnode["surveillance:type"="ALPR"](${bbox.south},${bbox.west},${bbox.north},${bbox.east});\nout body;`;
+	const elements = await runOverpassQuery(query, 65000);
+	return elements.map((el) => ({
+		id: el.id,
+		lat: el.lat!,
+		lon: el.lon!,
+		manufacturer: el.tags?.manufacturer ?? null,
+		direction: el.tags?.direction ?? null,
+		zone: el.tags?.['surveillance:zone'] ?? null,
+	}));
+}
 
-	let lastErr: unknown;
-	for (const endpoint of OVERPASS_ENDPOINTS) {
-		try {
-			const res = await fetch(endpoint, {
-				method: 'POST',
-				body: new URLSearchParams({ data: query }),
-				headers: { 'User-Agent': USER_AGENT, 'Content-Type': 'application/x-www-form-urlencoded' },
-			});
-			const text = await res.text();
-			if (!res.ok || text.trim().startsWith('<')) {
-				throw new Error(`Overpass endpoint ${endpoint} returned an error (HTTP ${res.status})`);
-			}
-			const json = JSON.parse(text) as { elements: OverpassElement[] };
-			return json.elements.map((el) => ({
-				id: el.id,
-				lat: el.lat,
-				lon: el.lon,
-				manufacturer: el.tags?.manufacturer ?? null,
-				direction: el.tags?.direction ?? null,
-				zone: el.tags?.['surveillance:zone'] ?? null,
-			}));
-		} catch (err) {
-			lastErr = err;
-			continue;
+export interface RoadNetwork {
+	nodes: { id: number; lat: number; lon: number }[];
+	ways: { id: number; nodeIds: number[] }[];
+}
+
+/**
+ * Fetches the arterial road network (motorway through tertiary, no
+ * residential side streets) within a bounding box — real street topology
+ * for routing synthetic trips over, instead of straight lines. Scoped to
+ * arterials both to keep the graph a manageable size for repeated
+ * shortest-path queries, and because ALPR cameras concentrate on
+ * arterial roads/chokepoints in the first place.
+ */
+export async function fetchRoadNetwork(bbox: BoundingBox): Promise<RoadNetwork> {
+	const highwayTypes = 'motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link';
+	const query = `[out:json][timeout:120];\nway["highway"~"^(${highwayTypes})$"](${bbox.south},${bbox.west},${bbox.north},${bbox.east});\n(._;>;);\nout skel qt;`;
+	const elements = await runOverpassQuery(query, 130000);
+
+	const nodes: RoadNetwork['nodes'] = [];
+	const ways: RoadNetwork['ways'] = [];
+	for (const el of elements) {
+		if (el.type === 'node') {
+			nodes.push({ id: el.id, lat: el.lat!, lon: el.lon! });
+		} else if (el.type === 'way' && el.nodes) {
+			ways.push({ id: el.id, nodeIds: el.nodes });
 		}
 	}
-	throw new Error(`All Overpass endpoints failed. Last error: ${lastErr}`);
+	return { nodes, ways };
 }

@@ -1,31 +1,67 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { haversineMeters, type LatLon } from '../lib/geo';
-import type { CameraDataset, TrajectoryReport } from '../data/generated/types';
+import type { CameraDataset, SampleRoute, TrajectoryReport } from '../data/generated/types';
 
 const AVG_SPEED_MPS = 11.2; // matches ingest/src/trajectory.ts's synthetic-timing assumption
-const ANIMATION_MS = 5000;
+const ANIMATION_MS = 6000;
 
-function lerp(a: LatLon, b: LatLon, t: number): LatLon {
-	return { lat: a.lat + (b.lat - a.lat) * t, lon: a.lon + (b.lon - a.lon) * t };
+const VEHICLE_COLORS = ['#3b82f6', '#ef4444', '#f0a868', '#a78bfa', '#22d3ee', '#f472b6', '#84cc16'];
+
+function cumulativeDistances(path: LatLon[]): number[] {
+	const cum = [0];
+	for (let i = 1; i < path.length; i++) cum.push(cum[i - 1] + haversineMeters(path[i - 1], path[i]));
+	return cum;
+}
+
+function pointAtDistance(path: LatLon[], cum: number[], targetMeters: number): LatLon {
+	if (targetMeters <= 0) return path[0];
+	const total = cum[cum.length - 1];
+	if (targetMeters >= total) return path[path.length - 1];
+	// Linear scan is fine — paths are capped at ~150 points.
+	for (let i = 1; i < cum.length; i++) {
+		if (cum[i] >= targetMeters) {
+			const segStart = cum[i - 1];
+			const segLen = cum[i] - segStart;
+			const t = segLen > 0 ? (targetMeters - segStart) / segLen : 0;
+			const a = path[i - 1];
+			const b = path[i];
+			return { lat: a.lat + (b.lat - a.lat) * t, lon: a.lon + (b.lon - a.lon) * t };
+		}
+	}
+	return path[path.length - 1];
+}
+
+interface VehicleState {
+	route: SampleRoute;
+	cum: number[];
+	durationSeconds: number;
+	color: string;
 }
 
 export default function TrajectoryMap({ cameraData, report }: { cameraData: CameraDataset; report: TrajectoryReport }) {
 	const cameras = cameraData.cameras ?? [];
-	const example = report.trips?.exampleReconstruction ?? null;
+	const routes = report.sampleRoutes ?? [];
 
-	const [progress, setProgress] = useState(0);
+	const [progress, setProgress] = useState(0); // 0..1 across the whole animation window
 	const [playing, setPlaying] = useState(false);
-	const rafRef = useRef<ReturnType<typeof setInterval> | null>(null);
+	const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 	const startRef = useRef<number | null>(null);
 
-	const totalRealSeconds = example ? haversineMeters(example.origin, example.destination) / AVG_SPEED_MPS : 0;
+	const vehicles: VehicleState[] = useMemo(
+		() =>
+			routes.map((route, i) => ({
+				route,
+				cum: cumulativeDistances(route.path),
+				durationSeconds: route.totalMeters / AVG_SPEED_MPS,
+				color: VEHICLE_COLORS[i % VEHICLE_COLORS.length],
+			})),
+		[routes],
+	);
 
-	// setInterval instead of requestAnimationFrame: rAF is throttled/paused by
-	// the browser when the tab isn't visible, which would silently freeze the
-	// simulation if a user switches away mid-animation. A plain interval keeps
-	// advancing (wall-clock-based, so it still catches up correctly either way).
+	const maxDurationSeconds = Math.max(1, ...vehicles.map((v) => v.durationSeconds));
+
 	useEffect(() => {
 		if (!playing) return;
 		function tick() {
@@ -37,18 +73,18 @@ export default function TrajectoryMap({ cameraData, report }: { cameraData: Came
 			if (t >= 1) {
 				setPlaying(false);
 				startRef.current = null;
-				if (rafRef.current) clearInterval(rafRef.current);
+				if (intervalRef.current) clearInterval(intervalRef.current);
 			}
 		}
-		rafRef.current = setInterval(tick, 50);
+		intervalRef.current = setInterval(tick, 50);
 		tick();
 		return () => {
-			if (rafRef.current) clearInterval(rafRef.current);
+			if (intervalRef.current) clearInterval(intervalRef.current);
 		};
 	}, [playing]);
 
-	if (!example) {
-		return <p className="empty-state" style={{ display: 'block' }}>No example trip to visualize yet.</p>;
+	if (vehicles.length === 0) {
+		return <p className="empty-state" style={{ display: 'block' }}>No sample routes to visualize yet.</p>;
 	}
 
 	function handlePlay() {
@@ -57,76 +93,80 @@ export default function TrajectoryMap({ cameraData, report }: { cameraData: Came
 		setPlaying(true);
 	}
 
-	const currentPos = lerp(example.origin, example.destination, progress);
-	const elapsedRealSeconds = progress * totalRealSeconds;
-	const center: [number, number] = [(example.origin.lat + example.destination.lat) / 2, (example.origin.lon + example.destination.lon) / 2];
+	// Global elapsed "synthetic seconds" — the slowest (longest) vehicle
+	// finishes exactly as the animation ends; shorter trips finish earlier,
+	// which is what real traffic looks like.
+	const elapsedSeconds = progress * maxDurationSeconds;
+
+	const allLats = vehicles.flatMap((v) => v.route.path.map((p) => p.lat));
+	const allLons = vehicles.flatMap((v) => v.route.path.map((p) => p.lon));
+	const center: [number, number] =
+		allLats.length > 0
+			? [(Math.min(...allLats) + Math.max(...allLats)) / 2, (Math.min(...allLons) + Math.max(...allLons)) / 2]
+			: [37.8044, -122.2712];
+
+	const capturedCameraKeys = new Set<string>();
+	for (const v of vehicles) {
+		const vehicleElapsed = Math.min(elapsedSeconds, v.durationSeconds);
+		for (const hit of v.route.hits) {
+			if (hit.approxSecondsIntoTrip <= vehicleElapsed) capturedCameraKeys.add(`${hit.lat},${hit.lon}`);
+		}
+	}
 
 	return (
 		<div>
 			<div className="map-container">
-				<MapContainer center={center} zoom={13} style={{ height: '420px', width: '100%' }}>
+				<MapContainer center={center} zoom={12} style={{ height: '460px', width: '100%' }}>
 					<TileLayer
 						attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 						url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 					/>
-					{cameras.map((cam) => (
-						<CircleMarker
-							key={cam.id}
-							center={[cam.lat, cam.lon]}
-							radius={2}
-							pathOptions={{ color: '#6ee7c4', fillColor: '#6ee7c4', fillOpacity: 0.35, weight: 0 }}
-						/>
-					))}
-					<Polyline
-						positions={[
-							[example.origin.lat, example.origin.lon],
-							[example.destination.lat, example.destination.lon],
-						]}
-						pathOptions={{ color: '#888', dashArray: '4 6', weight: 2 }}
-					/>
-					{example.sequence.map((hit, i) => {
-						const captured = elapsedRealSeconds >= hit.approxSecondsIntoTrip;
+					{cameras.map((cam) => {
+						const isHit = capturedCameraKeys.has(`${cam.lat},${cam.lon}`);
 						return (
 							<CircleMarker
-								key={i}
-								center={[hit.lat, hit.lon]}
-								radius={captured ? 8 : 6}
+								key={cam.id}
+								center={[cam.lat, cam.lon]}
+								radius={isHit ? 5 : 2}
 								pathOptions={{
-									color: captured ? '#f0a868' : '#f0a868',
-									fillColor: captured ? '#f0a868' : 'transparent',
-									fillOpacity: captured ? 0.95 : 0.4,
-									weight: 2,
+									color: isHit ? '#f0a868' : '#6ee7c4',
+									fillColor: isHit ? '#f0a868' : '#6ee7c4',
+									fillOpacity: isHit ? 0.95 : 0.3,
+									weight: isHit ? 2 : 0,
 								}}
 							/>
 						);
 					})}
-					<CircleMarker
-						center={[example.origin.lat, example.origin.lon]}
-						radius={7}
-						pathOptions={{ color: '#fff', fillColor: '#3b82f6', fillOpacity: 1, weight: 2 }}
-					/>
-					<CircleMarker
-						center={[example.destination.lat, example.destination.lon]}
-						radius={7}
-						pathOptions={{ color: '#fff', fillColor: '#ef4444', fillOpacity: 1, weight: 2 }}
-					/>
-					{(playing || progress > 0) && (
-						<CircleMarker
-							center={[currentPos.lat, currentPos.lon]}
-							radius={6}
-							pathOptions={{ color: '#fff', fillColor: '#111', fillOpacity: 1, weight: 2 }}
-						/>
-					)}
+
+					{vehicles.map((v, i) => (
+						<Polyline key={i} positions={v.route.path.map((p) => [p.lat, p.lon])} pathOptions={{ color: v.color, weight: 2, opacity: 0.5 }} />
+					))}
+
+					{vehicles.map((v, i) => {
+						const vehicleProgressSeconds = Math.min(elapsedSeconds, v.durationSeconds);
+						const distanceMeters = (vehicleProgressSeconds / v.durationSeconds) * v.route.totalMeters;
+						const pos = pointAtDistance(v.route.path, v.cum, distanceMeters);
+						const start = v.route.path[0];
+						const end = v.route.path[v.route.path.length - 1];
+						return (
+							<Fragment key={i}>
+								<CircleMarker center={[start.lat, start.lon]} radius={4} pathOptions={{ color: v.color, fillColor: v.color, fillOpacity: 0.5, weight: 1 }} />
+								<CircleMarker center={[end.lat, end.lon]} radius={4} pathOptions={{ color: v.color, fillColor: '#fff', fillOpacity: 1, weight: 2 }} />
+								{(playing || progress > 0) && (
+									<CircleMarker center={[pos.lat, pos.lon]} radius={6} pathOptions={{ color: '#fff', fillColor: v.color, fillOpacity: 1, weight: 2 }} />
+								)}
+							</Fragment>
+						);
+					})}
 				</MapContainer>
 			</div>
 			<div className="item-meta" style={{ marginTop: '12px' }}>
 				<button className="chip" onClick={handlePlay} aria-pressed={playing}>
-					{playing ? 'Simulating…' : '▶ Simulate this trip'}
+					{playing ? 'Simulating…' : `▶ Simulate traffic (${vehicles.length} vehicles)`}
 				</button>
-				<span className="badge">blue = start</span>
-				<span className="badge">red = end</span>
+				<span className="badge">filled dot = destination</span>
 				<span className="badge">orange = camera capture</span>
-				{playing && <span className="badge">T+{Math.round(elapsedRealSeconds)}s</span>}
+				{playing && <span className="badge">T+{Math.round(elapsedSeconds)}s</span>}
 			</div>
 		</div>
 	);
