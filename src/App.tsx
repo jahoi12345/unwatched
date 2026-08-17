@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { HashRouter, NavLink, Route, Routes } from 'react-router-dom';
 import Directory from './pages/Directory';
 
 // Dashboard bundles ~130KB of JSON snapshots, and Exposure bundles Leaflet
@@ -10,7 +10,7 @@ const Exposure = lazy(() => import('./pages/Exposure'));
 
 export default function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div className="wrap">
 				<header className="site">
 					<h1>Unwatched</h1>
@@ -48,6 +48,6 @@ export default function App() {
 					</p>
 				</footer>
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
