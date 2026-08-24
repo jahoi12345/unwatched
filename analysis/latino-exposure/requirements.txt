@@ -1,0 +1,16 @@
+numpy<2.5  # numba (via libpysal, for GWR) doesn't support numpy>=2.5 yet;
+           # installing pymc/arviz without this pin will silently upgrade
+           # numpy and break every libpysal-dependent script (build_figures.py)
+geopandas
+shapely
+pandas
+requests
+scipy
+statsmodels
+libpysal
+spreg
+esda
+mgwr
+python-dateutil
+pymc
+arviz

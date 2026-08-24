@@ -1,0 +1,265 @@
+<title>{{ title }}</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:wght@400;500;600;700&display=swap');
+
+  :root {
+    color-scheme: light;
+    --paper:      #f2f1ec;
+    --paper-2:    #e9e7e0;
+    --ink:        #1c1b17;
+    --ink-2:      #52514e;
+    --ink-3:      #79776f;
+    --rule:       #c9c7be;
+    --accent:     #1f3a5f;
+    --accent-2:   #9c4221;
+    --blue:       #2a78d6;
+    --critical:   #b5302f;
+    --card:       #fbfaf7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper:      #171613;
+      --paper-2:    #201f1b;
+      --ink:        #f2f1ec;
+      --ink-2:      #bcbab0;
+      --ink-3:      #8f8d84;
+      --rule:       #3c3b35;
+      --accent:     #7fa4d4;
+      --accent-2:   #e0916a;
+      --blue:       #5598e7;
+      --critical:   #e2807f;
+      --card:       #1e1d19;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:      #171613;
+    --paper-2:    #201f1b;
+    --ink:        #f2f1ec;
+    --ink-2:      #bcbab0;
+    --ink-3:      #8f8d84;
+    --rule:       #3c3b35;
+    --accent:     #7fa4d4;
+    --accent-2:   #e0916a;
+    --blue:       #5598e7;
+    --critical:   #e2807f;
+    --card:       #1e1d19;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+  .masthead {
+    text-align: left;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .kicker {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    margin: 0 0 0.9rem;
+  }
+  h1.title {
+    font-size: 2.15rem;
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+    max-width: 34ch;
+  }
+  .subtitle {
+    font-size: 1.08rem;
+    font-style: italic;
+    color: var(--ink-2);
+    margin: 0 0 1.4rem;
+    max-width: 48ch;
+  }
+  .meta-row {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.4rem;
+  }
+  .meta-row strong { color: var(--ink-2); font-weight: 600; }
+
+  .abstract {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 1.6rem 1.8rem;
+    margin: 2.2rem 0 3rem;
+    font-size: 0.97rem;
+  }
+  .abstract-label {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+
+  section { margin-bottom: 3rem; }
+  h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.6rem;
+    margin: 0 0 1.4rem;
+  }
+  h2 .num { color: var(--ink-3); font-weight: 500; margin-right: 0.5em; }
+  h3 {
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin: 1.8rem 0 0.8rem;
+    color: var(--ink);
+  }
+  p { margin: 0 0 1.1rem; }
+  .lede { font-size: 1.08rem; color: var(--ink); }
+  em.term { font-style: italic; color: var(--accent); }
+  strong.flag { color: var(--accent-2); font-weight: 600; }
+  a { color: var(--accent); }
+
+  .callout {
+    border-left: 3px solid var(--accent-2);
+    padding: 0.2rem 0 0.2rem 1.2rem;
+    margin: 1.6rem 0;
+    font-size: 0.96rem;
+    color: var(--ink-2);
+  }
+  .callout strong { color: var(--ink); }
+
+  figure { margin: 1.8rem 0; }
+  figure.wide { margin-left: calc(-1 * (min(100vw, 900px) - 760px) / 2 + 1.5rem);
+                margin-right: calc(-1 * (min(100vw, 900px) - 760px) / 2 + 1.5rem); }
+  figure img, figure svg { width: 100%; height: auto; display: block; }
+  /* Figures are static, matplotlib-rendered on dark ink -- fixed light card
+     regardless of page theme, same convention as a printed figure in a paper. */
+  .figure-card {
+    background: #fbfaf7;
+    border: 1px solid #d8d6cd;
+    border-radius: 3px;
+    padding: 1.4rem 1.4rem 1rem;
+  }
+  figcaption {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-3);
+    margin-top: 0.7rem;
+    line-height: 1.5;
+  }
+  figcaption strong { color: var(--ink-2); font-weight: 600; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.86rem;
+    margin: 1.2rem 0 1.6rem;
+  }
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-3);
+    margin-bottom: 0.6rem;
+  }
+  th, td {
+    text-align: right;
+    padding: 0.42rem 0.55rem;
+    border-bottom: 1px solid var(--rule);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  th:first-child, td:first-child { text-align: left; white-space: normal; }
+  thead th {
+    border-bottom: 1.5px solid var(--ink-2);
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  tbody tr:last-child td { border-bottom: 1.5px solid var(--ink-2); }
+  .sig { color: var(--accent); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+
+  ul.limitations { padding-left: 1.3rem; margin: 0 0 1rem; }
+  ul.limitations li { margin-bottom: 0.7rem; }
+
+  .footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-3);
+  }
+  .footer a { color: var(--ink-3); }
+
+  .status-pill {
+    display: inline-block;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  .status-pill.done { background: color-mix(in srgb, var(--blue) 18%, transparent); color: var(--accent); }
+  .status-pill.blocked { background: color-mix(in srgb, var(--critical) 18%, transparent); color: var(--critical); }
+
+  code { font-family: 'Public Sans', monospace; font-size: 0.88em; background: var(--paper-2); padding: 0.1em 0.35em; border-radius: 3px; }
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <p class="kicker">Working paper &middot; Unwatched research project</p>
+    <h1 class="title">{{ title }}</h1>
+    <p class="subtitle">{{ subtitle }}</p>
+    <div class="meta-row">
+      <span><strong>Geography</strong> Oakland, CA (primary) + 14 more cities</span>
+      <span><strong>Unit of analysis</strong> Census tract (primary), block group (robustness)</span>
+      <span><strong>Data vintage</strong> {{ data_vintage }}</span>
+    </div>
+  </header>
+
+  <div class="abstract">
+    <span class="abstract-label">Abstract</span>
+    {{ abstract | safe }}
+  </div>
+
+  {{ body | safe }}
+
+  <div class="footer">
+    <p>Prepared as a standalone econometric analysis for the Unwatched anti-surveillance research project. Code, data pipeline, and full model outputs live in <code>analysis/latino-exposure/</code> of the project repository — see <code>SCOPE.md</code> for the full methodology log, and <code>src/models.py</code> (Oakland baseline), <code>src/multi_city.py</code> (city acquisition pipeline), <code>src/pooled_model.py</code> and <code>src/multi_city_race_class.py</code> (per-city and pooled regressions), and <code>src/hierarchical_model.py</code> (the Bayesian multilevel model) for the code behind each section. Camera data: OpenStreetMap contributors / DeFlock project. Demographic data: U.S. Census Bureau, American Community Survey 2023 5-year estimates. Crime data: city-specific official open-data feeds (Oakland, Fresno, Albuquerque, Phoenix, Fort Worth, Denver, Sacramento, Seattle) — see &sect;7 for sources, coverage windows, and caveats per city. Road network: OpenStreetMap.</p>
+  </div>
+</div>
