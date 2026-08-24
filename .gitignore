@@ -36,3 +36,11 @@ CLAUDE.md
 
 # jetbrains setting folder
 .idea/
+
+# latino-exposure analysis: raw source data dumps (crime feeds, TIGER
+# shapefiles, road networks, camera pulls) -- reproducible from
+# analysis/latino-exposure/src/*.py, too large for git (600MB+, several
+# individual files over 50MB). Processed/analysis-ready tables in
+# data/processed/ are small and kept.
+analysis/latino-exposure/data/raw/
+analysis/latino-exposure/**/__pycache__/

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="473.607969pt" height="468.406562pt" viewBox="0 0 473.607969 468.406562" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-24T02:39:32.328032</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 468.406562 
+L 473.607969 468.406562 
+L 473.607969 0 
+L 0 0 
+L 0 468.406562 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 98.127969 423 
+L 466.407969 423 
+L 466.407969 7.2 
+L 98.127969 7.2 
+L 98.127969 423 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: middle; fill: #52514e" x="139.007478" y="434.059375" transform="rotate(-0 139.007478 434.059375)">−5</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: middle; fill: #52514e" x="200.846913" y="434.059375" transform="rotate(-0 200.846913 434.059375)">0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: middle; fill: #52514e" x="262.686347" y="434.059375" transform="rotate(-0 262.686347 434.059375)">5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: middle; fill: #52514e" x="324.525781" y="434.059375" transform="rotate(-0 324.525781 434.059375)">10</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: middle; fill: #52514e" x="386.365216" y="434.059375" transform="rotate(-0 386.365216 434.059375)">15</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: middle; fill: #52514e" x="448.20465" y="434.059375" transform="rotate(-0 448.20465 434.059375)">20</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; fill: #1c1b17" transform="translate(156.591406 447.792187)">Implied Latino-share coefficient by city, no crime control</text>
+     <text style="font-size: 10px; font-family: 'Source Serif Pro', 'Georgia', serif; fill: #1c1b17" transform="translate(131.697656 459.037812)">(all 15 cities, independent per-city models; 1 individually significant)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="29.501719" transform="rotate(-0 94.627969 29.501719)">Seattle  (n=177)</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="56.501719" transform="rotate(-0 94.627969 56.501719)">Oakland  (n=114)</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="83.501719" transform="rotate(-0 94.627969 83.501719)">Sacramento  (n=127)</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="110.501719" transform="rotate(-0 94.627969 110.501719)">San Diego  (n=317)</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11"/>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="137.501719" transform="rotate(-0 94.627969 137.501719)">Denver  (n=175)</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12"/>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="164.501719" transform="rotate(-0 94.627969 164.501719)">Kansas City  (n=115)</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_13"/>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="191.501719" transform="rotate(-0 94.627969 191.501719)">Albuquerque  (n=135)</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14"/>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="218.501719" transform="rotate(-0 94.627969 218.501719)">San Jose  (n=201)</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15"/>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="245.501719" transform="rotate(-0 94.627969 245.501719)">Dallas  (n=323)</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_16"/>
+     <g id="text_17">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="272.501719" transform="rotate(-0 94.627969 272.501719)">Fresno  (n=114)</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_17"/>
+     <g id="text_18">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="299.501719" transform="rotate(-0 94.627969 299.501719)">Fort Worth  (n=185)</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_18"/>
+     <g id="text_19">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="326.501719" transform="rotate(-0 94.627969 326.501719)">El Paso  (n=143)</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_19"/>
+     <g id="text_20">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="353.501719" transform="rotate(-0 94.627969 353.501719)">Phoenix  (n=366)</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_20"/>
+     <g id="text_21">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="380.501719" transform="rotate(-0 94.627969 380.501719)">Charlotte  (n=235)</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_21"/>
+     <g id="text_22">
+      <text style="font-size: 9px; font-family: 'Source Serif Pro', 'Georgia', serif; text-anchor: end; fill: #52514e" x="94.627969" y="407.501719" transform="rotate(-0 94.627969 407.501719)">Columbus  (n=206)</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_22">
+    <path d="M 190.110154 26.1 
+L 449.667969 26.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_23">
+    <path d="M 219.774374 53.1 
+L 242.406601 53.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #2a78d6; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_24">
+    <path d="M 189.809881 80.1 
+L 237.685355 80.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_25">
+    <path d="M 200.529734 107.1 
+L 219.769145 107.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_26">
+    <path d="M 191.309592 134.1 
+L 226.654585 134.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_27">
+    <path d="M 194.877756 161.1 
+L 220.75218 161.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 190.985821 188.1 
+L 221.853844 188.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_29">
+    <path d="M 184.789182 215.1 
+L 211.238661 215.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_30">
+    <path d="M 188.445011 242.1 
+L 202.142686 242.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_31">
+    <path d="M 164.706687 269.1 
+L 224.742425 269.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_32">
+    <path d="M 181.566436 296.1 
+L 207.637788 296.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_33">
+    <path d="M 168.368332 323.1 
+L 216.060215 323.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_34">
+    <path d="M 168.886773 350.1 
+L 209.479813 350.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_35">
+    <path d="M 159.810674 377.1 
+L 211.932303 377.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_36">
+    <path d="M 114.867969 404.1 
+L 209.518452 404.1 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #52514e; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_37">
+    <path d="M 200.846913 423 
+L 200.846913 7.2 
+" clip-path="url(#pfa255ae1b5)" style="fill: none; stroke: #c9c7be; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 98.127969 423 
+L 466.407969 423 
+" style="fill: none; stroke: #c9c7be; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mb9e291b638" d="M 0 3.708099 
+C 0.983399 3.708099 1.926654 3.317391 2.622022 2.622022 
+C 3.317391 1.926654 3.708099 0.983399 3.708099 0 
+C 3.708099 -0.983399 3.317391 -1.926654 2.622022 -2.622022 
+C 1.926654 -3.317391 0.983399 -3.708099 0 -3.708099 
+C -0.983399 -3.708099 -1.926654 -3.317391 -2.622022 -2.622022 
+C -3.317391 -1.926654 -3.708099 -0.983399 -3.708099 0 
+C -3.708099 0.983399 -3.317391 1.926654 -2.622022 2.622022 
+C -1.926654 3.317391 -0.983399 3.708099 0 3.708099 
+z
+" style="stroke: #ffffff; stroke-width: 0.6"/>
+    </defs>
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="319.889061" y="26.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m83164cb3b5" d="M 0 3.708099 
+C 0.983399 3.708099 1.926654 3.317391 2.622022 2.622022 
+C 3.317391 1.926654 3.708099 0.983399 3.708099 0 
+C 3.708099 -0.983399 3.317391 -1.926654 2.622022 -2.622022 
+C 1.926654 -3.317391 0.983399 -3.708099 0 -3.708099 
+C -0.983399 -3.708099 -1.926654 -3.317391 -2.622022 -2.622022 
+C -3.317391 -1.926654 -3.708099 -0.983399 -3.708099 0 
+C -3.708099 0.983399 -3.317391 1.926654 -2.622022 2.622022 
+C -1.926654 3.317391 -0.983399 3.708099 0 3.708099 
+z
+" style="stroke: #ffffff; stroke-width: 0.6"/>
+    </defs>
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#m83164cb3b5" x="231.090487" y="53.1" style="fill: #2a78d6; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="213.747618" y="80.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="210.14944" y="107.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_5">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="208.982089" y="134.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_6">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="207.814968" y="161.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_7">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="206.419833" y="188.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_8">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="198.013922" y="215.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_9">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="195.293848" y="242.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_10">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="194.724556" y="269.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_11">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="194.602112" y="296.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_12">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="192.214274" y="323.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_13">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="189.183293" y="350.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_14">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="185.871488" y="377.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="PathCollection_15">
+    <g clip-path="url(#pfa255ae1b5)">
+     <use xlink:href="#mb9e291b638" x="162.193211" y="404.1" style="fill: #52514e; stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfa255ae1b5">
+   <rect x="98.127969" y="7.2" width="368.28" height="415.8"/>
+  </clipPath>
+ </defs>
+</svg>
